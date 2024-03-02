@@ -28,7 +28,7 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <div className={`${montserrat.className} ${plusJakartaSans.className}`}>
+      <div className={`${plusJakartaSans.variable} ${montserrat.variable}`}>
         <Story />
       </div>
     ),
