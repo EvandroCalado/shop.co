@@ -1,12 +1,21 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Montserrat, Plus_Jakarta_Sans } from 'next/font/google';
+import './globals.css';
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--montserrat',
+});
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--plusJakartaSans',
+});
 
 export const metadata: Metadata = {
-  title: "Shop co",
-  description: "E-commerce cloth shop",
+  title: 'Shop co',
+  description: 'E-commerce cloth shop',
 };
 
 export default function RootLayout({
@@ -16,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${montserrat.className} ${plusJakartaSans.className}`}>
+        {children}
+      </body>
     </html>
   );
 }
