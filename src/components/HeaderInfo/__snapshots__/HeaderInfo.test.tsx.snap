@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeaderInfo /> should render a snapshot 1`] = `
+<div>
+  <div
+    class="flex h-10 w-full items-center justify-center gap-2 bg-black/95 px-4 text-sm text-white"
+  >
+    <h4>
+      Sing up and get 20% off to your first order.
+    </h4>
+    <a
+      class="border-b font-bold duration-150 hover:brightness-90"
+      href="/register"
+    >
+      Sign Up Now
+    </a>
+  </div>
+</div>
+`;
