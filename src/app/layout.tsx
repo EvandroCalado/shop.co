@@ -16,6 +16,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: 'Shop co',
   description: 'E-commerce cloth shop',
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({
