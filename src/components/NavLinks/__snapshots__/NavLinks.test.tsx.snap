@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavLinks /> should render a snapshot 1`] = `
+<div>
+  <nav
+    class="hidden items-center gap-2 capitalize md:flex"
+  >
+    <a
+      class="cursor-pointer duration-150 hover:text-zinc-600"
+      href="/shop"
+    >
+      shop
+    </a>
+    <a
+      class="cursor-pointer duration-150 hover:text-zinc-600"
+      href="/on-sale"
+    >
+      on sale
+    </a>
+    <a
+      class="cursor-pointer duration-150 hover:text-zinc-600"
+      href="/new-arrivals"
+    >
+      new arrivals
+    </a>
+    <a
+      class="cursor-pointer duration-150 hover:text-zinc-600"
+      href="/brands"
+    >
+      brands
+    </a>
+  </nav>
+</div>
+`;
