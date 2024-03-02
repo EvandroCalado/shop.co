@@ -1,7 +1,20 @@
 import { withThemeByClassName } from '@storybook/addon-themes';
 import type { Preview } from '@storybook/react';
+import { Montserrat, Plus_Jakarta_Sans } from 'next/font/google';
 import React from 'react';
-import '../src/globals.css';
+import '../src/app/globals.css';
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--montserrat',
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--plusJakartaSans',
+});
 
 const preview: Preview = {
   parameters: {
@@ -14,7 +27,11 @@ const preview: Preview = {
     },
   },
   decorators: [
-    (Story) => <Story />,
+    (Story) => (
+      <div className={`${montserrat.className} ${plusJakartaSans.className}`}>
+        <Story />
+      </div>
+    ),
 
     withThemeByClassName({
       themes: {
@@ -25,3 +42,5 @@ const preview: Preview = {
     }),
   ],
 };
+
+export default preview;
