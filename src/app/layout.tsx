@@ -7,6 +7,7 @@ const montserrat = Montserrat({
   display: 'swap',
   variable: '--montserrat',
 });
+
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
   display: 'swap',
