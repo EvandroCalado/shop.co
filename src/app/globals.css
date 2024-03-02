@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 @layer base {
-  body {
+  * {
     @apply font-plusJakartaSans;
+  }
+
+  h1,
+  h2 {
+    @apply font-montserrat;
   }
 }
