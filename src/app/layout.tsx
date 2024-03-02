@@ -15,8 +15,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Shop co',
-  description: 'E-commerce cloth shop',
+  title: 'Shop.co',
+  description: 'Elevate Your Style, Simplify Your Shopping',
   icons: {
     icon: '/logo.png',
   },
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} ${plusJakartaSans.className}`}>
+      <body className={`${montserrat.variable} ${plusJakartaSans.variable}`}>
         {children}
       </body>
     </html>
