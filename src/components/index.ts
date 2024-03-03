@@ -1,5 +1,7 @@
+export * from './Button';
 export * from './Header';
 export * from './HeaderInfo';
+export * from './Hero';
 export * from './Logo';
 export * from './Menu';
 export * from './MenuIcons';
