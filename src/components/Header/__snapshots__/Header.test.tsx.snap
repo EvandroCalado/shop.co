@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render a snapshot 1`] = `
+<div>
+  <header
+    class="flex items-center justify-between gap-8 px-6 py-6 md:px-16 lg:px-24"
+  >
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        class="md:hidden"
+      >
+        <button
+          data-testid="menu"
+        >
+          <svg
+            class="lucide lucide-menu "
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="4"
+              x2="20"
+              y1="12"
+              y2="12"
+            />
+            <line
+              x1="4"
+              x2="20"
+              y1="6"
+              y2="6"
+            />
+            <line
+              x1="4"
+              x2="20"
+              y1="18"
+              y2="18"
+            />
+          </svg>
+        </button>
+        <div
+          class="invisible opacity-0 absolute inset-0 z-10 m-auto flex h-[95%] w-[95%] flex-col items-center justify-center gap-4 bg-[#f0f0f0] capitalize transition-all duration-300"
+          data-testid="menu-container"
+        >
+          <button
+            class="absolute left-3 top-4 sm:left-[7px]"
+            data-testid="close"
+          >
+            <svg
+              class="lucide lucide-x text-red-600"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 6 6 18"
+              />
+              <path
+                d="m6 6 12 12"
+              />
+            </svg>
+          </button>
+          <a
+            class="cursor-pointer duration-150 hover:text-zinc-600"
+            href="/shop"
+          >
+            shop
+          </a>
+          <a
+            class="cursor-pointer duration-150 hover:text-zinc-600"
+            href="/on-sale"
+          >
+            on sale
+          </a>
+          <a
+            class="cursor-pointer duration-150 hover:text-zinc-600"
+            href="/new-arrivals"
+          >
+            new arrivals
+          </a>
+          <a
+            class="cursor-pointer duration-150 hover:text-zinc-600"
+            href="/brands"
+          >
+            brands
+          </a>
+        </div>
+      </div>
+      <a
+        class="text-2xl font-black uppercase"
+        href="/"
+      >
+        <h1>
+          shop.co
+        </h1>
+      </a>
+      <nav
+        class="hidden items-center gap-2 capitalize md:flex"
+      >
+        <a
+          class="cursor-pointer duration-150 hover:text-zinc-600"
+          href="/shop"
+        >
+          shop
+        </a>
+        <a
+          class="cursor-pointer duration-150 hover:text-zinc-600"
+          href="/on-sale"
+        >
+          on sale
+        </a>
+        <a
+          class="cursor-pointer duration-150 hover:text-zinc-600"
+          href="/new-arrivals"
+        >
+          new arrivals
+        </a>
+        <a
+          class="cursor-pointer duration-150 hover:text-zinc-600"
+          href="/brands"
+        >
+          brands
+        </a>
+      </nav>
+    </div>
+    <div
+      class="flex items-center gap-4 lg:w-1/2"
+    >
+      <form
+        class="flex w-full items-center gap-2 rounded-full bg-[#f0f0f0] px-4 py-2"
+      >
+        <button
+          type="submit"
+        >
+          <svg
+            class="lucide lucide-search w-4 text-zinc-400"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="11"
+              cy="11"
+              r="8"
+            />
+            <path
+              d="m21 21-4.3-4.3"
+            />
+          </svg>
+        </button>
+        <input
+          class="w-full bg-transparent text-sm outline-none"
+          placeholder="Search for products..."
+          type="text"
+        />
+      </form>
+      <div
+        class="flex items-center gap-4"
+      >
+        <div
+          class="relative cursor-pointer rounded-full p-2 duration-150 hover:bg-[#f0f0f0]"
+        >
+          <svg
+            class="lucide lucide-shopping-cart "
+            data-testid="shop"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="21"
+              r="1"
+            />
+            <circle
+              cx="19"
+              cy="21"
+              r="1"
+            />
+            <path
+              d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+            />
+          </svg>
+          <span
+            class="absolute right-0 top-0 flex h-4 w-4 items-center justify-center rounded-full border border-white bg-black/95 text-[10px] text-white"
+          >
+            2
+          </span>
+        </div>
+        <div
+          class="cursor-pointer rounded-full p-2 duration-150 hover:bg-[#f0f0f0]"
+        >
+          <svg
+            class="lucide lucide-circle-user "
+            data-testid="user"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+            />
+            <circle
+              cx="12"
+              cy="10"
+              r="3"
+            />
+            <path
+              d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;
