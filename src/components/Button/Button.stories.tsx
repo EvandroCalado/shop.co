@@ -9,10 +9,4 @@ export default {
   },
 } as Meta;
 
-export const Primary: StoryFn<ButtonProps> = (args) => (
-  <Button {...args} variant="primary" />
-);
-
-export const Outline: StoryFn<ButtonProps> = (args) => (
-  <Button {...args} variant="outline" />
-);
+export const Default: StoryFn<ButtonProps> = (args) => <Button {...args} />;
