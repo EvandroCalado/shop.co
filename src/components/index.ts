@@ -1,3 +1,4 @@
+export * from './BrandsBar';
 export * from './Button';
 export * from './Header';
 export * from './HeaderInfo';
