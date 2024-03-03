@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BrandsBar /> shroud render a snapshot 1`] = `
+<div>
+  <section
+    class="flex h-32 w-full flex-wrap items-center justify-around gap-2 bg-black/95"
+  >
+    <img
+      alt="versace"
+      data-nimg="1"
+      decoding="async"
+      height="33"
+      loading="lazy"
+      src="/_next/image?url=%2Fversace.png&w=384&q=75"
+      srcset="/_next/image?url=%2Fversace.png&w=256&q=75 1x, /_next/image?url=%2Fversace.png&w=384&q=75 2x"
+      style="color: transparent;"
+      width="166"
+    />
+    <img
+      alt="zara"
+      data-nimg="1"
+      decoding="async"
+      height="33"
+      loading="lazy"
+      src="/_next/image?url=%2Fzara.png&w=256&q=75"
+      srcset="/_next/image?url=%2Fzara.png&w=96&q=75 1x, /_next/image?url=%2Fzara.png&w=256&q=75 2x"
+      style="color: transparent;"
+      width="75"
+    />
+    <img
+      alt="gucci"
+      data-nimg="1"
+      decoding="async"
+      height="33"
+      loading="lazy"
+      src="/_next/image?url=%2Fgucci.png&w=384&q=75"
+      srcset="/_next/image?url=%2Fgucci.png&w=256&q=75 1x, /_next/image?url=%2Fgucci.png&w=384&q=75 2x"
+      style="color: transparent;"
+      width="166"
+    />
+    <img
+      alt="prada"
+      data-nimg="1"
+      decoding="async"
+      height="33"
+      loading="lazy"
+      src="/_next/image?url=%2Fprada.png&w=384&q=75"
+      srcset="/_next/image?url=%2Fprada.png&w=256&q=75 1x, /_next/image?url=%2Fprada.png&w=384&q=75 2x"
+      style="color: transparent;"
+      width="166"
+    />
+    <img
+      alt="calvin"
+      data-nimg="1"
+      decoding="async"
+      height="33"
+      loading="lazy"
+      src="/_next/image?url=%2Fcalvin.png&w=384&q=75"
+      srcset="/_next/image?url=%2Fcalvin.png&w=256&q=75 1x, /_next/image?url=%2Fcalvin.png&w=384&q=75 2x"
+      style="color: transparent;"
+      width="166"
+    />
+  </section>
+</div>
+`;
