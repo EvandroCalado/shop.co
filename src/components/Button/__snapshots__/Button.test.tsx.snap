@@ -3,7 +3,7 @@
 exports[`<Button /> should render a snapshot 1`] = `
 <div>
   <button
-    class="border border-black/95 bg-white text-black/95 hover:brightness-95 w-full rounded-full px-12 py-3 text-sm capitalize transition-all duration-150"
+    class="border border-black/95 bg-white text-black/95 hover:brightness-95 rounded-full px-14 py-3 text-sm capitalize transition-all duration-150"
   >
     teste
   </button>
