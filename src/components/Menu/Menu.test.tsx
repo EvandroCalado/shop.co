@@ -31,7 +31,9 @@ describe('<Menu />', () => {
 
     fireEvent.click(menuButton);
 
-    expect(screen.getByTestId('menu-container')).toHaveClass('visible');
+    expect(screen.getByTestId('menu-container')).toHaveClass(
+      'visible opacity-100',
+    );
   });
 
   it('should render menu container invisible', () => {
@@ -40,7 +42,9 @@ describe('<Menu />', () => {
 
     render(<Menu />);
 
-    expect(screen.getByTestId('menu-container')).toHaveClass('invisible');
+    expect(screen.getByTestId('menu-container')).toHaveClass(
+      'invisible opacity-0',
+    );
 
     const closeButton = screen.getByTestId('close');
 
