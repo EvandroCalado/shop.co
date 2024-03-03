@@ -1,14 +1,24 @@
 import { ButtonHTMLAttributes, FC } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  variant: 'primary' | 'outline';
+  variant?: 'primary' | 'outline';
+  className?: string;
 }
 
-export const Button: FC<ButtonProps> = ({ children, variant, ...rest }) => {
+export const Button: FC<ButtonProps> = ({
+  children,
+  variant = 'primary',
+  className,
+  ...rest
+}) => {
   return (
     <button
-      className={`${variant === 'primary' ? 'bg-black/95 text-white hover:bg-black/85' : 'border border-black/95 bg-white text-black/95 hover:brightness-95'} w-full rounded-full px-12 py-3 text-sm capitalize transition-all duration-150`}
+      className={twMerge(
+        `${variant === 'primary' ? 'bg-black/95 text-white hover:bg-black/85' : 'border border-black/95 bg-white text-black/95 hover:brightness-95'} rounded-full px-14 py-3 text-sm capitalize transition-all duration-150`,
+        className,
+      )}
       {...rest}
     >
       {children}
