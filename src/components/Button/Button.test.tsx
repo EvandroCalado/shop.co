@@ -3,8 +3,8 @@ import { render, screen } from '@testing-library/react';
 import { Button } from '.';
 
 describe('<Button />', () => {
-  it('should render variant primary', () => {
-    render(<Button variant="primary">teste</Button>);
+  it('should render with default values', () => {
+    render(<Button>teste</Button>);
 
     const button = screen.getByRole('button');
 
@@ -24,7 +24,7 @@ describe('<Button />', () => {
   });
 
   it('should render a snapshot', () => {
-    const { container } = render(<Button variant="outline">teste</Button>);
+    const { container } = render(<Button>teste</Button>);
 
     expect(container).toMatchSnapshot();
   });

@@ -19,6 +19,10 @@ describe('<Menu />', () => {
     expect(screen.getByTestId('menu-container')).toBeInTheDocument();
     expect(screen.getByTestId('menu-container')).toHaveClass('invisible');
     expect(screen.getByTestId('close')).toBeInTheDocument();
+
+    expect(screen.getByTestId('menu-container')).toHaveClass(
+      'invisible opacity-0',
+    );
   });
 
   it('should render menu container visible', () => {
