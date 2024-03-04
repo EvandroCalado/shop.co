@@ -11,4 +11,6 @@ export * from './MenuIcons';
 export * from './NavLinks';
 export * from './ProductCard';
 export * from './ProductsCarousel';
+export * from './RatingCard';
+export * from './RatingCarousel';
 export * from './Search';
