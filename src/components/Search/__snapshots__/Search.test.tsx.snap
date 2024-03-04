@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Search /> should render a snapshot 1`] = `
+exports[`<Search /> > should render a snapshot 1`] = `
 <div>
   <form
     class="flex w-full items-center gap-2 rounded-full bg-[#f0f0f0] px-4 py-2"

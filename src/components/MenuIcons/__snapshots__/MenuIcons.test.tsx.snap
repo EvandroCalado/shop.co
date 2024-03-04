@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<MenuIcons /> should render a snapshot 1`] = `
+exports[`<MenuIcons /> > should render a snapshot 1`] = `
 <div>
   <div
     class="flex items-center gap-4"

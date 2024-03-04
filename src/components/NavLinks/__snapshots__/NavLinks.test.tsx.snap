@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<NavLinks /> should render a snapshot 1`] = `
+exports[`<NavLinks /> > should render a snapshot 1`] = `
 <div>
   <nav
     class="hidden items-center gap-2 capitalize md:flex"

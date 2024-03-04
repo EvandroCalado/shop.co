@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Button /> should render a snapshot 1`] = `
+exports[`<Button /> > should render a snapshot 1`] = `
 <div>
   <button
     class="bg-black/95 text-white hover:bg-black/85 rounded-full px-14 py-3 text-sm capitalize transition-all duration-150"

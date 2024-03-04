@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<BrandsBar /> shroud render a snapshot 1`] = `
+exports[`<BrandsBar /> > shroud render a snapshot 1`] = `
 <div>
   <section
     class="flex h-32 w-full flex-wrap items-center justify-around gap-2 bg-black/95"
