@@ -22,7 +22,7 @@ export const ProductCard = () => {
         <Star size={20} />
         <Star size={20} />
         <StarHalf size={20} />
-        <span>4.5/5</span>H
+        <span>4.5/5</span>
       </div>
 
       <div className="flex items-center gap-2">
