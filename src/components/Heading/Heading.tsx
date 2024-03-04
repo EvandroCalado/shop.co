@@ -21,7 +21,7 @@ export const Heading: FC<HeadingProps> = ({
       className={twMerge(
         ' font-black text-black/95',
         uppercase && 'uppercase',
-        as === 'h1' && 'text-6xl',
+        as === 'h1' && 'text-4xl md:text-6xl',
         as === 'h2' && 'text-5xl',
         as === 'h3' && 'text-4xl',
         as === 'h4' && 'text-3xl',
