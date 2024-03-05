@@ -7,10 +7,10 @@ export interface ProductsCarouselProps {
 
 export const ProductsCarousel: FC<ProductsCarouselProps> = ({ title }) => {
   return (
-    <section className="space-y-8 px-6 py-6 md:px-16 lg:px-24">
+    <section className="my-8 space-y-8 px-6 py-6 md:px-16 lg:px-24">
       <Heading title={title} uppercase className="text-center" />
 
-      <div className="flex w-full snap-x items-center justify-between gap-8 sm:snap-none">
+      <div className="flex w-full snap-x items-center justify-between gap-8 overflow-hidden sm:snap-none">
         <ProductCard />
         <ProductCard />
         <ProductCard />

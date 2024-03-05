@@ -1,7 +1,26 @@
+import {
+  BrandsBar,
+  BrowseBy,
+  Footer,
+  Header,
+  Hero,
+  NewsLetter,
+  ProductsCarousel,
+  RatingCarousel,
+} from '@/components';
+
 export default function Home() {
   return (
-    <main>
-      <h1>Home</h1>
-    </main>
+    <>
+      <Header />
+      <Hero />
+      <BrandsBar />
+      <ProductsCarousel title="new arrivals" />
+      <ProductsCarousel title="top selling" />
+      <BrowseBy />
+      <RatingCarousel />
+      <NewsLetter />
+      <Footer />
+    </>
   );
 }

@@ -1,11 +1,15 @@
 import { Star, StarHalf } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Heading } from '..';
 import { calcDiscount } from '../../utils/calcDiscount';
 
 export const ProductCard = () => {
   return (
-    <div className="flex flex-col gap-3">
+    <Link
+      href="/products"
+      className="flex flex-col gap-3 [&>div>img]:duration-300 hover:[&>div>img]:scale-110"
+    >
       <div className="relative h-[350px] w-[360px] rounded-xl bg-[#f0f0f0]">
         <Image src="/temp/vector.png" alt="t-shit" fill />
       </div>
@@ -34,6 +38,6 @@ export const ProductCard = () => {
           -20%
         </span>
       </div>
-    </div>
+    </Link>
   );
 };

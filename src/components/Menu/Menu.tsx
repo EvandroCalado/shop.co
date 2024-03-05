@@ -15,7 +15,7 @@ export const Menu = () => {
       </button>
 
       <div
-        className={`${showMenu ? 'visible opacity-100' : 'invisible opacity-0'} absolute inset-0 z-10 m-auto flex h-[95%] w-[95%] flex-col items-center justify-center gap-4 bg-[#f0f0f0] capitalize transition-all duration-300`}
+        className={`${showMenu ? 'visible opacity-100' : 'invisible opacity-0'} fixed inset-0 z-10 m-auto flex h-[95%] w-[95%] flex-col items-center justify-center gap-4 bg-[#f0f0f0] capitalize transition-all duration-300`}
         data-testid="menu-container"
       >
         <button

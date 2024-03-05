@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 
 export const RatingCarousel = () => {
   return (
-    <div className="space-y-4 px-6 py-6 md:px-16 lg:px-24">
+    <section className="my-8 space-y-4 px-6 py-6 md:px-16 lg:px-24">
       <div className="flex items-center justify-between">
         <Heading title="our happy customers" uppercase />
 
@@ -65,6 +65,6 @@ export const RatingCarousel = () => {
           <RatingCard />
         </SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 };
