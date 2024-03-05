@@ -1,8 +1,10 @@
+'use client';
+
+import { MoveLeft, MoveRight } from 'lucide-react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Heading, RatingCard } from '..';
 
-import { MoveLeft, MoveRight } from 'lucide-react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
