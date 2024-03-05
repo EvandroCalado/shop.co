@@ -3,10 +3,10 @@
 exports[`<Hero /> > Shroud render a snapshot 1`] = `
 <div>
   <section
-    class="flex flex-col items-center bg-[#f0f0f0] px-6 md:flex-row md:px-16 lg:px-24"
+    class="flex flex-col items-center justify-between bg-[#f0f0f0] px-6 md:flex-row md:px-16 lg:px-24"
   >
     <div
-      class="space-y-10"
+      class="space-y-10 py-6"
     >
       <h1
         class="text-4xl font-black uppercase text-black/95 md:text-6xl"
@@ -18,7 +18,7 @@ exports[`<Hero /> > Shroud render a snapshot 1`] = `
          your style
       </h1>
       <p
-        class="text-sm text-zinc-500"
+        class="max-w-xl text-sm text-zinc-500"
       >
         Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
       </p>
@@ -28,10 +28,10 @@ exports[`<Hero /> > Shroud render a snapshot 1`] = `
         shop now
       </button>
       <div
-        class="flex flex-wrap items-center gap-8 border-black [&>div:not(:last-child)]:border-r"
+        class="flex flex-wrap items-center gap-4 border-black md:gap-8 [&>div:not(:last-child)]:border-r"
       >
         <div
-          class="pr-8"
+          class="pr-4 md:pr-8"
         >
           <h4
             class="text-2xl font-bold md:text-4xl"
@@ -45,7 +45,7 @@ exports[`<Hero /> > Shroud render a snapshot 1`] = `
           </span>
         </div>
         <div
-          class="pr-8"
+          class="pr-4 md:pr-8"
         >
           <h4
             class="text-2xl font-bold md:text-4xl"
@@ -59,7 +59,7 @@ exports[`<Hero /> > Shroud render a snapshot 1`] = `
           </span>
         </div>
         <div
-          class="pr-8"
+          class="pr-4 md:pr-8"
         >
           <h4
             class="text-2xl font-bold md:text-4xl"
@@ -74,18 +74,19 @@ exports[`<Hero /> > Shroud render a snapshot 1`] = `
         </div>
       </div>
     </div>
-    <div>
+    <div
+      class="relative min-h-[480px] w-full md:min-h-[960px]"
+    >
       <img
         alt="logo"
-        class="h-[663px] object-contain"
-        data-nimg="1"
+        class="object-contain md:object-cover 2xl:object-contain"
+        data-nimg="fill"
         decoding="async"
-        height="1000"
         loading="lazy"
-        src="/_next/image?url=%2Fhero.png&w=2048&q=75"
-        srcset="/_next/image?url=%2Fhero.png&w=1080&q=75 1x, /_next/image?url=%2Fhero.png&w=2048&q=75 2x"
-        style="color: transparent;"
-        width="1000"
+        sizes="100vw"
+        src="/_next/image?url=%2Fhero.png&w=3840&q=75"
+        srcset="/_next/image?url=%2Fhero.png&w=640&q=75 640w, /_next/image?url=%2Fhero.png&w=750&q=75 750w, /_next/image?url=%2Fhero.png&w=828&q=75 828w, /_next/image?url=%2Fhero.png&w=1080&q=75 1080w, /_next/image?url=%2Fhero.png&w=1200&q=75 1200w, /_next/image?url=%2Fhero.png&w=1920&q=75 1920w, /_next/image?url=%2Fhero.png&w=2048&q=75 2048w, /_next/image?url=%2Fhero.png&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
       />
     </div>
   </section>

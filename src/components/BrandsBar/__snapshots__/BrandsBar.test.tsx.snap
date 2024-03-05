@@ -3,7 +3,7 @@
 exports[`<BrandsBar /> > shroud render a snapshot 1`] = `
 <div>
   <section
-    class="flex h-32 w-full flex-wrap items-center justify-around gap-2 bg-black/95"
+    class="flex w-full flex-wrap items-center justify-around gap-4 bg-black/95 p-4 md:h-32"
   >
     <img
       alt="versace"

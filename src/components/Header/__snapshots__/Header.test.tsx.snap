@@ -47,7 +47,7 @@ exports[`<Header /> > should render a snapshot 1`] = `
           </svg>
         </button>
         <div
-          class="invisible opacity-0 absolute inset-0 z-10 m-auto flex h-[95%] w-[95%] flex-col items-center justify-center gap-4 bg-[#f0f0f0] capitalize transition-all duration-300"
+          class="invisible opacity-0 fixed inset-0 z-10 m-auto flex h-[95%] w-[95%] flex-col items-center justify-center gap-4 bg-[#f0f0f0] capitalize transition-all duration-300"
           data-testid="menu-container"
         >
           <button
