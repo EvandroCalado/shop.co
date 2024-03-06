@@ -29,7 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${plusJakartaSans.variable}`}>
+      <body
+        className={`${montserrat.variable} ${plusJakartaSans.variable} flex min-h-screen flex-col`}
+      >
         {children}
       </body>
     </html>
