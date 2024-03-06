@@ -13,7 +13,7 @@ const Register = () => {
       .string()
       .min(3, 'username must be at least 3 characters')
       .max(20, 'username must be a maximum of 20 characters'),
-    email: z.string().email('please, insert a valid email'),
+    email: z.string().email('please insert a valid email'),
     password: z
       .string()
       .min(3, 'password must be at least 3 characters')
