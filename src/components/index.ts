@@ -15,6 +15,7 @@ export * from './NavLinks';
 export * from './NewsLetter';
 export * from './ProductCard';
 export * from './ProductsCarousel';
+export * from './Providers';
 export * from './RatingCard';
 export * from './RatingCarousel';
 export * from './Search';
