@@ -3,11 +3,15 @@
 import { Button, Heading, Input } from '@/components';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Lock, Mail } from 'lucide-react';
+import { signIn } from 'next-auth/react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { z } from 'zod';
 
 const Login = () => {
+  const router = useRouter();
+
   const loginSchema = z.object({
     identifier: z.string().email('please, insert a valid email'),
     password: z
@@ -24,8 +28,18 @@ const Login = () => {
     formState: { errors },
   } = useForm<LoginData>({ resolver: zodResolver(loginSchema) });
 
-  const onSubmit: SubmitHandler<LoginData> = (data) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<LoginData> = async (data) => {
+    const res = await signIn('credentials', {
+      ...data,
+      redirect: false,
+      callbackUrl: '/',
+    });
+
+    if (res?.status === 401) {
+      throw new Error('Invalid credentials');
+    }
+
+    router.push(res?.url || '/');
   };
 
   return (
