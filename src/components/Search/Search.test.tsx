@@ -11,7 +11,7 @@ describe('<Search />', () => {
     expect(screen.getByRole('textbox')).toBeInTheDocument();
     expect(screen.getByRole('textbox')).toHaveAttribute(
       'placeholder',
-      'Search for products...',
+      'Search...',
     );
   });
 

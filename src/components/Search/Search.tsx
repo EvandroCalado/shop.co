@@ -9,7 +9,7 @@ export const Search = () => {
 
       <input
         type="text"
-        placeholder="Search for products..."
+        placeholder="Search..."
         className="w-full bg-transparent text-sm outline-none"
       />
     </form>

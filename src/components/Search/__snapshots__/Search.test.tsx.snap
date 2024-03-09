@@ -32,7 +32,7 @@ exports[`<Search /> > should render a snapshot 1`] = `
     </button>
     <input
       class="w-full bg-transparent text-sm outline-none"
-      placeholder="Search for products..."
+      placeholder="Search..."
       type="text"
     />
   </form>
