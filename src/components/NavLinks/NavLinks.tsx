@@ -1,5 +1,5 @@
+import { menuLinks } from '@/utils/menuLinks';
 import Link from 'next/link';
-import { menuLinks } from '../../utils/menuLinks';
 
 export const NavLinks = () => {
   return (

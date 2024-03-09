@@ -1,8 +1,8 @@
+import { calcDiscount } from '@/utils/calcDiscount';
 import { Star, StarHalf } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Heading } from '..';
-import { calcDiscount } from '../../utils/calcDiscount';
 
 export const ProductCard = () => {
   return (

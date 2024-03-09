@@ -1,9 +1,10 @@
 'use client';
 
+import { menuLinks } from '@/utils/menuLinks';
 import { Menu as MenuIcon, X } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
-import { menuLinks } from '../../utils/menuLinks';
+import { Logo } from '..';
 
 export const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -15,7 +16,7 @@ export const Menu = () => {
       </button>
 
       <div
-        className={`${showMenu ? 'visible opacity-100' : 'invisible opacity-0'} fixed inset-0 z-10 m-auto flex h-[95%] w-[95%] flex-col items-center justify-center gap-4 bg-[#f0f0f0] capitalize transition-all duration-300`}
+        className={`${showMenu ? 'visible opacity-100' : 'invisible opacity-0'} fixed inset-0 z-10 m-auto flex h-[95%] w-[95%] flex-col items-center justify-center gap-4 rounded-lg bg-[#f0f0f0] capitalize transition-all duration-300`}
         data-testid="menu-container"
       >
         <button
@@ -26,6 +27,7 @@ export const Menu = () => {
           <X className="text-red-600" />
         </button>
 
+        <Logo />
         {menuLinks.map((link) => (
           <Link
             key={link.id}

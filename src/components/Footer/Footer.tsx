@@ -1,7 +1,7 @@
+import { company, faq, help, resources } from '@/utils/footerItems';
 import { Facebook, Github, Instagram, Twitter } from 'lucide-react';
 import Image from 'next/image';
 import { FooterItem, Logo } from '..';
-import { company, faq, help, resources } from '../../utils/footerItems';
 
 export const Footer = () => {
   return (
@@ -44,36 +44,36 @@ export const Footer = () => {
           <Image
             src="/badge/visa.png"
             alt="visa"
-            width={80}
-            height={130}
+            width={70}
+            height={120}
             priority
           />
           <Image
             src="/badge/master.png"
             alt="master"
-            width={80}
-            height={130}
+            width={70}
+            height={120}
             priority
           />
           <Image
             src="/badge/paypal.png"
             alt="paypal"
-            width={80}
-            height={130}
+            width={70}
+            height={120}
             priority
           />
           <Image
             src="/badge/appleplay.png"
             alt="appleplay"
-            width={80}
-            height={130}
+            width={70}
+            height={120}
             priority
           />
           <Image
             src="/badge/googleplay.png"
             alt="googleplay"
-            width={80}
-            height={130}
+            width={70}
+            height={120}
             priority
           />
         </div>
