@@ -4,10 +4,13 @@ import { Button, Heading, Input } from '@/components';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Lock, Mail, User } from 'lucide-react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { z } from 'zod';
 
 const Register = () => {
+  const router = useRouter();
+
   const registerSchema = z.object({
     username: z
       .string()
@@ -28,8 +31,25 @@ const Register = () => {
     formState: { errors },
   } = useForm<LoginData>({ resolver: zodResolver(registerSchema) });
 
-  const onSubmit: SubmitHandler<LoginData> = (data) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<LoginData> = async (data) => {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/auth/local/register`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      },
+    );
+
+    if (res?.status === 401) {
+      throw new Error('Invalid credentials');
+    }
+
+    if (res.status === 200) {
+      router.push('/login');
+    }
   };
 
   return (
