@@ -1,5 +1,6 @@
 import { withThemeByClassName } from '@storybook/addon-themes';
 import type { Preview } from '@storybook/react';
+import { SessionProvider } from 'next-auth/react';
 import { Montserrat, Plus_Jakarta_Sans } from 'next/font/google';
 import React from 'react';
 import '../src/app/globals.css';
@@ -29,7 +30,9 @@ const preview: Preview = {
   decorators: [
     (Story) => (
       <div className={`${plusJakartaSans.variable} ${montserrat.variable}`}>
-        <Story />
+        <SessionProvider>
+          <Story />
+        </SessionProvider>
       </div>
     ),
 
