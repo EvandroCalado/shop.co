@@ -22,7 +22,7 @@ const stats = [
 export const Hero = () => {
   return (
     <section className="flex flex-col items-center justify-between bg-[#f0f0f0] px-6 md:px-16 lg:flex-row lg:px-24">
-      <div className="space-y-10 py-6 lg:flex-1">
+      <div className="space-y-10 py-4 md:p-0 lg:flex-1">
         <h1 className="text-4xl font-black uppercase text-black/95 md:text-6xl">
           find clothes
           <br /> that matches
@@ -47,7 +47,7 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="relative h-[380px] w-full sm:h-[480px] md:h-[750px] lg:flex-1">
+      <div className="relative h-[380px] w-full sm:h-[480px] md:h-[710px] lg:flex-1">
         <Image src="/hero.png" alt="logo" fill className="object-cover" />
       </div>
     </section>
