@@ -26,7 +26,10 @@
       "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "types": [
+      "vitest/globals"
+    ]
   },
   "include": [
     "next-env.d.ts",
@@ -34,7 +37,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "./.test/setup.ts",
-    "vitest.config.mts"
+    "vitest.config.ts"
   ],
   "exclude": [
     "node_modules"
