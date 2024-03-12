@@ -6,10 +6,15 @@ export const getByTagSlug = async (tag: string) => {
   const populate = '&populate=*';
 
   try {
-    const res = await customFetch.get(
+    const { data } = await customFetch.get(
       `${process.env.NEXT_PUBLIC_API_URL}/products${filters}${populate}`,
     );
-    return res.data;
+
+    if (!data) {
+      throw new Error('No products found');
+    }
+
+    return data;
   } catch (error) {
     if (error instanceof AxiosError) {
       throw new Error(error.response?.data?.error?.message);
