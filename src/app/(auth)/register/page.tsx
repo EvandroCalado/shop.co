@@ -6,6 +6,7 @@ import { Lock, Mail, User } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { SubmitHandler, useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 import { z } from 'zod';
 
 const Register = () => {
@@ -44,10 +45,12 @@ const Register = () => {
     );
 
     if (res?.status === 401) {
-      throw new Error('Invalid credentials');
+      toast.error('Invalid credentials');
+      return;
     }
 
     if (res.status === 200) {
+      toast.success('User created successfully');
       router.push('/login');
     }
   };

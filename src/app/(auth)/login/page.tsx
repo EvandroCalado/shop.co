@@ -7,6 +7,7 @@ import { signIn } from 'next-auth/react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { SubmitHandler, useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 import { z } from 'zod';
 
 const Login = () => {
@@ -36,8 +37,11 @@ const Login = () => {
     });
 
     if (res?.status === 401) {
-      throw new Error('Invalid credentials');
+      toast.error('Invalid credentials');
+      return;
     }
+
+    toast.success('Logged in successfully');
 
     router.push(res?.url || '/');
   };
