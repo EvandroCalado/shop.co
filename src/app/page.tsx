@@ -2,6 +2,9 @@ import { getByTagSlug } from '@/actions/products';
 import {
   BrandsBar,
   BrowseBy,
+  Footer,
+  Header,
+  HeaderInfo,
   Hero,
   NewsLetter,
   ProductsCarousel,
@@ -24,6 +27,8 @@ export default async function Home() {
 
   return (
     <>
+      <HeaderInfo />
+      <Header />
       <Hero />
       <BrandsBar />
 
@@ -38,6 +43,7 @@ export default async function Home() {
       <BrowseBy />
       <RatingCarousel />
       <NewsLetter />
+      <Footer />
     </>
   );
 }

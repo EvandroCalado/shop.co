@@ -1,7 +1,8 @@
-import { Footer, Header, HeaderInfo, Providers } from '@/components';
+import { Providers } from '@/components';
 import type { Metadata } from 'next';
 import { Montserrat, Plus_Jakarta_Sans } from 'next/font/google';
-import '../globals.css';
+import { Toaster } from 'react-hot-toast';
+import './globals.css';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -34,10 +35,8 @@ export default function RootLayout({
         className={`${montserrat.variable} ${plusJakartaSans.variable} flex min-h-screen flex-col`}
       >
         <Providers>
-          <HeaderInfo />
-          <Header />
           {children}
-          <Footer />
+          <Toaster />
         </Providers>
       </body>
     </html>
