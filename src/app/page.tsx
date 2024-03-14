@@ -2,15 +2,14 @@ import { getByTagSlug } from '@/actions/products';
 import {
   BrandsBar,
   BrowseBy,
-  Footer,
-  Header,
-  HeaderInfo,
   Hero,
+  Layout,
   NewsLetter,
   ProductsCarousel,
   RatingCarousel,
 } from '@/components';
 import { ProductsType } from '@/types/productsType';
+import toast from 'react-hot-toast';
 
 export default async function Home() {
   const promises = [getByTagSlug('new-arrivals'), getByTagSlug('on-sale')];
@@ -22,13 +21,12 @@ export default async function Home() {
       );
     })
     .catch((error) => {
+      toast.error(error.message);
       throw new Error(error);
     });
 
   return (
-    <>
-      <HeaderInfo />
-      <Header />
+    <Layout>
       <Hero />
       <BrandsBar />
 
@@ -43,7 +41,6 @@ export default async function Home() {
       <BrowseBy />
       <RatingCarousel />
       <NewsLetter />
-      <Footer />
-    </>
+    </Layout>
   );
 }

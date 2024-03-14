@@ -8,6 +8,7 @@ export * from './HeaderInfo';
 export * from './Heading';
 export * from './Hero';
 export * from './Input';
+export * from './Layout';
 export * from './Logo';
 export * from './Menu';
 export * from './MenuIcons';
