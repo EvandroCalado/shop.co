@@ -16,7 +16,7 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
   return (
     <Link
       href={`/product/${product.attributes.slug}`}
-      className="flex flex-col gap-3 [&>div>img]:duration-300 hover:[&>div>img]:scale-110"
+      className="flex snap-start flex-col gap-3 [&>div>img]:duration-300 hover:[&>div>img]:scale-110"
     >
       <div className="relative h-[350px] w-[360px] overflow-hidden rounded-xl bg-[#f0f0f0]">
         <Image
