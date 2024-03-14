@@ -6,9 +6,7 @@ export const getByTagSlug = async (tag: string) => {
   const populate = '&populate=*';
 
   try {
-    const { data } = await customFetch.get(
-      `${process.env.NEXT_PUBLIC_API_URL}/products${filters}${populate}`,
-    );
+    const { data } = await customFetch.get(`/products${filters}${populate}`);
 
     if (!data) {
       throw new Error('No products found');
