@@ -1,8 +1,19 @@
+import { ProductsByDressStyleType } from '@/types/productsByDressStyle';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FC } from 'react';
 import { Heading } from '..';
 
-export const BrowseBy = () => {
+export interface BrowseByProps {
+  productsByDressStyle: ProductsByDressStyleType;
+}
+
+export const BrowseBy: FC<BrowseByProps> = ({ productsByDressStyle }) => {
+  const casual = productsByDressStyle.data[0].attributes;
+  const formal = productsByDressStyle.data[1].attributes;
+  const party = productsByDressStyle.data[2].attributes;
+  const gym = productsByDressStyle.data[3].attributes;
+
   return (
     <section className="px-6 py-6 md:px-16 lg:px-24">
       <div className="space-y-4 rounded-3xl bg-[#f0f0f0] p-4 md:p-16">
@@ -14,57 +25,65 @@ export const BrowseBy = () => {
 
         <div className="flex flex-col items-center gap-4 md:flex-row">
           <Link
-            href="#"
-            className="relative h-[180px] w-full overflow-hidden rounded-xl bg-white md:h-[320px] md:flex-[2]"
+            href={`/productsByDressStyle/${casual.slug}`}
+            className="flex h-[180px] w-full items-start justify-between overflow-hidden rounded-xl bg-white md:h-[320px] md:flex-[2]"
           >
-            <Heading title="casual" as="h5" className="m-8 capitalize" />
-            <Image
-              src="/temp/browse.png"
-              alt="browse"
-              fill
-              className="object-cover"
-            />
+            <Heading title={casual.name} as="h5" className="m-8 capitalize" />
+            <div className="relative h-full w-1/2">
+              <Image
+                src={casual.image.data.attributes.url}
+                alt={casual.name}
+                fill
+                className="object-cover"
+              />
+            </div>
           </Link>
 
           <Link
-            href="#"
-            className="relative h-[180px] w-full overflow-hidden rounded-xl bg-white md:h-[320px] md:flex-[3]"
+            href={`/productsByDressStyle/${formal.slug}`}
+            className="flex h-[180px] w-full items-start justify-between overflow-hidden rounded-xl bg-white md:h-[320px] md:flex-[3]"
           >
-            <Heading title="formal" as="h5" className="m-8 capitalize" />
-            <Image
-              src="/temp/browse.png"
-              alt="browse"
-              fill
-              className="object-cover"
-            />
+            <Heading title={formal.name} as="h5" className="m-8 capitalize" />
+            <div className="relative h-full w-1/2">
+              <Image
+                src={formal.image.data.attributes.url}
+                alt={formal.name}
+                fill
+                className="object-cover"
+              />
+            </div>
           </Link>
         </div>
 
         <div className="flex flex-col items-center gap-4 md:flex-row">
           <Link
-            href="#"
-            className="relative h-[180px] w-full overflow-hidden rounded-xl bg-white md:h-[320px] md:flex-[3]"
+            href={`/productsByDressStyle/${gym.slug}`}
+            className="flex h-[180px] w-full items-start justify-between overflow-hidden rounded-xl bg-white md:h-[320px] md:flex-[3]"
           >
-            <Heading title="casual" as="h5" className="m-8 capitalize" />
-            <Image
-              src="/temp/browse.png"
-              alt="browse"
-              fill
-              className="object-cover"
-            />
+            <Heading title={gym.name} as="h5" className="m-8 capitalize" />
+            <div className="relative h-full w-1/2">
+              <Image
+                src={gym.image.data.attributes.url}
+                alt={gym.name}
+                fill
+                className="object-cover"
+              />
+            </div>
           </Link>
 
           <Link
-            href="#"
-            className="relative h-[180px] w-full overflow-hidden rounded-xl bg-white md:h-[320px] md:flex-[2]"
+            href={`/productsByDressStyle/${party.slug}`}
+            className="flex h-[180px] w-full items-start justify-between overflow-hidden rounded-xl bg-white md:h-[320px] md:flex-[2]"
           >
-            <Heading title="formal" as="h5" className="m-8 capitalize" />
-            <Image
-              src="/temp/browse.png"
-              alt="browse"
-              fill
-              className="object-cover"
-            />
+            <Heading title={party.name} as="h5" className="m-8 capitalize" />
+            <div className="relative h-full w-1/2">
+              <Image
+                src={party.image.data.attributes.url}
+                alt={party.name}
+                fill
+                className="object-cover"
+              />
+            </div>
           </Link>
         </div>
       </div>
