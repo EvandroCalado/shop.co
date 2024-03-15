@@ -20,7 +20,7 @@ export const ProductGallery: FC<ProductGalleryProps> = ({ images }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div className="max-w-[350px]">
+    <div className="w-full lg:max-w-[450px] xl:max-w-[600px]">
       <Swiper
         style={{
           '--swiper-navigation-color': '#fff',
@@ -33,7 +33,7 @@ export const ProductGallery: FC<ProductGalleryProps> = ({ images }) => {
       >
         {images.data.map((image) => (
           <SwiperSlide key={image.id}>
-            <div className="relative mb-4 h-[350px] w-[350px] rounded-2xl bg-[#f0f0f0]">
+            <div className="relative mb-4 h-[400px] rounded-2xl bg-[#f0f0f0] lg:max-w-[600px]">
               <Image
                 src={image.attributes.url}
                 alt={image.attributes.name}
@@ -56,8 +56,11 @@ export const ProductGallery: FC<ProductGalleryProps> = ({ images }) => {
         className="mySwiper justify-between"
       >
         {images.data.map((image) => (
-          <SwiperSlide key={image.id} className="ml-1 cursor-pointer">
-            <div className="relative h-[100px] w-[100px] rounded-2xl bg-[#f0f0f0]">
+          <SwiperSlide
+            key={image.id}
+            className="flex cursor-pointer items-center justify-between"
+          >
+            <div className="relative h-[100px] w-full rounded-2xl bg-[#f0f0f0]">
               <Image
                 src={image.attributes.formats.thumbnail.url}
                 alt={image.attributes.name}
