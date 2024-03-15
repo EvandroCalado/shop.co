@@ -1,4 +1,5 @@
 export * from './BrandsBar';
+export * from './BreadCrumb';
 export * from './BrowseBy';
 export * from './Button';
 export * from './Footer';
@@ -16,6 +17,7 @@ export * from './NavLinks';
 export * from './NewsLetter';
 export * from './ProductCard';
 export * from './ProductGallery';
+export * from './ProductPrice';
 export * from './ProductsCarousel';
 export * from './Providers';
 export * from './RatingCard';
