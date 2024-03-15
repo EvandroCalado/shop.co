@@ -15,7 +15,7 @@ export const ProductsCarousel: FC<ProductsCarouselProps> = ({
     <section className="my-8 space-y-8 px-6 py-6 md:px-16 lg:px-24">
       <Heading title={title} uppercase className="text-center" />
 
-      <div className="no-scrollbar flex w-full snap-mandatory items-center justify-between gap-8 overflow-y-hidden overflow-x-scroll">
+      <div className="flex w-full snap-mandatory items-center justify-between gap-8 overflow-y-hidden overflow-x-scroll scrollbar-hide">
         {products.data.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
