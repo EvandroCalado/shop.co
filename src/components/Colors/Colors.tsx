@@ -19,11 +19,16 @@ export const Colors: FC<ColorsProps> = ({ colors }) => {
           <button
             key={color.id}
             style={{ backgroundColor: color.attributes.color }}
-            className="flex h-8 w-8 items-center justify-center rounded-full"
+            className="flex h-8 w-8 items-center justify-center rounded-full border border-zinc-500"
             onClick={() => setActive(color.attributes.name)}
           >
-            {active === color.attributes.name && (
-              <Check size={16} color="white" />
+            {active === color.attributes.name &&
+            color.attributes.name === 'white' ? (
+              <Check size={16} color="black" />
+            ) : (
+              active === color.attributes.name && (
+                <Check size={16} color="white" />
+              )
             )}
           </button>
         ))}
