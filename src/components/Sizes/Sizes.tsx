@@ -1,7 +1,8 @@
 'use client';
 
+import { useActive } from '@/hooks/useActive';
 import { ProductType } from '@/types/productsType';
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import { Button } from '..';
 
 export interface SizeProps {
@@ -9,7 +10,7 @@ export interface SizeProps {
 }
 
 export const Sizes: FC<SizeProps> = ({ sizes }) => {
-  const [active, setActive] = useState(sizes.data[0].attributes.name);
+  const { active, setActive } = useActive(sizes.data[0].attributes.name);
 
   return (
     <div>

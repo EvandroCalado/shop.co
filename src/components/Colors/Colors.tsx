@@ -1,15 +1,16 @@
 'use client';
 
+import { useActive } from '@/hooks/useActive';
 import { ProductType } from '@/types/productsType';
 import { Check } from 'lucide-react';
-import { FC, useState } from 'react';
+import { FC } from 'react';
 
 export interface ColorsProps {
   colors: ProductType['attributes']['colors'];
 }
 
 export const Colors: FC<ColorsProps> = ({ colors }) => {
-  const [active, setActive] = useState(colors.data[0].attributes.name);
+  const { active, setActive } = useActive(colors.data[0].attributes.name);
 
   return (
     <div>
