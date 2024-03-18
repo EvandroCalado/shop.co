@@ -9,6 +9,7 @@ import {
   ProductPrice,
   ProductTabs,
   Quantity,
+  RatingItem,
   Sizes,
 } from '@/components';
 import { ProductType } from '@/types/productsType';
@@ -28,7 +29,9 @@ const ProductDetails = async ({ params }: { params: { id: string } }) => {
 
           <div className="flex w-full flex-col justify-between gap-4">
             <Heading title={name} uppercase />
-            <div>Rating</div>
+
+            <RatingItem />
+
             <ProductPrice price={price} discount={discount} />
 
             <p className="max-w-4xl text-zinc-400">{description}</p>
