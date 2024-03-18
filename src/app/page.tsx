@@ -1,5 +1,4 @@
-import { getByTagSlug } from '@/actions/products';
-import { getByDressStyle } from '@/actions/products/getByDressStyle';
+import { getByDressStyle, getByTagSlug } from '@/actions/products';
 import {
   BrandsBar,
   BrowseBy,
@@ -37,6 +36,7 @@ export default async function Home() {
           key={products.data[0].id}
           title={products.data[0].attributes.tag.data.attributes.name}
           products={products}
+          className="px-6 md:px-16 lg:px-24"
         />
       ))}
 
