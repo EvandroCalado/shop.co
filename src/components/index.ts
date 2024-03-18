@@ -28,5 +28,6 @@ export * from './Quantity';
 export * from './Rating';
 export * from './RatingCard';
 export * from './RatingCarousel';
+export * from './RatingItem';
 export * from './Search';
 export * from './Sizes';
