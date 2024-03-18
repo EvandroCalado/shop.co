@@ -5,6 +5,10 @@ import { useState } from 'react';
 export const Quantity = () => {
   const [count, setCount] = useState(1);
 
+  if (count < 1) {
+    setCount(1);
+  }
+
   return (
     <div>
       <div className="flex items-center gap-2 overflow-hidden rounded-full bg-[#f0f0f0] text-xl">
