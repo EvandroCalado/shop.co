@@ -19,6 +19,10 @@ export const RatingCard = () => {
         from Shop.co. From casual wear to elegant dresses, every piece I&apos;ve
         bought has exceeded my expectations.
       </p>
+
+      <div className="text-sm font-semibold text-zinc-400">
+        Posted on August 16, 2023
+      </div>
     </div>
   );
 };
