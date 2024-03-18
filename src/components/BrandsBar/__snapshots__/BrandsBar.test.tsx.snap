@@ -5,61 +5,76 @@ exports[`<BrandsBar /> > shroud render a snapshot 1`] = `
   <section
     class="flex w-full flex-wrap items-center justify-around gap-4 bg-black/95 p-4 md:h-32"
   >
-    <img
-      alt="versace"
-      data-nimg="1"
-      decoding="async"
-      height="33"
-      loading="lazy"
-      src="/_next/image?url=%2Fversace.png&w=384&q=75"
-      srcset="/_next/image?url=%2Fversace.png&w=256&q=75 1x, /_next/image?url=%2Fversace.png&w=384&q=75 2x"
-      style="color: transparent;"
-      width="166"
-    />
-    <img
-      alt="zara"
-      data-nimg="1"
-      decoding="async"
-      height="33"
-      loading="lazy"
-      src="/_next/image?url=%2Fzara.png&w=256&q=75"
-      srcset="/_next/image?url=%2Fzara.png&w=96&q=75 1x, /_next/image?url=%2Fzara.png&w=256&q=75 2x"
-      style="color: transparent;"
-      width="75"
-    />
-    <img
-      alt="gucci"
-      data-nimg="1"
-      decoding="async"
-      height="33"
-      loading="lazy"
-      src="/_next/image?url=%2Fgucci.png&w=384&q=75"
-      srcset="/_next/image?url=%2Fgucci.png&w=256&q=75 1x, /_next/image?url=%2Fgucci.png&w=384&q=75 2x"
-      style="color: transparent;"
-      width="166"
-    />
-    <img
-      alt="prada"
-      data-nimg="1"
-      decoding="async"
-      height="33"
-      loading="lazy"
-      src="/_next/image?url=%2Fprada.png&w=384&q=75"
-      srcset="/_next/image?url=%2Fprada.png&w=256&q=75 1x, /_next/image?url=%2Fprada.png&w=384&q=75 2x"
-      style="color: transparent;"
-      width="166"
-    />
-    <img
-      alt="calvin"
-      data-nimg="1"
-      decoding="async"
-      height="33"
-      loading="lazy"
-      src="/_next/image?url=%2Fcalvin.png&w=384&q=75"
-      srcset="/_next/image?url=%2Fcalvin.png&w=256&q=75 1x, /_next/image?url=%2Fcalvin.png&w=384&q=75 2x"
-      style="color: transparent;"
-      width="166"
-    />
+    <div
+      class="relative h-[33px] w-[166px]"
+    >
+      <img
+        alt="versace"
+        data-nimg="fill"
+        decoding="async"
+        fetchpriority="high"
+        sizes="166px"
+        src="/_next/image?url=%2Fversace.png&w=3840&q=75"
+        srcset="/_next/image?url=%2Fversace.png&w=16&q=75 16w, /_next/image?url=%2Fversace.png&w=32&q=75 32w, /_next/image?url=%2Fversace.png&w=48&q=75 48w, /_next/image?url=%2Fversace.png&w=64&q=75 64w, /_next/image?url=%2Fversace.png&w=96&q=75 96w, /_next/image?url=%2Fversace.png&w=128&q=75 128w, /_next/image?url=%2Fversace.png&w=256&q=75 256w, /_next/image?url=%2Fversace.png&w=384&q=75 384w, /_next/image?url=%2Fversace.png&w=640&q=75 640w, /_next/image?url=%2Fversace.png&w=750&q=75 750w, /_next/image?url=%2Fversace.png&w=828&q=75 828w, /_next/image?url=%2Fversace.png&w=1080&q=75 1080w, /_next/image?url=%2Fversace.png&w=1200&q=75 1200w, /_next/image?url=%2Fversace.png&w=1920&q=75 1920w, /_next/image?url=%2Fversace.png&w=2048&q=75 2048w, /_next/image?url=%2Fversace.png&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+    </div>
+    <div
+      class="relative h-[33px] w-[75px]"
+    >
+      <img
+        alt="zara"
+        data-nimg="fill"
+        decoding="async"
+        fetchpriority="high"
+        sizes="75px"
+        src="/_next/image?url=%2Fzara.png&w=3840&q=75"
+        srcset="/_next/image?url=%2Fzara.png&w=16&q=75 16w, /_next/image?url=%2Fzara.png&w=32&q=75 32w, /_next/image?url=%2Fzara.png&w=48&q=75 48w, /_next/image?url=%2Fzara.png&w=64&q=75 64w, /_next/image?url=%2Fzara.png&w=96&q=75 96w, /_next/image?url=%2Fzara.png&w=128&q=75 128w, /_next/image?url=%2Fzara.png&w=256&q=75 256w, /_next/image?url=%2Fzara.png&w=384&q=75 384w, /_next/image?url=%2Fzara.png&w=640&q=75 640w, /_next/image?url=%2Fzara.png&w=750&q=75 750w, /_next/image?url=%2Fzara.png&w=828&q=75 828w, /_next/image?url=%2Fzara.png&w=1080&q=75 1080w, /_next/image?url=%2Fzara.png&w=1200&q=75 1200w, /_next/image?url=%2Fzara.png&w=1920&q=75 1920w, /_next/image?url=%2Fzara.png&w=2048&q=75 2048w, /_next/image?url=%2Fzara.png&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+    </div>
+    <div
+      class="relative h-[33px] w-[166px]"
+    >
+      <img
+        alt="gucci"
+        data-nimg="fill"
+        decoding="async"
+        fetchpriority="high"
+        sizes="166px"
+        src="/_next/image?url=%2Fgucci.png&w=3840&q=75"
+        srcset="/_next/image?url=%2Fgucci.png&w=16&q=75 16w, /_next/image?url=%2Fgucci.png&w=32&q=75 32w, /_next/image?url=%2Fgucci.png&w=48&q=75 48w, /_next/image?url=%2Fgucci.png&w=64&q=75 64w, /_next/image?url=%2Fgucci.png&w=96&q=75 96w, /_next/image?url=%2Fgucci.png&w=128&q=75 128w, /_next/image?url=%2Fgucci.png&w=256&q=75 256w, /_next/image?url=%2Fgucci.png&w=384&q=75 384w, /_next/image?url=%2Fgucci.png&w=640&q=75 640w, /_next/image?url=%2Fgucci.png&w=750&q=75 750w, /_next/image?url=%2Fgucci.png&w=828&q=75 828w, /_next/image?url=%2Fgucci.png&w=1080&q=75 1080w, /_next/image?url=%2Fgucci.png&w=1200&q=75 1200w, /_next/image?url=%2Fgucci.png&w=1920&q=75 1920w, /_next/image?url=%2Fgucci.png&w=2048&q=75 2048w, /_next/image?url=%2Fgucci.png&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+    </div>
+    <div
+      class="relative h-[33px] w-[166px]"
+    >
+      <img
+        alt="prada"
+        data-nimg="fill"
+        decoding="async"
+        fetchpriority="high"
+        sizes="166px"
+        src="/_next/image?url=%2Fprada.png&w=3840&q=75"
+        srcset="/_next/image?url=%2Fprada.png&w=16&q=75 16w, /_next/image?url=%2Fprada.png&w=32&q=75 32w, /_next/image?url=%2Fprada.png&w=48&q=75 48w, /_next/image?url=%2Fprada.png&w=64&q=75 64w, /_next/image?url=%2Fprada.png&w=96&q=75 96w, /_next/image?url=%2Fprada.png&w=128&q=75 128w, /_next/image?url=%2Fprada.png&w=256&q=75 256w, /_next/image?url=%2Fprada.png&w=384&q=75 384w, /_next/image?url=%2Fprada.png&w=640&q=75 640w, /_next/image?url=%2Fprada.png&w=750&q=75 750w, /_next/image?url=%2Fprada.png&w=828&q=75 828w, /_next/image?url=%2Fprada.png&w=1080&q=75 1080w, /_next/image?url=%2Fprada.png&w=1200&q=75 1200w, /_next/image?url=%2Fprada.png&w=1920&q=75 1920w, /_next/image?url=%2Fprada.png&w=2048&q=75 2048w, /_next/image?url=%2Fprada.png&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+    </div>
+    <div
+      class="relative h-[33px] w-[166px]"
+    >
+      <img
+        alt="calvin"
+        data-nimg="fill"
+        decoding="async"
+        fetchpriority="high"
+        sizes="166px"
+        src="/_next/image?url=%2Fcalvin.png&w=3840&q=75"
+        srcset="/_next/image?url=%2Fcalvin.png&w=16&q=75 16w, /_next/image?url=%2Fcalvin.png&w=32&q=75 32w, /_next/image?url=%2Fcalvin.png&w=48&q=75 48w, /_next/image?url=%2Fcalvin.png&w=64&q=75 64w, /_next/image?url=%2Fcalvin.png&w=96&q=75 96w, /_next/image?url=%2Fcalvin.png&w=128&q=75 128w, /_next/image?url=%2Fcalvin.png&w=256&q=75 256w, /_next/image?url=%2Fcalvin.png&w=384&q=75 384w, /_next/image?url=%2Fcalvin.png&w=640&q=75 640w, /_next/image?url=%2Fcalvin.png&w=750&q=75 750w, /_next/image?url=%2Fcalvin.png&w=828&q=75 828w, /_next/image?url=%2Fcalvin.png&w=1080&q=75 1080w, /_next/image?url=%2Fcalvin.png&w=1200&q=75 1200w, /_next/image?url=%2Fcalvin.png&w=1920&q=75 1920w, /_next/image?url=%2Fcalvin.png&w=2048&q=75 2048w, /_next/image?url=%2Fcalvin.png&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+    </div>
   </section>
 </div>
 `;
