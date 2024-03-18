@@ -1,12 +1,20 @@
 'use client';
 
 import { useActive } from '@/hooks/useActive';
-import { Rating } from '..';
+import { ProductType } from '@/types/productsType';
+import { FC } from 'react';
+import { Faq, ProductDetails, Rating } from '..';
 
-export const ProductTabs = () => {
+export interface ProductTabsProps {
+  product: ProductType;
+}
+
+export const ProductTabs: FC<ProductTabsProps> = ({ product }) => {
   const tabs = ['product details', 'rating & reviews', 'FAQs'];
 
   const { active, setActive } = useActive(tabs[0]);
+
+  const { details } = product.attributes;
 
   return (
     <section>
@@ -22,9 +30,9 @@ export const ProductTabs = () => {
         ))}
       </div>
 
-      {active === 'product details' && <div>Product Details</div>}
+      {active === 'product details' && <ProductDetails details={details} />}
       {active === 'rating & reviews' && <Rating />}
-      {active === 'FAQs' && <div>FAQs</div>}
+      {active === 'FAQs' && <Faq />}
     </section>
   );
 };
