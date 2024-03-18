@@ -1,9 +1,8 @@
 import { ProductType } from '@/types/productsType';
-import { Star, StarHalf } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
-import { Heading, ProductPrice } from '..';
+import { Heading, ProductPrice, RatingItem } from '..';
 
 export interface ProductCardProps {
   product: ProductType;
@@ -28,14 +27,7 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
 
       <Heading title={name} as="h5" className="capitalize" />
 
-      <div className="flex items-center gap-2 text-sm">
-        <Star size={20} />
-        <Star size={20} />
-        <Star size={20} />
-        <Star size={20} />
-        <StarHalf size={20} />
-        <span>4.5/5</span>
-      </div>
+      <RatingItem />
 
       <ProductPrice price={price} discount={discount} />
     </Link>
