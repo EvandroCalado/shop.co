@@ -41,41 +41,56 @@ export const Footer = () => {
           shop.co © {new Date().getFullYear()}, all rights reserved
         </div>
         <div className="flex items-center">
-          <Image
-            src="/badge/visa.png"
-            alt="visa"
-            width={70}
-            height={120}
-            priority
-          />
-          <Image
-            src="/badge/master.png"
-            alt="master"
-            width={70}
-            height={120}
-            priority
-          />
-          <Image
-            src="/badge/paypal.png"
-            alt="paypal"
-            width={70}
-            height={120}
-            priority
-          />
-          <Image
-            src="/badge/appleplay.png"
-            alt="appleplay"
-            width={70}
-            height={120}
-            priority
-          />
-          <Image
-            src="/badge/googleplay.png"
-            alt="googleplay"
-            width={70}
-            height={120}
-            priority
-          />
+          <div className="relative h-[120px] w-[70px]">
+            <Image
+              src="/badge/visa.png"
+              alt="visa"
+              sizes="70px"
+              fill
+              priority
+              className="object-contain"
+            />
+          </div>
+          <div className="relative h-[120px] w-[70px]">
+            <Image
+              src="/badge/master.png"
+              alt="master"
+              sizes="70px"
+              fill
+              priority
+              className="object-contain"
+            />
+          </div>
+          <div className="relative h-[120px] w-[70px]">
+            <Image
+              src="/badge/paypal.png"
+              alt="paypal"
+              sizes="70px"
+              fill
+              priority
+              className="object-contain"
+            />
+          </div>
+          <div className="relative h-[120px] w-[70px]">
+            <Image
+              src="/badge/appleplay.png"
+              alt="appleplay"
+              sizes="70px"
+              fill
+              priority
+              className="object-contain"
+            />
+          </div>
+          <div className="relative h-[120px] w-[70px]">
+            <Image
+              src="/badge/googleplay.png"
+              alt="googleplay"
+              sizes="70px"
+              fill
+              priority
+              className="object-contain"
+            />
+          </div>
         </div>
       </div>
     </footer>

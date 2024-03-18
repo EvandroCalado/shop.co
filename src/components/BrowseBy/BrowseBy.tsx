@@ -33,7 +33,9 @@ export const BrowseBy: FC<BrowseByProps> = ({ productsByDressStyle }) => {
               <Image
                 src={casual.image.data.attributes.url}
                 alt={casual.name}
+                sizes="(100vw - 2rem) 180px, 280px"
                 fill
+                priority
                 className="object-cover"
               />
             </div>
@@ -48,7 +50,9 @@ export const BrowseBy: FC<BrowseByProps> = ({ productsByDressStyle }) => {
               <Image
                 src={formal.image.data.attributes.url}
                 alt={formal.name}
+                sizes="(100vw - 2rem) 180px, 280px"
                 fill
+                priority
                 className="object-cover"
               />
             </div>
@@ -65,7 +69,9 @@ export const BrowseBy: FC<BrowseByProps> = ({ productsByDressStyle }) => {
               <Image
                 src={gym.image.data.attributes.url}
                 alt={gym.name}
+                sizes="(100vw - 2rem) 180px, 280px"
                 fill
+                priority
                 className="object-cover"
               />
             </div>
@@ -80,7 +86,9 @@ export const BrowseBy: FC<BrowseByProps> = ({ productsByDressStyle }) => {
               <Image
                 src={party.image.data.attributes.url}
                 alt={party.name}
+                sizes="(100vw - 2rem) 180px, 280px"
                 fill
+                priority
                 className="object-cover"
               />
             </div>

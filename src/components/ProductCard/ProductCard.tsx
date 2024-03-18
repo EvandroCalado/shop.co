@@ -20,7 +20,9 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
         <Image
           src={cover.data.attributes.formats.small.url}
           alt={name}
+          sizes="(100vw - 2rem) 350px, 360px"
           fill
+          priority
           className="object-contain group-hover:scale-110"
         />
       </div>
