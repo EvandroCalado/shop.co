@@ -1,4 +1,4 @@
-import { getProductById } from '@/actions/products/getProductById';
+import { getByCategory, getProductById } from '@/actions/products';
 import {
   BreadCrumb,
   Button,
@@ -8,6 +8,7 @@ import {
   ProductGallery,
   ProductPrice,
   ProductTabs,
+  ProductsCarousel,
   Quantity,
   RatingItem,
   Sizes,
@@ -16,8 +17,21 @@ import { ProductType } from '@/types/productsType';
 
 const ProductDetails = async ({ params }: { params: { id: string } }) => {
   const product: ProductType = await getProductById(params.id);
-  const { images, price, discount, name, description, colors, sizes } =
-    product.attributes;
+
+  const {
+    images,
+    price,
+    discount,
+    name,
+    description,
+    colors,
+    sizes,
+    categories,
+  } = product.attributes;
+
+  const productsByCategory = await getByCategory(
+    categories.data[0].attributes.slug,
+  );
 
   return (
     <Layout>
@@ -47,6 +61,11 @@ const ProductDetails = async ({ params }: { params: { id: string } }) => {
         </div>
 
         <ProductTabs product={product} />
+
+        <ProductsCarousel
+          title="you might also like"
+          products={productsByCategory}
+        />
       </section>
     </Layout>
   );
