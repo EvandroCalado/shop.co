@@ -6,12 +6,14 @@ import { Button, Heading, ProductCard } from '..';
 export interface ProductsCarouselProps {
   products: ProductsType;
   title: string;
+  showButton?: boolean;
   className?: string;
 }
 
 export const ProductsCarousel: FC<ProductsCarouselProps> = ({
   products,
   title,
+  showButton = true,
   className,
 }) => {
   return (
@@ -24,9 +26,11 @@ export const ProductsCarousel: FC<ProductsCarouselProps> = ({
         ))}
       </div>
 
-      <div className="w-full text-center">
-        <Button variant="outline">view all</Button>
-      </div>
+      {showButton && (
+        <div className="w-full text-center">
+          <Button variant="outline">view all</Button>
+        </div>
+      )}
     </section>
   );
 };
