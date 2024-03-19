@@ -16,10 +16,10 @@ interface Pagination {
 
 export interface ProductType {
   id: number;
-  attributes: Attributes5;
+  attributes: Attributes6;
 }
 
-interface Attributes5 {
+interface Attributes6 {
   name: string;
   slug: string;
   description: string;
@@ -37,12 +37,25 @@ interface Attributes5 {
   sizes: Categories;
   tag: Brand;
   dress_style: Brand;
-  // ratings: Ratings;
+  ratings: Ratings;
 }
 
-// interface Ratings {
-//   data: any[];
-// }
+interface Ratings {
+  data: Datum4[];
+}
+
+interface Datum4 {
+  id: number;
+  attributes: Attributes5;
+}
+
+interface Attributes5 {
+  rate: string;
+  avaliation: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+}
 
 interface Colors {
   data: Datum3[];
