@@ -5,11 +5,17 @@ import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Heading, RatingCard } from '..';
 
+import { RatingsType } from '@/types/ratingsType';
+import { FC } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-export const RatingCarousel = () => {
+export interface RatingCarouselProps {
+  ratings: RatingsType;
+}
+
+export const RatingCarousel: FC<RatingCarouselProps> = ({ ratings }) => {
   return (
     <section className="my-8 space-y-4 px-6 py-6 md:px-16 lg:px-24">
       <div className="flex items-center justify-between">
@@ -46,7 +52,12 @@ export const RatingCarousel = () => {
           },
         }}
       >
-        <SwiperSlide>
+        {ratings.data.map((rating) => (
+          <SwiperSlide key={rating.id}>
+            <RatingCard rating={rating} />
+          </SwiperSlide>
+        ))}
+        {/* <SwiperSlide>
           <RatingCard />
         </SwiperSlide>
         <SwiperSlide>
@@ -63,7 +74,7 @@ export const RatingCarousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <RatingCard />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </section>
   );

@@ -1,27 +1,36 @@
-import { Star, StarHalf } from 'lucide-react';
+import { RatingType } from '@/types/ratingsType';
+import { formatDate } from '@/utils/formatDate';
+import { ratingStars } from '@/utils/ratingStars';
+import { Star } from 'lucide-react';
+import { FC } from 'react';
 import { Heading } from '..';
 
-export const RatingCard = () => {
+export interface RatingCardProps {
+  rating: RatingType;
+}
+
+export const RatingCard: FC<RatingCardProps> = ({ rating }) => {
+  const { avaliation, rate, user, createdAt } = rating.attributes;
+  const { username } = user.data.attributes;
+
   return (
-    <div className="space-y-2 rounded-xl border border-[#f0f0f0] p-4">
+    <div className="h-48 space-y-2 rounded-xl border border-[#f0f0f0] p-4">
       <div className="flex items-center gap-2 text-sm">
-        <Star size={20} />
-        <Star size={20} />
-        <Star size={20} />
-        <Star size={20} />
-        <StarHalf size={20} />
+        {ratingStars.map((star) => {
+          if (star.rateName === rate) {
+            return Array.from({ length: star.rate }).map((_, index) => (
+              <Star key={index} color="#FFC633" fill="#FFC633" />
+            ));
+          }
+        })}
       </div>
 
-      <Heading title="sarah m." as="h6" className="capitalize" />
+      <Heading title={username} as="h6" className="capitalize" />
 
-      <p className="text-sm text-zinc-400">
-        I&apos;m blown away by the quality and style of the clothes I received
-        from Shop.co. From casual wear to elegant dresses, every piece I&apos;ve
-        bought has exceeded my expectations.
-      </p>
+      <p className="line-clamp-3 text-sm text-zinc-400">{avaliation}</p>
 
-      <div className="text-sm font-semibold text-zinc-400">
-        Posted on August 16, 2023
+      <div className="text-sm font-bold text-zinc-400">
+        Posted on {formatDate(createdAt)}
       </div>
     </div>
   );

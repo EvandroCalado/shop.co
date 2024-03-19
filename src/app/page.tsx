@@ -1,4 +1,5 @@
 import { getByDressStyle, getByTagSlug } from '@/actions/products';
+import { getAll } from '@/actions/ratings/getAll';
 import {
   BrandsBar,
   BrowseBy,
@@ -12,7 +13,6 @@ import { ProductsType } from '@/types/productsType';
 import toast from 'react-hot-toast';
 
 export default async function Home() {
-  const productsByDressStyle = await getByDressStyle();
   const promises = [getByTagSlug('new-arrivals'), getByTagSlug('on-sale')];
 
   const resolve = Promise.allSettled(promises)
@@ -25,6 +25,8 @@ export default async function Home() {
       toast.error(error.message);
       throw new Error(error);
     });
+  const productsByDressStyle = await getByDressStyle();
+  const ratings = await getAll();
 
   return (
     <Layout>
@@ -41,7 +43,7 @@ export default async function Home() {
       ))}
 
       <BrowseBy productsByDressStyle={productsByDressStyle} />
-      <RatingCarousel />
+      <RatingCarousel ratings={ratings} />
       <NewsLetter />
     </Layout>
   );
