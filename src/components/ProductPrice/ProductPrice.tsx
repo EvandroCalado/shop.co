@@ -8,11 +8,11 @@ export interface ProductPriceProps {
 
 export const ProductPrice: FC<ProductPriceProps> = ({ price, discount }) => {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-4">
       <span className="text-4xl font-semibold">
         ${discount ? calcDiscount(price, discount) : price}
       </span>
-      <span className="text-4xl font-semibold text-zinc-400 line-through">
+      <span className="text-4xl font-semibold text-zinc-300 line-through">
         ${price}
       </span>
       {discount && (

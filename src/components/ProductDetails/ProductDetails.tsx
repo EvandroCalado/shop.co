@@ -5,5 +5,7 @@ export interface ProductDetailsProps {
 }
 
 export const ProductDetails: FC<ProductDetailsProps> = ({ details }) => {
-  return <div dangerouslySetInnerHTML={{ __html: details }}></div>;
+  return (
+    <div dangerouslySetInnerHTML={{ __html: details }} className="my-16"></div>
+  );
 };

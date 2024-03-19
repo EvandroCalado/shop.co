@@ -23,7 +23,7 @@ export const ProductTabs: FC<ProductTabsProps> = ({ product }) => {
           <button
             key={tab}
             onClick={() => setActive(tab)}
-            className={`${active === tab ? 'border-b-[2px] border-black/95 text-black/95' : 'border-b-[2px] border-transparent text-zinc-500'} w-full cursor-pointer p-2 capitalize duration-150 hover:text-black/95`}
+            className={`${active === tab ? 'border-b-[2px] border-black/95 bg-[#f0f0f0] text-black/95' : 'border-b-[2px] border-transparent text-zinc-500'} w-full cursor-pointer rounded-t-xl p-4 capitalize duration-150 hover:bg-[#f0f0f0] hover:text-black/95`}
           >
             {tab}
           </button>
