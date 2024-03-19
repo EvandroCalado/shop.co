@@ -27,6 +27,7 @@ const ProductDetails = async ({ params }: { params: { id: string } }) => {
     colors,
     sizes,
     categories,
+    ratings,
   } = product.attributes;
 
   const productsByCategory = await getByCategory(
@@ -44,7 +45,7 @@ const ProductDetails = async ({ params }: { params: { id: string } }) => {
           <div className="flex w-full flex-col justify-between gap-4">
             <Heading title={name} uppercase />
 
-            <RatingItem />
+            {ratings.data.length > 0 && <RatingItem ratings={ratings} />}
 
             <ProductPrice price={price} discount={discount} />
 
