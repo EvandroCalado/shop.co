@@ -18,8 +18,8 @@ export const RatingCard: FC<RatingCardProps> = ({ rating }) => {
       <div className="flex items-center gap-2 text-sm">
         {ratingStars.map((star) => {
           if (star.rateName === rate) {
-            return Array.from({ length: star.rate }).map((_, index) => (
-              <Star key={index} color="#FFC633" fill="#FFC633" />
+            return Array.from({ length: star.rate }).map((_, i) => (
+              <Star key={i} color="#FFC633" fill="#FFC633" />
             ));
           }
         })}
