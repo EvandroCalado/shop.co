@@ -16,10 +16,10 @@ interface Pagination {
 
 export interface ProductType {
   id: number;
-  attributes: Attributes6;
+  attributes: Attributes10;
 }
 
-interface Attributes6 {
+interface Attributes10 {
   name: string;
   slug: string;
   description: string;
@@ -36,25 +36,118 @@ interface Attributes6 {
   colors: Colors;
   sizes: Categories;
   tag: Brand;
-  dress_style: Brand;
-  ratings: Ratings;
+  dress_style: Dressstyle;
+  ratings: RatingsType;
 }
 
-interface Ratings {
-  data: Datum4[];
+export interface RatingsType {
+  data: RatingType[];
 }
 
-interface Datum4 {
+export interface RatingType {
   id: number;
-  attributes: Attributes5;
+  attributes: Attributes9;
 }
 
-interface Attributes5 {
+interface Attributes9 {
   rate: string;
   avaliation: string;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
+  user: User;
+  product: Product;
+}
+
+interface Product {
+  data: Data5;
+}
+
+interface Data5 {
+  id: number;
+  attributes: Attributes8;
+}
+
+interface Attributes8 {
+  name: string;
+  slug: string;
+  description: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+  details: string;
+  price: number;
+  discount: number;
+}
+
+interface User {
+  data: Data4;
+}
+
+interface Data4 {
+  id: number;
+  attributes: Attributes7;
+}
+
+interface Attributes7 {
+  username: string;
+  email: string;
+  provider: string;
+  confirmed: boolean;
+  blocked: boolean;
+  createdAt: string;
+  updatedAt: string;
+}
+
+interface Dressstyle {
+  data: Data3;
+}
+
+interface Data3 {
+  id: number;
+  attributes: Attributes6;
+}
+
+interface Attributes6 {
+  name: string;
+  slug: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+  image: Image;
+}
+
+interface Image {
+  data: Data2;
+}
+
+interface Data2 {
+  id: number;
+  attributes: Attributes5;
+}
+
+interface Attributes5 {
+  name: string;
+  alternativeText?: string;
+  caption?: string;
+  width: number;
+  height: number;
+  formats: Formats3;
+  hash: string;
+  ext: string;
+  mime: string;
+  size: number;
+  url: string;
+  previewUrl?: string;
+  provider: string;
+  provider_metadata: Providermetadata;
+  createdAt: string;
+  updatedAt: string;
+}
+
+interface Formats3 {
+  small: Small;
+  thumbnail: Small;
 }
 
 interface Colors {
