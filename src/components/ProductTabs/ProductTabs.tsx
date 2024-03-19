@@ -14,10 +14,10 @@ export const ProductTabs: FC<ProductTabsProps> = ({ product }) => {
 
   const { active, setActive } = useActive(tabs[0]);
 
-  const { details } = product.attributes;
+  const { details, ratings } = product.attributes;
 
   return (
-    <section>
+    <section className="mb-16">
       <div className="my-8 flex w-full items-center justify-between">
         {tabs.map((tab) => (
           <button
@@ -31,7 +31,7 @@ export const ProductTabs: FC<ProductTabsProps> = ({ product }) => {
       </div>
 
       {active === 'product details' && <ProductDetails details={details} />}
-      {active === 'rating & reviews' && <Rating />}
+      {active === 'rating & reviews' && <Rating ratings={ratings} />}
       {active === 'FAQs' && <Faq />}
     </section>
   );
