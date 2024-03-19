@@ -66,6 +66,7 @@ const ProductDetails = async ({ params }: { params: { id: string } }) => {
         <ProductsCarousel
           title="you might also like"
           products={productsByCategory}
+          showButton={false}
         />
       </section>
     </Layout>
