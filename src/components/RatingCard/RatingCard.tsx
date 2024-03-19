@@ -1,4 +1,4 @@
-import { RatingType } from '@/types/ratingsType';
+import { RatingType } from '@/types/productsType';
 import { formatDate } from '@/utils/formatDate';
 import { ratingStars } from '@/utils/ratingStars';
 import { Star } from 'lucide-react';
