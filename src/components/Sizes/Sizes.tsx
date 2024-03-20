@@ -7,15 +7,15 @@ import { Button } from '..';
 
 export interface SizeProps {
   sizes: ProductType['attributes']['sizes'];
-  hasTitle?: boolean;
+  title?: string;
 }
 
-export const Sizes: FC<SizeProps> = ({ sizes, hasTitle = true }) => {
+export const Sizes: FC<SizeProps> = ({ sizes, title }) => {
   const { active, setActive } = useActive(sizes.data[0].attributes.name);
 
   return (
     <div>
-      {hasTitle && <span className="text-zinc-400">Choose Size:</span>}
+      {title && <span className="capitalize text-zinc-400">{title}</span>}
       <div className="mt-2 flex flex-wrap items-center gap-2">
         {sizes.data.map((size) => (
           <Button

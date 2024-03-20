@@ -7,15 +7,15 @@ import { FC } from 'react';
 
 export interface ColorsProps {
   colors: ProductType['attributes']['colors'];
-  hasTitle?: boolean;
+  title?: string;
 }
 
-export const Colors: FC<ColorsProps> = ({ colors, hasTitle = true }) => {
+export const Colors: FC<ColorsProps> = ({ colors, title }) => {
   const { active, setActive } = useActive(colors.data[0].attributes.name);
 
   return (
     <div>
-      {hasTitle && <span className="text-zinc-400">Select Colors:</span>}
+      {title && <span className="capitalize text-zinc-400">{title}</span>}
       <div className="mt-2 flex flex-wrap items-center gap-2">
         {colors.data.map((color) => (
           <button
