@@ -1,17 +1,15 @@
 import { customFetch } from '@/utils/customFetch';
 import { AxiosError } from 'axios';
 
-export const getProductById = async (id: string) => {
-  const populate = '?populate=deep,3';
-
+export const getAllProducts = async () => {
   try {
-    const { data } = await customFetch.get(`/products/${id}${populate}`);
+    const { data } = await customFetch.get('/products?populate=*');
 
     if (!data) {
-      throw new Error('No product found');
+      throw new Error('No products found');
     }
 
-    return data.data;
+    return data;
   } catch (error) {
     if (error instanceof AxiosError) {
       throw new Error(error.response?.data?.error?.message);

@@ -1,7 +1,7 @@
 import { customFetch } from '@/utils/customFetch';
 import { AxiosError } from 'axios';
 
-export const getByDressStyle = async (dressStyle = '') => {
+export const getProductsByDressStyle = async (dressStyle = '') => {
   const filters = dressStyle && `&filters[slug][$eq]=${dressStyle}`;
   const populate = '?populate=*';
 

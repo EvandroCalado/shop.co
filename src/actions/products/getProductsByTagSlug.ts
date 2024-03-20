@@ -1,7 +1,7 @@
 import { customFetch } from '@/utils/customFetch';
 import { AxiosError } from 'axios';
 
-export const getByTagSlug = async (tag: string) => {
+export const getProductsByTagSlug = async (tag: string) => {
   const filters = `?filters[tag][slug][$eq]=${tag}`;
   const populate = '&populate=*';
 
