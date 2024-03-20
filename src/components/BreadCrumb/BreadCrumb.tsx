@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { FC } from 'react';
 
 export interface BreadCrumbProps {
-  name: string;
-  id: number;
+  name?: string;
+  id?: number;
 }
 
 export const BreadCrumb: FC<BreadCrumbProps> = ({ name, id }) => {
@@ -14,19 +14,21 @@ export const BreadCrumb: FC<BreadCrumbProps> = ({ name, id }) => {
         <Link href="/" className="hover:underline">
           Home
         </Link>
-        <ChevronRight size={16} />
       </span>
+      <ChevronRight size={16} />
       <span className="flex items-center gap-1">
         <Link href="/shop" className="hover:underline">
           Shop
         </Link>
-        <ChevronRight size={16} />
       </span>
-      <span className="flex items-center capitalize">
-        <Link href={`/product/${id}`} className="hover:underline">
-          {name}
-        </Link>
-      </span>
+      {name && <ChevronRight size={16} />}
+      {name && (
+        <span className="flex items-center capitalize">
+          <Link href={`/product/${id}`} className="hover:underline">
+            {name}
+          </Link>
+        </span>
+      )}
     </div>
   );
 };
