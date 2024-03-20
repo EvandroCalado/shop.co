@@ -7,7 +7,7 @@ export interface CheckboxProps {
 
 export const Checkbox: FC<CheckboxProps> = ({ name, groupName }) => {
   return (
-    <div className="my-4 flex items-center justify-between text-zinc-500">
+    <div className="my-2 flex items-center justify-between text-zinc-500">
       <label htmlFor={name} className="w-full cursor-pointer capitalize">
         {name}
       </label>
