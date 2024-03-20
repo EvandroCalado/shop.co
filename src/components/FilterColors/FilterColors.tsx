@@ -127,7 +127,7 @@ export const FilterColors = () => {
   return (
     <div>
       <Heading title="Colors" as="h6" className="my-4 font-semibold" />
-      <Colors colors={tempColors} hasTitle={false} />
+      <Colors colors={tempColors} />
     </div>
   );
 };

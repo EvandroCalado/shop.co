@@ -87,7 +87,7 @@ export const FilterSizes = () => {
   return (
     <div>
       <Heading title="Sizes" as="h6" className="my-4 font-semibold" />
-      <Sizes sizes={tempSizes} hasTitle={false} />
+      <Sizes sizes={tempSizes} />
     </div>
   );
 };
