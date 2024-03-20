@@ -7,15 +7,16 @@ import { Button } from '..';
 
 export interface SizeProps {
   sizes: ProductType['attributes']['sizes'];
+  hasTitle?: boolean;
 }
 
-export const Sizes: FC<SizeProps> = ({ sizes }) => {
+export const Sizes: FC<SizeProps> = ({ sizes, hasTitle = true }) => {
   const { active, setActive } = useActive(sizes.data[0].attributes.name);
 
   return (
     <div>
-      <span className="text-zinc-400">Choose Size:</span>
-      <div className="mt-2 flex items-center gap-2">
+      {hasTitle && <span className="text-zinc-400">Choose Size:</span>}
+      <div className="mt-2 flex flex-wrap items-center gap-2">
         {sizes.data.map((size) => (
           <Button
             key={size.id}

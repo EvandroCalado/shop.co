@@ -7,15 +7,16 @@ import { FC } from 'react';
 
 export interface ColorsProps {
   colors: ProductType['attributes']['colors'];
+  hasTitle?: boolean;
 }
 
-export const Colors: FC<ColorsProps> = ({ colors }) => {
+export const Colors: FC<ColorsProps> = ({ colors, hasTitle = true }) => {
   const { active, setActive } = useActive(colors.data[0].attributes.name);
 
   return (
     <div>
-      <span className="text-zinc-400">Select Colors:</span>
-      <div className="mt-2 flex items-center gap-2">
+      {hasTitle && <span className="text-zinc-400">Select Colors:</span>}
+      <div className="mt-2 flex flex-wrap items-center gap-2">
         {colors.data.map((color) => (
           <button
             key={color.id}
