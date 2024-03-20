@@ -1,4 +1,5 @@
-import { getByCategory, getProductById } from '@/actions/products';
+import { getProductById } from '@/actions/products/getProductById';
+import { getProductsByCategory } from '@/actions/products/getProductsByCategory';
 import {
   BreadCrumb,
   Button,
@@ -30,7 +31,7 @@ const ProductDetails = async ({ params }: { params: { id: string } }) => {
     ratings,
   } = product.attributes;
 
-  const productsByCategory = await getByCategory(
+  const productsByCategory = await getProductsByCategory(
     categories.data[0].attributes.slug,
   );
 
