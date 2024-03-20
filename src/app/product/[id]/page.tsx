@@ -51,8 +51,8 @@ const ProductDetails = async ({ params }: { params: { id: string } }) => {
 
             <p className="max-w-4xl text-zinc-400">{description}</p>
 
-            <Colors colors={colors} />
-            <Sizes sizes={sizes} />
+            <Colors colors={colors} title="choose color:" />
+            <Sizes sizes={sizes} title="choose size:" />
 
             <div className="flex items-center gap-2">
               <Quantity />
