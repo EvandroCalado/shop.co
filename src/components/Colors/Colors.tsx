@@ -19,6 +19,7 @@ export const Colors: FC<ColorsProps> = ({ colors, title }) => {
       <div className="mt-2 flex flex-wrap items-center gap-2">
         {colors.data.map((color) => (
           <button
+            type="button"
             key={color.id}
             style={{ backgroundColor: color.attributes.color }}
             className="flex h-8 w-8 items-center justify-center rounded-full border border-zinc-500"
