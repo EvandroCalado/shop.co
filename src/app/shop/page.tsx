@@ -1,6 +1,7 @@
 'use client';
 
 import { getAllColors } from '@/actions/colors/getAllColors';
+import { getAllProducts } from '@/actions/products/getAllProducts';
 import { getAllSizes } from '@/actions/sizes/getAllSizes';
 import {
   BreadCrumb,
@@ -12,11 +13,13 @@ import {
   FilterSizes,
   Heading,
   Layout,
+  ProductCard,
   Separator,
 } from '@/components';
 import { useActiveColor } from '@/hooks/useActiveColor';
 import { useActiveSize } from '@/hooks/useActiveSize';
 import { ColorsType } from '@/types/colorsType';
+import { ProductsType } from '@/types/productsType';
 import { SizesType } from '@/types/sizesType';
 import { SlidersHorizontal } from 'lucide-react';
 import { useCallback, useEffect, useState } from 'react';
@@ -24,11 +27,9 @@ import { useCallback, useEffect, useState } from 'react';
 const Shop = () => {
   const [allColors, setAllColors] = useState<ColorsType>();
   const [allSizes, setAllSizes] = useState<SizesType>();
+  const [allProducts, setAllProducts] = useState<ProductsType>();
   const { activeColor, setActiveColor } = useActiveColor('');
   const { activeSize, setActiveSize } = useActiveSize('');
-
-  console.log(activeColor);
-  console.log(activeSize);
 
   const getColors = useCallback(async () => {
     const colors = await getAllColors();
@@ -40,18 +41,24 @@ const Shop = () => {
     setAllSizes(sizes);
   }, []);
 
+  const getProducts = useCallback(async () => {
+    const products = await getAllProducts();
+    setAllProducts(products);
+  }, []);
+
   useEffect(() => {
     getColors();
     getSizes();
-  }, [getColors, getSizes]);
+    getProducts();
+  }, [getColors, getSizes, getProducts]);
 
   return (
     <Layout>
       <section className="mb-16 px-6 md:px-16 lg:px-24">
         <BreadCrumb />
 
-        <div className="flex flex-col items-center gap-8 lg:flex-row">
-          <form className="w-[238px] rounded-xl border border-[#f0f0f0] px-4 py-2">
+        <div className="flex flex-col justify-between gap-8 md:flex-row">
+          <form className="hidden h-fit w-[238px] rounded-xl border border-[#f0f0f0] px-4 py-2 md:block">
             <div className="flex w-full items-center justify-between">
               <Heading
                 title="filters"
@@ -85,7 +92,13 @@ const Shop = () => {
             </div>
           </form>
 
-          <div className="flex flex-1 items-center">Shop</div>
+          <div className="flex-1">
+            <div className="grid grid-cols-1 justify-end gap-16 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+              {allProducts?.data?.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </Layout>
