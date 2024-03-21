@@ -9,27 +9,26 @@ export interface ProductCardProps {
 }
 
 export const ProductCard: FC<ProductCardProps> = ({ product }) => {
-  const { cover, name, price, discount } = product.attributes;
-
+  const { cover, name, price, discount, ratings } = product.attributes;
   return (
     <Link
       href={`/product/${product.id}`}
-      className="group flex snap-start flex-col gap-3 [&>div>img]:duration-300"
+      className="group flex snap-start flex-col gap-3"
     >
-      <div className="relative h-[350px] w-[360px] overflow-hidden rounded-xl bg-[#f0f0f0]">
+      <div className="relative h-[350px] overflow-hidden rounded-xl bg-[#f0f0f0]">
         <Image
           src={cover.data.attributes.formats.small.url}
           alt={name}
           sizes="(100vw - 2rem) 350px, 360px"
           fill
           priority
-          className="object-contain group-hover:scale-110"
+          className="object-contain duration-300 group-hover:scale-110"
         />
       </div>
 
       <Heading title={name} as="h5" className="capitalize" />
 
-      <RatingItem />
+      {ratings.data.length > 0 && <RatingItem ratings={ratings} />}
 
       <ProductPrice price={price} discount={discount} />
     </Link>
