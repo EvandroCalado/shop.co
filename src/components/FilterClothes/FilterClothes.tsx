@@ -9,7 +9,7 @@ export const FilterClothes: FC<FilterClothesProps> = ({ setActiveClothe }) => {
   return (
     <div>
       <InputRadio
-        name="t-shirt"
+        name="t-shirts"
         groupName="clothes"
         onChangeHandle={setActiveClothe}
       />
