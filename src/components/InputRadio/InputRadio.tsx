@@ -1,11 +1,16 @@
 import { FC } from 'react';
 
-export interface CheckboxProps {
+export interface InputRadioProps {
   name: string;
   groupName: string;
+  onChangeHandle: (clothe: string) => void;
 }
 
-export const Checkbox: FC<CheckboxProps> = ({ name, groupName }) => {
+export const InputRadio: FC<InputRadioProps> = ({
+  name,
+  groupName,
+  onChangeHandle,
+}) => {
   return (
     <div className="my-2 flex items-center justify-between text-zinc-500">
       <label htmlFor={name} className="w-full cursor-pointer capitalize">
@@ -15,6 +20,8 @@ export const Checkbox: FC<CheckboxProps> = ({ name, groupName }) => {
         type="radio"
         id={name}
         name={groupName}
+        value={name}
+        onChange={(e) => onChangeHandle(e.target.value)}
         className="cursor-pointer accent-black/95"
       />
     </div>
