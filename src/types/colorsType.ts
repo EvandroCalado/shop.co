@@ -1,17 +1,5 @@
 export interface ColorsType {
   data: Datum[];
-  meta: Meta;
-}
-
-interface Meta {
-  pagination: Pagination;
-}
-
-interface Pagination {
-  page: number;
-  pageSize: number;
-  pageCount: number;
-  total: number;
 }
 
 interface Datum {
