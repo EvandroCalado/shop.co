@@ -1,6 +1,6 @@
 import { customFetch } from '@/utils/customFetch';
 
-export const getAll = async () => {
+export const getAllRatings = async () => {
   const populate = '?populate=*';
   const { data } = await customFetch.get(`/ratings${populate}`);
 
