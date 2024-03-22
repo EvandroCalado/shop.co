@@ -1,6 +1,8 @@
-import { getProductsByDressStyle } from '@/actions/products/getProductsByDressStyle';
-import { getProductsByTagSlug } from '@/actions/products/getProductsByTagSlug';
-import { getAll } from '@/actions/ratings/getAll';
+import {
+  getAllRatings,
+  getProductsByDressStyle,
+  getProductsByTagSlug,
+} from '@/actions';
 import {
   BrandsBar,
   BrowseBy,
@@ -10,7 +12,7 @@ import {
   ProductsCarousel,
   RatingCarousel,
 } from '@/components';
-import { ProductsType } from '@/types/productsType';
+import { ProductsType } from '@/types';
 import toast from 'react-hot-toast';
 
 export default async function Home() {
@@ -30,7 +32,7 @@ export default async function Home() {
       throw new Error(error);
     });
   const productsByDressStyle = await getProductsByDressStyle();
-  const ratings = await getAll();
+  const ratings = await getAllRatings();
 
   return (
     <Layout>
