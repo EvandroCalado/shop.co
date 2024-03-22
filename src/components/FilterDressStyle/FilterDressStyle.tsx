@@ -1,6 +1,13 @@
-import { Checkbox, Heading } from '..';
+import { FC } from 'react';
+import { Heading, InputRadio } from '..';
 
-export const FilterDressStyle = () => {
+export interface FilterDressStyleProps {
+  setActiveDressStyle: (clothe: string) => void;
+}
+
+export const FilterDressStyle: FC<FilterDressStyleProps> = ({
+  setActiveDressStyle,
+}) => {
   return (
     <div>
       <Heading
@@ -8,10 +15,26 @@ export const FilterDressStyle = () => {
         as="h6"
         className="font-semibold capitalize"
       />
-      <Checkbox name="casual" groupName="dressStyle" />
-      <Checkbox name="formal" groupName="dressStyle" />
-      <Checkbox name="party" groupName="dressStyle" />
-      <Checkbox name="gym" groupName="dressStyle" />
+      <InputRadio
+        name="casual"
+        groupName="dressStyle"
+        onChangeHandle={setActiveDressStyle}
+      />
+      <InputRadio
+        name="formal"
+        groupName="dressStyle"
+        onChangeHandle={setActiveDressStyle}
+      />
+      <InputRadio
+        name="party"
+        groupName="dressStyle"
+        onChangeHandle={setActiveDressStyle}
+      />
+      <InputRadio
+        name="gym"
+        groupName="dressStyle"
+        onChangeHandle={setActiveDressStyle}
+      />
     </div>
   );
 };

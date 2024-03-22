@@ -1,13 +1,38 @@
-import { Checkbox } from '..';
+import { FC } from 'react';
+import { InputRadio } from '..';
 
-export const FilterClothes = () => {
+export interface FilterClothesProps {
+  setActiveClothe: (clothe: string) => void;
+}
+
+export const FilterClothes: FC<FilterClothesProps> = ({ setActiveClothe }) => {
   return (
     <div>
-      <Checkbox name="t-shirt" groupName="clothes" />
-      <Checkbox name="shorts" groupName="clothes" />
-      <Checkbox name="shirts" groupName="clothes" />
-      <Checkbox name="hoodies" groupName="clothes" />
-      <Checkbox name="jeans" groupName="clothes" />
+      <InputRadio
+        name="t-shirt"
+        groupName="clothes"
+        onChangeHandle={setActiveClothe}
+      />
+      <InputRadio
+        name="shorts"
+        groupName="clothes"
+        onChangeHandle={setActiveClothe}
+      />
+      <InputRadio
+        name="shirts"
+        groupName="clothes"
+        onChangeHandle={setActiveClothe}
+      />
+      <InputRadio
+        name="hoodies"
+        groupName="clothes"
+        onChangeHandle={setActiveClothe}
+      />
+      <InputRadio
+        name="jeans"
+        groupName="clothes"
+        onChangeHandle={setActiveClothe}
+      />
     </div>
   );
 };
