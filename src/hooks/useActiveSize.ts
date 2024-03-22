@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useState } from 'react';
 
-export interface ReturnActiveProps {
+interface ReturnActiveProps {
   activeSize: string;
   setActiveSize: Dispatch<SetStateAction<string>>;
 }

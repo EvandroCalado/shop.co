@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useState } from 'react';
 
-export interface ReturnActiveProps {
+interface ReturnActiveProps {
   activeColor: string;
   setActiveColor: Dispatch<SetStateAction<string>>;
 }
