@@ -27,13 +27,13 @@ export const Colors: FC<ColorsProps> = ({
             key={color.id}
             style={{ backgroundColor: color.attributes.color }}
             className="flex h-8 w-8 items-center justify-center rounded-full border border-zinc-500"
-            onClick={() => setActiveColor(color.attributes.name)}
+            onClick={() => setActiveColor(color.attributes.slug)}
           >
-            {activeColor === color.attributes.name &&
+            {activeColor === color.attributes.slug &&
             color.attributes.name === 'white' ? (
               <Check size={16} color="black" />
             ) : (
-              activeColor === color.attributes.name && (
+              activeColor === color.attributes.slug && (
                 <Check size={16} color="white" />
               )
             )}
