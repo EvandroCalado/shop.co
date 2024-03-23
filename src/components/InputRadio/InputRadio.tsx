@@ -1,14 +1,18 @@
+'use client';
+
 import { FC } from 'react';
 
 export interface InputRadioProps {
   name: string;
   groupName: string;
+  activeValue: string;
   onChangeHandle: (clothe: string) => void;
 }
 
 export const InputRadio: FC<InputRadioProps> = ({
   name,
   groupName,
+  activeValue,
   onChangeHandle,
 }) => {
   return (
@@ -21,6 +25,7 @@ export const InputRadio: FC<InputRadioProps> = ({
         id={name}
         name={groupName}
         value={name}
+        checked={activeValue === name}
         onChange={(e) => onChangeHandle(e.target.value)}
         className="cursor-pointer accent-black/95"
       />
