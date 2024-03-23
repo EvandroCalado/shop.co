@@ -29,6 +29,7 @@ export * from './ProductGallery';
 export * from './ProductPrice';
 export * from './ProductTabs';
 export * from './ProductsCarousel';
+export * from './ProductsList';
 export * from './Providers';
 export * from './Quantity';
 export * from './Rating';
