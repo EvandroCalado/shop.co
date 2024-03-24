@@ -1,8 +1,6 @@
 'use client';
 
-import { getAllColors } from '@/actions/colors/getAllColors';
-import { getAllProducts } from '@/actions/products/getAllProducts';
-import { getAllSizes } from '@/actions/sizes/getAllSizes';
+import { getAllColors, getAllProducts, getAllSizes } from '@/actions';
 import {
   BreadCrumb,
   Button,
@@ -13,23 +11,30 @@ import {
   FilterSizes,
   Heading,
   Layout,
-  ProductCard,
+  Pagination,
+  ProductsList,
   Separator,
 } from '@/components';
-import { useActiveColor } from '@/hooks/useActiveColor';
-import { useActiveSize } from '@/hooks/useActiveSize';
-import { ColorsType } from '@/types/colorsType';
-import { ProductsType } from '@/types/productsType';
-import { SizesType } from '@/types/sizesType';
-import { SlidersHorizontal } from 'lucide-react';
+import { useActiveColor, useActiveSize } from '@/hooks';
+import { ColorsType, ProductsType, SizesType } from '@/types';
+import { SlidersHorizontal, X } from 'lucide-react';
 import { useCallback, useEffect, useState } from 'react';
 
 const Shop = () => {
   const [allColors, setAllColors] = useState<ColorsType>();
   const [allSizes, setAllSizes] = useState<SizesType>();
   const [allProducts, setAllProducts] = useState<ProductsType>();
+  const [activeClothe, setActiveClothe] = useState('');
+  const [activeDressStyle, setActiveDressStyle] = useState('');
+  const [activePrice, setActivePrice] = useState(0);
   const { activeColor, setActiveColor } = useActiveColor('');
   const { activeSize, setActiveSize } = useActiveSize('');
+  const [showFilters, setShowFilters] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const { page, pageCount } = allProducts
+    ? allProducts.meta.pagination
+    : { page: 0, pageCount: 0 };
 
   const getColors = useCallback(async () => {
     const colors = await getAllColors();
@@ -46,6 +51,44 @@ const Shop = () => {
     setAllProducts(products);
   }, []);
 
+  const priceToString = () => {
+    if (activePrice === 0) return '';
+
+    return activePrice.toFixed().toString();
+  };
+
+  const allProductsRequest = async (page = currentPage) => {
+    const products = await getAllProducts(
+      activeClothe,
+      priceToString(),
+      activeColor,
+      activeSize,
+      activeDressStyle,
+      page,
+    );
+
+    setAllProducts(products);
+  };
+
+  const handleOnSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
+
+    allProductsRequest();
+    setShowFilters(false);
+  };
+
+  const handleOnReset = () => {
+    setActiveClothe('');
+    setActivePrice(0);
+    setActiveColor('');
+    setActiveSize('');
+    setActiveDressStyle('');
+    setCurrentPage(1);
+    getProducts();
+
+    setShowFilters(false);
+  };
+
   useEffect(() => {
     getColors();
     getSizes();
@@ -54,52 +97,87 @@ const Shop = () => {
 
   return (
     <Layout>
-      <section className="mb-16 px-6 md:px-16 lg:px-24">
+      <section className="mb-8 px-6 md:px-16 lg:px-24">
         <BreadCrumb />
 
-        <div className="flex flex-col justify-between gap-8 md:flex-row">
-          <form className="hidden h-fit w-[238px] rounded-xl border border-[#f0f0f0] px-4 py-2 md:block">
+        <div className="relative flex flex-col justify-between gap-8 md:flex-row">
+          <form
+            onSubmit={handleOnSubmit}
+            className="absolute left-0 z-10 h-fit w-full rounded-xl border border-[#f0f0f0] bg-white px-4 py-2 md:static md:w-[238px]"
+          >
             <div className="flex w-full items-center justify-between">
               <Heading
                 title="filters"
                 as="h6"
                 className="font-semibold capitalize"
               />
-              <SlidersHorizontal />
+              <button
+                type="button"
+                onClick={() => setShowFilters(!showFilters)}
+                className="md:hidden"
+              >
+                {showFilters ? <X /> : <SlidersHorizontal />}
+              </button>
+              <SlidersHorizontal className="hidden md:block" />
             </div>
 
-            <Separator />
-            <FilterClothes />
-            <Separator />
-            <FilterPrice />
-            <Separator />
-            <FilterColors
-              allColors={allColors}
-              activeColor={activeColor}
-              setActiveColor={setActiveColor}
-            />
-            <Separator />
-            <FilterSizes
-              allSizes={allSizes}
-              activeSize={activeSize}
-              setActiveSize={setActiveSize}
-            />
-            <Separator />
-            <FilterDressStyle />
+            <div
+              className={`${showFilters ? 'visible block opacity-100' : 'invisible hidden opacity-0 md:visible md:block md:opacity-100'} transition-all duration-300`}
+            >
+              <Separator />
+              <FilterClothes
+                activeClothe={activeClothe}
+                setActiveClothe={setActiveClothe}
+              />
+              <Separator />
+              <FilterPrice
+                activePrice={activePrice}
+                setActivePrice={setActivePrice}
+              />
+              <Separator />
+              <FilterColors
+                allColors={allColors}
+                activeColor={activeColor}
+                setActiveColor={setActiveColor}
+              />
+              <Separator />
+              <FilterSizes
+                allSizes={allSizes}
+                activeSize={activeSize}
+                setActiveSize={setActiveSize}
+              />
+              <Separator />
+              <FilterDressStyle
+                activeDressStyle={activeDressStyle}
+                setActiveDressStyle={setActiveDressStyle}
+              />
 
-            <div className="my-4 text-center">
-              <Button type="submit">apply filter</Button>
+              <div className="my-4 flex items-center justify-center gap-2">
+                <Button type="submit" className="px-6">
+                  apply
+                </Button>
+
+                <Button
+                  onClick={handleOnReset}
+                  variant="outline"
+                  type="reset"
+                  className="px-6"
+                >
+                  Clear
+                </Button>
+              </div>
             </div>
           </form>
 
-          <div className="flex-1">
-            <div className="grid grid-cols-1 justify-end gap-16 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-              {allProducts?.data?.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          </div>
+          <ProductsList allProducts={allProducts} />
         </div>
+
+        <Pagination
+          allProductsRequest={allProductsRequest}
+          setCurrentPage={setCurrentPage}
+          page={page}
+          pageCount={pageCount}
+        />
       </section>
     </Layout>
   );
