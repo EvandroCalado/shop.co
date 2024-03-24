@@ -23,6 +23,7 @@ export * from './Menu';
 export * from './MenuIcons';
 export * from './NavLinks';
 export * from './NewsLetter';
+export * from './Pagination';
 export * from './ProductCard';
 export * from './ProductDetails';
 export * from './ProductGallery';
