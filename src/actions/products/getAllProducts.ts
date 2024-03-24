@@ -7,7 +7,7 @@ export const getAllProducts = async (
   activeColor = '',
   activeSize = '',
   activeDressStyle = '',
-  page = '1',
+  page = 1,
 ) => {
   const populate = '?populate=deep,3';
   const clotheFilter =
@@ -18,13 +18,9 @@ export const getAllProducts = async (
   const sizeFilter = activeSize && `&filters[sizes][slug][$eq]=${activeSize}`;
   const dressStyleFilter =
     activeDressStyle && `&filters[dress_style][slug][$eq]=${activeDressStyle}`;
-  const pagination = page
-    ? `&pagination[page]=${page}&pagination[pageSize]=6`
-    : '&pagination[page]=1&pagination[pageSize]=6';
+  const pagination = `&pagination[page]=${page}&pagination[pageSize]=6`;
 
   const url = `${populate}${clotheFilter}${priceFilter}${colorFilter}${sizeFilter}${dressStyleFilter}${pagination}`;
-
-  // console.log(url);
 
   try {
     const { data } = await customFetch.get(`/products${url}`);
