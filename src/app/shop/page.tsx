@@ -15,7 +15,6 @@ import {
   ProductsList,
   Separator,
 } from '@/components';
-import { useActiveColor, useActiveSize } from '@/hooks';
 import { ColorsType, ProductsType, SizesType } from '@/types';
 import { SlidersHorizontal, X } from 'lucide-react';
 import { useCallback, useEffect, useState } from 'react';
@@ -27,8 +26,8 @@ const Shop = () => {
   const [activeClothe, setActiveClothe] = useState('');
   const [activeDressStyle, setActiveDressStyle] = useState('');
   const [activePrice, setActivePrice] = useState(0);
-  const { activeColor, setActiveColor } = useActiveColor('');
-  const { activeSize, setActiveSize } = useActiveSize('');
+  const [activeColor, setActiveColor] = useState('');
+  const [activeSize, setActiveSize] = useState('');
   const [showFilters, setShowFilters] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
 
