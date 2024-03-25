@@ -3,20 +3,29 @@
 import { CircleUser, ShoppingCart } from 'lucide-react';
 import { signOut, useSession } from 'next-auth/react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 export const MenuIcons = () => {
   const { data: session } = useSession();
   const [showMenu, setShowMenu] = useState(false);
+  const router = useRouter();
+
+  const handleOnCLick = () => {
+    router.push('/cart');
+  };
 
   return (
     <div className="flex items-center gap-2 sm:gap-4">
-      <div className="relative cursor-pointer rounded-full p-2 duration-150 hover:bg-[#f0f0f0]">
+      <button
+        className="relative cursor-pointer rounded-full p-2 duration-150 hover:bg-[#f0f0f0]"
+        onClick={handleOnCLick}
+      >
         <ShoppingCart data-testid="shop" />
         <span className="absolute right-0 top-0 flex h-4 w-4 items-center justify-center rounded-full border border-white bg-black/95 text-[10px] text-white">
           2
         </span>
-      </div>
+      </button>
 
       {session ? (
         <div className="relative">
