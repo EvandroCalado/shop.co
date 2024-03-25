@@ -1,5 +1,6 @@
-import { getProductById } from '@/actions/products/getProductById';
-import { getProductsByCategory } from '@/actions/products/getProductsByCategory';
+'use client';
+
+import { getProductById, getProductsByCategory } from '@/actions';
 import {
   BreadCrumb,
   Button,
@@ -14,26 +15,38 @@ import {
   RatingItem,
   Sizes,
 } from '@/components';
-import { ProductType } from '@/types/productsType';
+import { ProductType, ProductsType } from '@/types';
+import { useParams } from 'next/navigation';
+import { useCallback, useEffect, useState } from 'react';
 
-const ProductDetails = async ({ params }: { params: { id: string } }) => {
-  const product: ProductType = await getProductById(params.id);
+const ProductDetails = () => {
+  const [product, setProduct] = useState<ProductType>();
+  const [productsByCategories, setProductsByCategories] =
+    useState<ProductsType>();
+  const [activeColor, setActiveColor] = useState('');
+  const [activeSize, setActiveSize] = useState('');
+  const [activeQuantity, setActiveQuantity] = useState(1);
 
-  const {
-    images,
-    price,
-    discount,
-    name,
-    description,
-    colors,
-    sizes,
-    categories,
-    ratings,
-  } = product.attributes;
+  const param = useParams();
 
-  const productsByCategory = await getProductsByCategory(
-    categories.data[0].attributes.slug,
-  );
+  const getProduct = useCallback(async () => {
+    const product = await getProductById(param.id as string);
+    const productsByCategories = await getProductsByCategory(
+      product?.attributes.categories.data[0].attributes.slug,
+    );
+    setProduct(product);
+    setProductsByCategories(productsByCategories);
+  }, [param]);
+
+  useEffect(() => {
+    getProduct();
+  }, [getProduct]);
+
+  if (!product) return null;
+  if (!productsByCategories) return null;
+
+  const { images, price, discount, name, description, colors, sizes, ratings } =
+    product?.attributes || {};
 
   return (
     <Layout>
@@ -52,11 +65,24 @@ const ProductDetails = async ({ params }: { params: { id: string } }) => {
 
             <p className="max-w-4xl text-zinc-400">{description}</p>
 
-            <Colors colors={colors} title="choose color:" />
-            <Sizes sizes={sizes} title="choose size:" />
+            <Colors
+              colors={colors}
+              title="choose color:"
+              activeColor={activeColor}
+              setActiveColor={setActiveColor}
+            />
+            <Sizes
+              sizes={sizes}
+              title="choose size:"
+              activeSize={activeSize}
+              setActiveSize={setActiveSize}
+            />
 
             <div className="flex items-center gap-2">
-              <Quantity />
+              <Quantity
+                activeQuantity={activeQuantity}
+                setActiveQuantity={setActiveQuantity}
+              />
               <Button className="w-full lg:w-64 xl:w-96">add to cart</Button>
             </div>
           </div>
@@ -66,7 +92,7 @@ const ProductDetails = async ({ params }: { params: { id: string } }) => {
 
         <ProductsCarousel
           title="you might also like"
-          products={productsByCategory}
+          products={productsByCategories}
           showButton={false}
         />
       </section>
