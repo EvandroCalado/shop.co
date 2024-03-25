@@ -15,7 +15,7 @@ export const Input: FC<InputProps> = ({
 }) => {
   return (
     <div
-      className={`relative [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-[0.55rem] [&>svg]:z-10 [&>svg]:text-zinc-400`}
+      className={`relative w-full [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-[0.55rem] [&>svg]:z-10 [&>svg]:text-zinc-400`}
     >
       <input
         className={`${variant === 'default' ? 'bg-white' : 'bg-[#f0f0f0]'} w-full rounded-full px-12 py-[11px] text-sm outline-none ring-black/95 duration-150 focus:ring-1 [&+svg]:duration-150 [&+svg]:focus:text-black/95`}
