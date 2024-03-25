@@ -1,12 +1,18 @@
 'use client';
 
-import { useState } from 'react';
+import { FC } from 'react';
 
-export const Quantity = () => {
-  const [count, setCount] = useState(1);
+export interface QuantityProps {
+  activeQuantity: number;
+  setActiveQuantity: (quantity: number) => void;
+}
 
-  if (count < 1) {
-    setCount(1);
+export const Quantity: FC<QuantityProps> = ({
+  activeQuantity,
+  setActiveQuantity,
+}) => {
+  if (activeQuantity < 1) {
+    setActiveQuantity(1);
   }
 
   return (
@@ -14,14 +20,14 @@ export const Quantity = () => {
       <div className="flex items-center gap-2 overflow-hidden rounded-full bg-[#f0f0f0] text-xl">
         <button
           className="flex-1 px-4 py-2 hover:bg-zinc-400/10"
-          onClick={() => setCount(count - 1)}
+          onClick={() => setActiveQuantity(activeQuantity - 1)}
         >
           -
         </button>
-        <span className="w-6 text-center">{count}</span>
+        <span className="w-6 text-center">{activeQuantity}</span>
         <button
           className="flex-1 px-4 py-2 hover:bg-zinc-400/10"
-          onClick={() => setCount(count + 1)}
+          onClick={() => setActiveQuantity(activeQuantity + 1)}
         >
           +
         </button>
