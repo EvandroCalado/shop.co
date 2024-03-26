@@ -1,5 +1,6 @@
 'use client';
 
+import { useCartStore } from '@/store/cartStore';
 import { CircleUser, ShoppingCart } from 'lucide-react';
 import { signOut, useSession } from 'next-auth/react';
 import Link from 'next/link';
@@ -7,8 +8,10 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 export const MenuIcons = () => {
-  const { data: session } = useSession();
   const [showMenu, setShowMenu] = useState(false);
+  const { data: session } = useSession();
+  const { cartItem } = useCartStore();
+
   const router = useRouter();
 
   const handleOnCLick = () => {
@@ -22,9 +25,11 @@ export const MenuIcons = () => {
         onClick={handleOnCLick}
       >
         <ShoppingCart data-testid="shop" />
-        <span className="absolute right-0 top-0 flex h-4 w-4 items-center justify-center rounded-full border border-white bg-black/95 text-[10px] text-white">
-          2
-        </span>
+        {cartItem.length > 0 && (
+          <span className="absolute right-0 top-0 flex h-4 w-4 items-center justify-center rounded-full border border-white bg-black/95 text-[10px] text-white">
+            {cartItem.length}
+          </span>
+        )}
       </button>
 
       {session ? (
