@@ -15,6 +15,7 @@ import {
   RatingItem,
   Sizes,
 } from '@/components';
+import { useCartStore } from '@/stores/cartStore';
 import { ProductType, ProductsType } from '@/types';
 import { useParams } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
@@ -26,6 +27,7 @@ const ProductDetails = () => {
   const [activeColor, setActiveColor] = useState('');
   const [activeSize, setActiveSize] = useState('');
   const [activeQuantity, setActiveQuantity] = useState(1);
+  const { addToCart } = useCartStore();
 
   const param = useParams();
 
@@ -83,7 +85,12 @@ const ProductDetails = () => {
                 activeQuantity={activeQuantity}
                 setActiveQuantity={setActiveQuantity}
               />
-              <Button className="w-full lg:w-64 xl:w-96">add to cart</Button>
+              <Button
+                className="w-full lg:w-64 xl:w-96"
+                onClick={() => addToCart(product)}
+              >
+                add to cart
+              </Button>
             </div>
           </div>
         </div>
