@@ -87,7 +87,14 @@ const ProductDetails = () => {
               />
               <Button
                 className="w-full lg:w-64 xl:w-96"
-                onClick={() => addToCart(product)}
+                onClick={() =>
+                  addToCart({
+                    product,
+                    color: activeColor,
+                    size: activeSize,
+                    quantity: activeQuantity,
+                  })
+                }
               >
                 add to cart
               </Button>
