@@ -1,6 +1,6 @@
 'use client';
 
-import { useCartStore } from '@/store/cartStore';
+import { useCartStore } from '@/stores/cartStore';
 import { CircleUser, ShoppingCart } from 'lucide-react';
 import { signOut, useSession } from 'next-auth/react';
 import Link from 'next/link';
