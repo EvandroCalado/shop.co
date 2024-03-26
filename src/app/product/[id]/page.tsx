@@ -17,6 +17,7 @@ import {
 } from '@/components';
 import { useCartStore } from '@/stores/cartStore';
 import { ProductType, ProductsType } from '@/types';
+import { calcDiscount } from '@/utils/calcDiscount';
 import { useParams } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
 
@@ -27,6 +28,8 @@ const ProductDetails = () => {
   const [activeColor, setActiveColor] = useState('');
   const [activeSize, setActiveSize] = useState('');
   const [activeQuantity, setActiveQuantity] = useState(1);
+  const [colorError, setColorError] = useState('');
+  const [sizeError, setSizeError] = useState('');
   const { addToCart } = useCartStore();
 
   const param = useParams();
@@ -49,6 +52,27 @@ const ProductDetails = () => {
 
   const { images, price, discount, name, description, colors, sizes, ratings } =
     product?.attributes || {};
+
+  const handleAddToCart = () => {
+    if (activeColor === '') {
+      setColorError('Please select a color');
+      return;
+    }
+
+    if (activeSize === '') {
+      setSizeError('Please select a size');
+      return;
+    }
+
+    addToCart({
+      id: product.id + activeColor + activeSize,
+      product,
+      color: activeColor,
+      size: activeSize,
+      quantity: activeQuantity,
+      amount: calcDiscount(price, discount) * activeQuantity,
+    });
+  };
 
   return (
     <Layout>
@@ -73,12 +97,14 @@ const ProductDetails = () => {
               activeColor={activeColor}
               setActiveColor={setActiveColor}
             />
+            {activeColor === '' && <p className="text-red-500">{colorError}</p>}
             <Sizes
               sizes={sizes}
               title="choose size:"
               activeSize={activeSize}
               setActiveSize={setActiveSize}
             />
+            {activeSize === '' && <p className="text-red-500">{sizeError}</p>}
 
             <div className="flex items-center gap-2">
               <Quantity
@@ -87,14 +113,7 @@ const ProductDetails = () => {
               />
               <Button
                 className="w-full lg:w-64 xl:w-96"
-                onClick={() =>
-                  addToCart({
-                    product,
-                    color: activeColor,
-                    size: activeSize,
-                    quantity: activeQuantity,
-                  })
-                }
+                onClick={handleAddToCart}
               >
                 add to cart
               </Button>
