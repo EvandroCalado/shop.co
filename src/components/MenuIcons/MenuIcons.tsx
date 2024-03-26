@@ -18,6 +18,10 @@ export const MenuIcons = () => {
     router.push('/cart');
   };
 
+  const totalCartItems = cartItems.reduce((acc, item) => {
+    return acc + item.quantity;
+  }, 0);
+
   return (
     <div className="flex items-center gap-2 sm:gap-4">
       <button
@@ -27,7 +31,7 @@ export const MenuIcons = () => {
         <ShoppingCart data-testid="shop" />
         {cartItems.length > 0 && (
           <span className="absolute right-0 top-0 flex h-4 w-4 items-center justify-center rounded-full border border-white bg-black/95 text-[10px] text-white">
-            {cartItems.length}
+            {totalCartItems}
           </span>
         )}
       </button>

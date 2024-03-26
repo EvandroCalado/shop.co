@@ -17,9 +17,6 @@ export interface CartStoreProps {
   // clearCart: () => void;
   increaseQuantity: (id: string) => void;
   decreaseQuantity: (id: string) => void;
-  // totalItems: number;
-  // totalAmount: number;
-  // totalDiscount: number;
 }
 
 export const useCartStore = create<CartStoreProps>((set) => ({
@@ -50,23 +47,16 @@ export const useCartStore = create<CartStoreProps>((set) => ({
   // clearCart: () => set({ cartItem: [] }),
   increaseQuantity: (id: string) =>
     set((state) => ({
-      cartItems: state.cartItems.map((cartItem) =>
-        cartItem.id === id
-          ? { ...cartItem, quantity: cartItem.quantity + 1 }
-          : cartItem,
+      cartItems: state.cartItems.map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item,
       ),
     })),
   decreaseQuantity: (id: string) =>
     set((state) => ({
       cartItems: state.cartItems
-        .map((cartItem) =>
-          cartItem.id === id
-            ? { ...cartItem, quantity: cartItem.quantity - 1 }
-            : cartItem,
+        .map((item) =>
+          item.id === id ? { ...item, quantity: item.quantity - 1 } : item,
         )
         .filter((item) => item.quantity > 0),
     })),
-  // totalItems: () => set({ cartItem: [] }),
-  // totalAmount: () => set({ cartItem: [] }),
-  // totalDiscount: () => set({ cartItem: [] }),
 }));
