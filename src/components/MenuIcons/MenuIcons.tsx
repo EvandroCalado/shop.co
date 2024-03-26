@@ -10,7 +10,7 @@ import { useState } from 'react';
 export const MenuIcons = () => {
   const [showMenu, setShowMenu] = useState(false);
   const { data: session } = useSession();
-  const { cartItem } = useCartStore();
+  const { cartItems } = useCartStore();
 
   const router = useRouter();
 
@@ -25,9 +25,9 @@ export const MenuIcons = () => {
         onClick={handleOnCLick}
       >
         <ShoppingCart data-testid="shop" />
-        {cartItem.length > 0 && (
+        {cartItems.length > 0 && (
           <span className="absolute right-0 top-0 flex h-4 w-4 items-center justify-center rounded-full border border-white bg-black/95 text-[10px] text-white">
-            {cartItem.length}
+            {cartItems.length}
           </span>
         )}
       </button>
