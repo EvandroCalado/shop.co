@@ -6,7 +6,7 @@ import { ArrowRight, Tag } from 'lucide-react';
 import { Button, Input, Separator } from '..';
 
 export const OrderSummary = () => {
-  const { cartItems } = useCartStore();
+  const cartItems = useCartStore((state) => state.cartItems);
 
   const subtotalWithDiscount = cartItems.reduce((acc, item) => {
     return (

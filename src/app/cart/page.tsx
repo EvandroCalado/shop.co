@@ -6,7 +6,7 @@ import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
 const Cart = () => {
-  const { cartItems } = useCartStore();
+  const cartItems = useCartStore((state) => state.cartItems);
 
   return (
     <Layout>

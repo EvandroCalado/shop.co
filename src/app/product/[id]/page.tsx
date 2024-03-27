@@ -30,7 +30,7 @@ const ProductDetails = () => {
   const [activeQuantity, setActiveQuantity] = useState(1);
   const [colorError, setColorError] = useState('');
   const [sizeError, setSizeError] = useState('');
-  const { addToCart } = useCartStore();
+  const addToCart = useCartStore((state) => state.addToCart);
 
   const param = useParams();
 

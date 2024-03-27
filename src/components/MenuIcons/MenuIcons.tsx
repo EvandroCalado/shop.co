@@ -10,7 +10,7 @@ import { useState } from 'react';
 export const MenuIcons = () => {
   const [showMenu, setShowMenu] = useState(false);
   const { data: session } = useSession();
-  const { cartItems } = useCartStore();
+  const cartItems = useCartStore((state) => state.cartItems);
 
   const router = useRouter();
 
