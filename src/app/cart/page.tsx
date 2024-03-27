@@ -2,7 +2,7 @@
 
 import { CartList, Heading, Layout, OrderSummary } from '@/components';
 import { useCartStore } from '@/stores/cartStore';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, PackageOpen } from 'lucide-react';
 import Link from 'next/link';
 
 const Cart = () => {
@@ -29,10 +29,17 @@ const Cart = () => {
 
         <Heading title="your cart" uppercase as="h2" />
 
-        <div className="flex w-full flex-col gap-4 md:flex-row">
-          <CartList cartItems={cartItems} />
-          <OrderSummary />
-        </div>
+        {cartItems.length === 0 ? (
+          <div className="flex w-full items-center justify-center gap-4 py-36">
+            <PackageOpen size={100} />
+            <Heading title="your cart is empty" uppercase as="h4" />
+          </div>
+        ) : (
+          <div className="flex w-full flex-col gap-4 md:flex-row">
+            <CartList cartItems={cartItems} />
+            <OrderSummary />
+          </div>
+        )}
       </section>
     </Layout>
   );
