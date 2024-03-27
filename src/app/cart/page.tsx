@@ -1,12 +1,13 @@
 'use client';
 
-import { CartList, Heading, Layout, OrderSummary } from '@/components';
+import { Button, CartList, Heading, Layout, OrderSummary } from '@/components';
 import { useCartStore } from '@/stores/cartStore';
 import { ChevronRight, PackageOpen } from 'lucide-react';
 import Link from 'next/link';
 
 const Cart = () => {
   const cartItems = useCartStore((state) => state.cartItems);
+  const clearCart = useCartStore((state) => state.clearCart);
 
   return (
     <Layout>
@@ -35,9 +36,15 @@ const Cart = () => {
             <Heading title="your cart is empty" uppercase as="h4" />
           </div>
         ) : (
-          <div className="flex w-full flex-col gap-4 md:flex-row">
-            <CartList cartItems={cartItems} />
-            <OrderSummary />
+          <div>
+            <div className="flex w-full flex-col gap-4 md:flex-row">
+              <CartList cartItems={cartItems} />
+              <OrderSummary />
+            </div>
+
+            <Button type="button" onClick={clearCart}>
+              clear cart
+            </Button>
           </div>
         )}
       </section>

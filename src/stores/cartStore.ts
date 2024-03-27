@@ -14,7 +14,7 @@ export interface CartStoreProps {
   cartItems: CartItemProps[];
   addToCart: (product: CartItemProps) => void;
   removeFromCart: (id: string) => void;
-  // clearCart: () => void;
+  clearCart: () => void;
   increaseQuantity: (id: string) => void;
   decreaseQuantity: (id: string) => void;
 }
@@ -44,7 +44,7 @@ export const useCartStore = create<CartStoreProps>((set) => ({
     set((state) => ({
       cartItems: state.cartItems.filter((cartItem) => cartItem.id !== id),
     })),
-  // clearCart: () => set({ cartItem: [] }),
+  clearCart: () => set({ cartItems: [] }),
   increaseQuantity: (id: string) =>
     set((state) => ({
       cartItems: state.cartItems.map((item) =>
