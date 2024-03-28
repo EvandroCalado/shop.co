@@ -2,11 +2,22 @@
 
 import { useCartStore } from '@/stores/cartStore';
 import { calcDiscount } from '@/utils/calcDiscount';
+import { customFetch } from '@/utils/customFetch';
+import { loadStripe } from '@stripe/stripe-js';
+import { AxiosError } from 'axios';
 import { ArrowRight, Tag } from 'lucide-react';
+import { useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 import { Button, Input, Separator } from '..';
+
+const stripePromise = loadStripe(
+  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY as string,
+);
 
 export const OrderSummary = () => {
   const cartItems = useCartStore((state) => state.cartItems);
+  const { data: session } = useSession();
+  const router = useRouter();
 
   const subtotalWithDiscount = cartItems.reduce((acc, item) => {
     return (
@@ -30,6 +41,28 @@ export const OrderSummary = () => {
   const totalDiscount = subtotalWithoutDiscount - subtotalWithDiscount;
 
   const deliveryCost = 15;
+
+  const handlePayment = async () => {
+    if (!session) {
+      return router.push('/login');
+    }
+
+    try {
+      const stripe = await stripePromise;
+      const response = await customFetch.post('/orders', {
+        products: cartItems,
+      });
+
+      await stripe?.redirectToCheckout({
+        sessionId: response.data.stripeSession.id,
+      });
+    } catch (error) {
+      if (error instanceof AxiosError) {
+        console.log(error.response?.data?.error?.message);
+        throw new Error(error.response?.data?.error?.message);
+      }
+    }
+  };
 
   return (
     <div className="flex w-full flex-col gap-2 rounded-2xl border-[1px] border-[#f0f0f0] p-4 lg:flex-1">
@@ -72,7 +105,10 @@ export const OrderSummary = () => {
         />
         <Button className="px-6">apply</Button>
       </div>
-      <Button className="mt-2 flex w-full items-center justify-center gap-2">
+      <Button
+        onClick={handlePayment}
+        className="mt-2 flex w-full items-center justify-center gap-2"
+      >
         go to checkout <ArrowRight size={18} />
       </Button>
     </div>

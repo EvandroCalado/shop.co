@@ -43,7 +43,7 @@ const Login = () => {
 
     toast.success('Logged in successfully');
 
-    router.push(res?.url || '/');
+    router.back();
   };
 
   return (
