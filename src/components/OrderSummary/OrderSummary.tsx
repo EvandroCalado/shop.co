@@ -40,7 +40,7 @@ export const OrderSummary = () => {
 
   const totalDiscount = subtotalWithoutDiscount - subtotalWithDiscount;
 
-  const deliveryCost = 15;
+  const deliveryCost = 0;
 
   const handlePayment = async () => {
     if (!session) {
