@@ -77,7 +77,7 @@ export const OrderSummary = () => {
       </div>
       <div className="flex items-center justify-between">
         <span className="capitalize text-zinc-400">
-          discount(-{totalPercentageDiscount}%)
+          discount(-{totalPercentageDiscount.toFixed(2)}%)
         </span>
         <span className="text-lg font-semibold text-red-500">
           -${totalDiscount.toFixed(2)}
