@@ -1,6 +1,6 @@
 import { RatingsType } from '@/types/productsType';
 import { FC } from 'react';
-import { Button, Heading, RatingCard } from '..';
+import { Heading, RatingCard } from '..';
 
 export interface RatingProps {
   ratings: RatingsType;
@@ -26,12 +26,6 @@ export const Rating: FC<RatingProps> = ({ ratings }) => {
           <RatingCard key={rating.id} rating={rating} />
         ))}
       </div>
-
-      {ratings.data.length > 6 && (
-        <div className="w-full text-center">
-          <Button variant="outline">load more reviews</Button>
-        </div>
-      )}
     </div>
   );
 };
