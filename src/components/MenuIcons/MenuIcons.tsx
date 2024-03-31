@@ -46,12 +46,21 @@ export const MenuIcons = () => {
             <CircleUser />
           </button>
 
-          <button
-            onClick={() => signOut()}
-            className={`${showMenu ? 'visible opacity-100' : 'invisible opacity-0'} absolute -bottom-10 right-0 z-10 cursor-pointer rounded-lg bg-[#f0f0f0] p-4 px-4 py-2 text-zinc-400 shadow-lg duration-150 hover:text-black/95`}
+          <div
+            className={`${showMenu ? 'visible opacity-100' : 'invisible opacity-0'} absolute -bottom-[4.5rem] right-0 z-10 cursor-pointer space-y-1 rounded-lg bg-[#f0f0f0] p-4 px-4 py-2 text-zinc-400 shadow-lg`}
           >
-            Logout
-          </button>
+            <Link href="/orders">
+              <button className="capitalize duration-150 hover:text-black/95">
+                orders
+              </button>
+            </Link>
+            <button
+              onClick={() => signOut()}
+              className="capitalize duration-150 hover:text-black/95"
+            >
+              logout
+            </button>
+          </div>
         </div>
       ) : (
         <div className="relative">
