@@ -51,6 +51,7 @@ export const OrderSummary = () => {
       const stripe = await stripePromise;
       const response = await customFetch.post('/orders', {
         products: cartItems,
+        userId: session.user.id,
       });
 
       await stripe?.redirectToCheckout({
