@@ -3,14 +3,18 @@
 import { getAllOrdersByUser } from '@/actions/orders/getAllOrdersByUser';
 import { Heading, Layout, Pagination } from '@/components';
 import { OrdersType } from '@/types/ordersType';
+import { calcDiscount } from '@/utils/calcDiscount';
 import { formatDate } from '@/utils/formatDate';
 import { useSession } from 'next-auth/react';
-import { Fragment, useCallback, useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { useCallback, useEffect, useState } from 'react';
 
 const Orders = () => {
   const [orders, setOrders] = useState<OrdersType>();
   const [currentPage, setCurrentPage] = useState(1);
   const { data: session } = useSession();
+
+  const route = useRouter();
 
   const { page, pageCount } = orders?.meta?.pagination || {
     page: 0,
@@ -31,6 +35,14 @@ const Orders = () => {
   useEffect(() => {
     getOrdersByUser();
   }, [getOrdersByUser]);
+
+  if (!session) {
+    return route.push('/login');
+  }
+
+  if (!orders || !orders.data) {
+    return null;
+  }
 
   return (
     <Layout>
@@ -53,18 +65,25 @@ const Orders = () => {
                 <td className="w-1/4">
                   {formatDate(order.attributes.createdAt)}
                 </td>
-                <td className="hidden w-1/4 md:table-cell">
+                <td className="hidden w-1/4 md:table-cell [&>span:not(:last-of-type)]:after:content-[','] [&>span]:mr-1">
                   {order.attributes.cartItems.map((cartItem) => (
-                    <Fragment key={cartItem.id}>
+                    <span key={cartItem.id}>
                       {cartItem.product.attributes.name}({cartItem.quantity})
-                    </Fragment>
+                    </span>
                   ))}
                 </td>
                 <td className="w-1/4">
                   $
                   {order.attributes.cartItems
                     .reduce((acc, item) => {
-                      return acc + item.quantity * item.amount;
+                      return (
+                        acc +
+                        item.quantity *
+                          calcDiscount(
+                            item.product.attributes.price,
+                            item.product.attributes.discount,
+                          )
+                      );
                     }, 0)
                     .toFixed(2)}
                 </td>
