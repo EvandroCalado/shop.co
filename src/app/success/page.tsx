@@ -3,6 +3,7 @@ import { Button, Heading, Layout } from '@/components';
 import { CartItemProps } from '@/stores/cartStore';
 import { formatDate } from '@/utils/formatDate';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Success = async (ctx: { searchParams: { orderId: string } }) => {
   const order = await getOrderById(ctx.searchParams.orderId);
@@ -63,7 +64,9 @@ const Success = async (ctx: { searchParams: { orderId: string } }) => {
           </div>
         </div>
 
-        <Button className="mt-8 text-center">purchase history</Button>
+        <Link href="/orders">
+          <Button className="mt-8 text-center">purchase history</Button>
+        </Link>
       </section>
     </Layout>
   );
