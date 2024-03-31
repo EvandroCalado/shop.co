@@ -65,7 +65,7 @@ const ProductDetails = () => {
     }
 
     addToCart({
-      id: product.id + activeColor + activeSize + Date.now(),
+      id: Date.now().toString(),
       product,
       color: activeColor,
       size: activeSize,
