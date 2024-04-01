@@ -7,6 +7,13 @@ export interface ProductsListProps {
 }
 
 export const ProductsList: FC<ProductsListProps> = ({ allProducts }) => {
+  if (!allProducts)
+    return (
+      <div className="flex flex-1 animate-pulse items-center justify-center">
+        <Heading title="loading..." as="h3" className="text-center" />
+      </div>
+    );
+
   return (
     <div className="mt-16 flex-1 md:mt-0">
       <div className="flex items-center justify-end">
