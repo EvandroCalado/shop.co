@@ -17,6 +17,7 @@ import {
 } from '@/components';
 import { ColorsType, ProductsType, SizesType } from '@/types';
 import { SlidersHorizontal, X } from 'lucide-react';
+import { useSearchParams } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
 
 const Shop = () => {
@@ -30,6 +31,10 @@ const Shop = () => {
   const [activeSize, setActiveSize] = useState('');
   const [showFilters, setShowFilters] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
+
+  const query = useSearchParams();
+
+  const activeName = query.get('q');
 
   const { page, pageCount } = allProducts
     ? allProducts.meta.pagination
@@ -46,9 +51,9 @@ const Shop = () => {
   }, []);
 
   const getProducts = useCallback(async () => {
-    const products = await getAllProducts();
+    const products = await getAllProducts(activeName || '');
     setAllProducts(products);
-  }, []);
+  }, [activeName]);
 
   const priceToString = () => {
     if (activePrice === 0) return '';
@@ -58,6 +63,7 @@ const Shop = () => {
 
   const allProductsRequest = async (page = currentPage) => {
     const products = await getAllProducts(
+      activeName || '',
       activeClothe,
       priceToString(),
       activeColor,

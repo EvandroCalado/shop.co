@@ -2,6 +2,7 @@ import { customFetch } from '@/utils/customFetch';
 import { AxiosError } from 'axios';
 
 export const getAllProducts = async (
+  activeName = '',
   activeClothe = '',
   activePrice = '',
   activeColor = '',
@@ -10,6 +11,7 @@ export const getAllProducts = async (
   page = 1,
 ) => {
   const populate = '?populate=deep,3';
+  const nameFilter = activeName && `&filters[name][$containsi]=${activeName}`;
   const clotheFilter =
     activeClothe && `&filters[categories][slug][$eq]=${activeClothe}`;
   const priceFilter = activePrice && `&filters[price][$lte]=${activePrice}`;
@@ -20,7 +22,7 @@ export const getAllProducts = async (
     activeDressStyle && `&filters[dress_style][slug][$eq]=${activeDressStyle}`;
   const pagination = `&pagination[page]=${page}&pagination[pageSize]=6`;
 
-  const url = `${populate}${clotheFilter}${priceFilter}${colorFilter}${sizeFilter}${dressStyleFilter}${pagination}`;
+  const url = `${populate}${nameFilter}${clotheFilter}${priceFilter}${colorFilter}${sizeFilter}${dressStyleFilter}${pagination}`;
 
   try {
     const { data } = await customFetch.get(`/products${url}`);
