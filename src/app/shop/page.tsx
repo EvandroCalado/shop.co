@@ -17,10 +17,13 @@ import {
 } from '@/components';
 import { ColorsType, ProductsType, SizesType } from '@/types';
 import { SlidersHorizontal, X } from 'lucide-react';
-import { useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
 
 const Shop = () => {
+  const query = useSearchParams();
+  const router = useRouter();
+
   const [allColors, setAllColors] = useState<ColorsType>();
   const [allSizes, setAllSizes] = useState<SizesType>();
   const [allProducts, setAllProducts] = useState<ProductsType>();
@@ -31,9 +34,6 @@ const Shop = () => {
   const [activeSize, setActiveSize] = useState('');
   const [showFilters, setShowFilters] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-
-  const query = useSearchParams();
-
   const activeName = query.get('q');
 
   const { page, pageCount } = allProducts
@@ -90,6 +90,7 @@ const Shop = () => {
     setActiveDressStyle('');
     setCurrentPage(1);
     getProducts();
+    router.push('/shop?q=');
 
     setShowFilters(false);
   };
