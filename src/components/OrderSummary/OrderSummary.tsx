@@ -44,7 +44,7 @@ export const OrderSummary = () => {
 
   const handlePayment = async () => {
     if (!session) {
-      return router.push('/login');
+      return router.push('/login?redirect=/cart');
     }
 
     try {
