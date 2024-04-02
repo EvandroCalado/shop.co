@@ -59,7 +59,7 @@ const Register = () => {
     <div className="flex flex-1 flex-col items-center justify-center px-4">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-full rounded-xl border border-[#f0f0f0] px-4 py-6 shadow-xl sm:w-2/3 lg:w-2/5 xl:w-1/4 [&>div>input]:mt-4 [&>div>svg]:mt-4"
+        className="w-full rounded-xl border border-[#f0f0f0] px-8 py-16 shadow-xl sm:w-2/3 lg:w-2/5 xl:w-1/4 [&>div>input]:mt-4 [&>div>svg]:mt-4"
       >
         <Heading
           title="register"
