@@ -1,11 +1,18 @@
 'use client';
 
 import { useCartStore } from '@/stores/cartStore';
-import { CircleUser, ShoppingCart } from 'lucide-react';
+import {
+  CircleUser,
+  LogOut,
+  NotebookText,
+  ShoppingCart,
+  UserCog,
+} from 'lucide-react';
 import { signOut, useSession } from 'next-auth/react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { Button } from '..';
 
 export const MenuIcons = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -47,38 +54,33 @@ export const MenuIcons = () => {
           </button>
 
           <div
-            className={`${showMenu ? 'visible opacity-100' : 'invisible opacity-0'} absolute -bottom-[4.5rem] right-0 z-10 cursor-pointer space-y-1 rounded-lg bg-[#f0f0f0] p-4 px-4 py-2 text-zinc-400 shadow-lg`}
+            className={`${showMenu ? 'visible opacity-100' : 'invisible opacity-0'} absolute -bottom-[8rem] right-0 z-10 flex cursor-pointer flex-col gap-2 rounded-lg bg-[#f0f0f0] px-4 py-2 text-zinc-400 shadow-lg`}
           >
+            <Link href="/profile">
+              <button className="hover:bg-black-95 m-0 flex w-full items-center justify-between gap-2 rounded-md px-3 py-1 capitalize duration-150 hover:bg-zinc-100">
+                <UserCog size={18} />
+                profile
+              </button>
+            </Link>
             <Link href="/orders">
-              <button className="capitalize duration-150 hover:text-black/95">
+              <button className="hover:bg-black-95 m-0 flex w-full items-center justify-between gap-2 rounded-md px-3 py-1 capitalize duration-150 hover:bg-zinc-100">
+                <NotebookText size={18} />
                 orders
               </button>
             </Link>
             <button
               onClick={() => signOut()}
-              className="capitalize duration-150 hover:text-black/95"
+              className="hover:bg-black-95 m-0 flex w-full items-center justify-between gap-2 rounded-md px-3 py-1 capitalize duration-150 hover:bg-zinc-100"
             >
+              <LogOut size={18} />
               logout
             </button>
           </div>
         </div>
       ) : (
-        <div className="relative">
-          <button
-            className="cursor-pointer rounded-full p-2 duration-150 hover:bg-[#f0f0f0]"
-            data-testid="user"
-            onClick={() => setShowMenu(!showMenu)}
-          >
-            <CircleUser />
-          </button>
-
-          <Link
-            href="/login"
-            className={`${showMenu ? 'visible opacity-100' : 'invisible opacity-0'} absolute -bottom-10 right-0 z-10 cursor-pointer rounded-lg bg-[#f0f0f0] p-4 px-4 py-2 text-zinc-400 shadow-lg duration-150 hover:text-black/95`}
-          >
-            Login
-          </Link>
-        </div>
+        <Link href="/login" className=" bg-">
+          <Button className="px-6 py-2">login</Button>
+        </Link>
       )}
     </div>
   );
