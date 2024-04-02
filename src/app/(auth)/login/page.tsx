@@ -5,13 +5,14 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Lock, Mail } from 'lucide-react';
 import { signIn } from 'next-auth/react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import { z } from 'zod';
 
 const Login = () => {
   const router = useRouter();
+  const query = useSearchParams();
 
   const loginSchema = z.object({
     identifier: z.string().email('please, insert a valid email'),
@@ -43,14 +44,16 @@ const Login = () => {
 
     toast.success('Logged in successfully');
 
-    router.back();
+    const redirect = query.get('redirect') || '/';
+
+    router.push(redirect);
   };
 
   return (
     <div className="flex flex-1 flex-col items-center justify-center">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-full rounded-xl border border-[#f0f0f0] px-4 py-6 shadow-xl sm:w-2/3 lg:w-2/5 xl:w-1/4 [&>div>input]:mt-4 [&>div>svg]:mt-4"
+        className="w-full rounded-xl border border-[#f0f0f0] px-8 py-16 shadow-xl sm:w-2/3 lg:w-2/5 xl:w-1/4 [&>div>input]:mt-4 [&>div>svg]:mt-4"
       >
         <Heading
           title="login"
