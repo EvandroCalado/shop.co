@@ -1,4 +1,4 @@
-import { Footer, Header, HeaderInfo } from '..';
+import { Footer, Header, HeaderInfo, NewsLetter } from '..';
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -6,6 +6,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       <HeaderInfo />
       <Header />
       {children}
+      <NewsLetter />
       <Footer />
     </>
   );
