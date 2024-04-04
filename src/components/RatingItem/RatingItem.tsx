@@ -7,7 +7,7 @@ export interface RatingItemProps {
 }
 
 export const RatingItem: FC<RatingItemProps> = ({ ratings }) => {
-  if (!ratings) return null;
+  if (!ratings || ratings.data.length === 0) return null;
 
   const allRatings = ratings.data.map((rating) => {
     if (rating.attributes.rate === 'one') return 1;
