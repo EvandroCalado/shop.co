@@ -18,10 +18,14 @@ import {
 import { useCartStore } from '@/stores/cartStore';
 import { ProductType, ProductsType } from '@/types';
 import { calcDiscount } from '@/utils/calcDiscount';
+import { customFetch } from '@/utils/customFetch';
+import { useSession } from 'next-auth/react';
 import { useParams } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
+import toast from 'react-hot-toast';
 
 const ProductDetails = () => {
+  const { data: session } = useSession();
   const [product, setProduct] = useState<ProductType>();
   const [productsByCategories, setProductsByCategories] =
     useState<ProductsType>();
@@ -74,6 +78,22 @@ const ProductDetails = () => {
     });
   };
 
+  const handleAddToWishlist = async () => {
+    const res = customFetch.post('/wishlists', {
+      data: {
+        user: session?.user.id,
+        products: product.id,
+      },
+    });
+
+    if ((await res).status === 200) {
+      toast.success('Product added to wishlist');
+      return;
+    }
+
+    toast.error('Error adding product to wishlist');
+  };
+
   return (
     <Layout>
       <section className="px-6 py-6 md:px-16 lg:px-24">
@@ -111,11 +131,15 @@ const ProductDetails = () => {
                 activeQuantity={activeQuantity}
                 setActiveQuantity={setActiveQuantity}
               />
-              <Button
-                className="w-full lg:w-64 xl:w-96"
-                onClick={handleAddToCart}
-              >
+              <Button className="w-52 px-4" onClick={handleAddToCart}>
                 add to cart
+              </Button>
+              <Button
+                variant="outline"
+                className="w-52 px-4"
+                onClick={handleAddToWishlist}
+              >
+                add to wishlist
               </Button>
             </div>
           </div>
