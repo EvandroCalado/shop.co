@@ -8,7 +8,6 @@ import {
   BrowseBy,
   Hero,
   Layout,
-  NewsLetter,
   ProductsCarousel,
   RatingCarousel,
 } from '@/components';
@@ -50,7 +49,6 @@ export default async function Home() {
 
       <BrowseBy productsByDressStyle={productsByDressStyle} />
       <RatingCarousel ratings={ratings} />
-      <NewsLetter />
     </Layout>
   );
 }
