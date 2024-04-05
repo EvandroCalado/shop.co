@@ -1,6 +1,6 @@
 'use client';
 
-import { getAllColors, getAllProducts, getAllSizes } from '@/actions';
+import { getAllProducts } from '@/actions';
 import {
   BreadCrumb,
   Button,
@@ -15,45 +15,40 @@ import {
   ProductsList,
   Separator,
 } from '@/components';
-import { ColorsType, ProductsType, SizesType } from '@/types';
+import { useFilters } from '@/hooks';
 import { SlidersHorizontal, X } from 'lucide-react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useCallback, useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const Shop = () => {
   const query = useSearchParams();
   const router = useRouter();
+  const activeName = query.get('q') || '';
 
-  const [allColors, setAllColors] = useState<ColorsType>();
-  const [allSizes, setAllSizes] = useState<SizesType>();
-  const [allProducts, setAllProducts] = useState<ProductsType>();
-  const [activeClothe, setActiveClothe] = useState('');
-  const [activeDressStyle, setActiveDressStyle] = useState('');
-  const [activePrice, setActivePrice] = useState(0);
-  const [activeColor, setActiveColor] = useState('');
-  const [activeSize, setActiveSize] = useState('');
+  const {
+    activeClothe,
+    activeColor,
+    activeDressStyle,
+    activePrice,
+    activeSize,
+    allColors,
+    allProducts,
+    allSizes,
+    setAllProducts,
+    setActiveClothe,
+    setActiveColor,
+    setActiveDressStyle,
+    setActivePrice,
+    setActiveSize,
+    getProducts,
+  } = useFilters({ activeName });
+
   const [showFilters, setShowFilters] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const activeName = query.get('q');
 
   const { page, pageCount } = allProducts
     ? allProducts.meta.pagination
     : { page: 0, pageCount: 0 };
-
-  const getColors = useCallback(async () => {
-    const colors = await getAllColors();
-    setAllColors(colors);
-  }, []);
-
-  const getSizes = useCallback(async () => {
-    const sizes = await getAllSizes();
-    setAllSizes(sizes);
-  }, []);
-
-  const getProducts = useCallback(async () => {
-    const products = await getAllProducts(activeName || '');
-    setAllProducts(products);
-  }, [activeName]);
 
   const priceToString = () => {
     if (activePrice === 0) return '';
@@ -94,12 +89,6 @@ const Shop = () => {
 
     setShowFilters(false);
   };
-
-  useEffect(() => {
-    getColors();
-    getSizes();
-    getProducts();
-  }, [getColors, getSizes, getProducts]);
 
   return (
     <Layout>
