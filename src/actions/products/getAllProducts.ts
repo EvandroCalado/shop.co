@@ -9,23 +9,23 @@ export enum HttpStatusCode {
 }
 
 export type HttpResponse<T> = {
-  statusCode: HttpStatusCode;
+  status: HttpStatusCode;
   data?: T;
 };
 
-export type LoadProducts = {
+export type LoadItems = {
   loadAll: () => Promise<HttpResponse<ProductsType>>;
 };
 
-export interface FiltersProps {
-  loadProducts: LoadProducts;
+export interface GetAllProductsProps {
+  loadProducts: LoadItems;
 }
 
-export const getAllProducts = async ({ loadProducts }: FiltersProps) => {
+export const getAllProducts = async ({ loadProducts }: GetAllProductsProps) => {
   try {
     const response = await loadProducts.loadAll();
 
-    if (!response) {
+    if (!(response.status === HttpStatusCode.OK)) {
       throw new Error('No products found');
     }
 
