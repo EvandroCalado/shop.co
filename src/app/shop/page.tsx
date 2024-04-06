@@ -1,6 +1,5 @@
 'use client';
 
-import { getAllProducts } from '@/actions';
 import {
   BreadCrumb,
   Button,
@@ -25,64 +24,31 @@ const Shop = () => {
   const router = useRouter();
   const activeName = query.get('q') || '';
 
-  const {
-    activeClothe,
-    activeColor,
-    activeDressStyle,
-    activePrice,
-    activeSize,
-    allColors,
-    allProducts,
-    allSizes,
-    setAllProducts,
-    setActiveClothe,
-    setActiveColor,
-    setActiveDressStyle,
-    setActivePrice,
-    setActiveSize,
-    getProducts,
-  } = useFilters({ activeName });
-
   const [showFilters, setShowFilters] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
 
-  const { page, pageCount } = allProducts
-    ? allProducts.meta.pagination
+  const { all, active, setActive, getProducts } = useFilters({
+    activeName,
+    currentPage,
+  });
+
+  const { page, pageCount } = all.allProducts
+    ? all.allProducts.meta.pagination
     : { page: 0, pageCount: 0 };
-
-  const priceToString = () => {
-    if (activePrice === 0) return '';
-
-    return activePrice.toFixed().toString();
-  };
-
-  const allProductsRequest = async (page = currentPage) => {
-    const products = await getAllProducts(
-      activeName || '',
-      activeClothe,
-      priceToString(),
-      activeColor,
-      activeSize,
-      activeDressStyle,
-      page,
-    );
-
-    setAllProducts(products);
-  };
 
   const handleOnSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
 
-    allProductsRequest();
+    getProducts();
     setShowFilters(false);
   };
 
   const handleOnReset = () => {
-    setActiveClothe('');
-    setActivePrice(0);
-    setActiveColor('');
-    setActiveSize('');
-    setActiveDressStyle('');
+    setActive.setActiveClothe('');
+    setActive.setActivePrice(0);
+    setActive.setActiveColor('');
+    setActive.setActiveSize('');
+    setActive.setActiveDressStyle('');
     setCurrentPage(1);
     getProducts();
     router.push('/shop?q=');
@@ -121,54 +87,44 @@ const Shop = () => {
             >
               <Separator />
               <FilterClothes
-                activeClothe={activeClothe}
-                setActiveClothe={setActiveClothe}
+                activeClothe={active.activeClothe}
+                setActiveClothe={setActive.setActiveClothe}
               />
               <Separator />
               <FilterPrice
-                activePrice={activePrice}
-                setActivePrice={setActivePrice}
+                activePrice={active.activePrice}
+                setActivePrice={setActive.setActivePrice}
               />
               <Separator />
               <FilterColors
-                allColors={allColors}
-                activeColor={activeColor}
-                setActiveColor={setActiveColor}
+                allColors={all.allColors}
+                activeColor={active.activeColor}
+                setActiveColor={setActive.setActiveColor}
               />
               <Separator />
               <FilterSizes
-                allSizes={allSizes}
-                activeSize={activeSize}
-                setActiveSize={setActiveSize}
+                allSizes={all.allSizes}
+                activeSize={active.activeSize}
+                setActiveSize={setActive.setActiveSize}
               />
               <Separator />
               <FilterDressStyle
-                activeDressStyle={activeDressStyle}
-                setActiveDressStyle={setActiveDressStyle}
+                activeDressStyle={active.activeDressStyle}
+                setActiveDressStyle={setActive.setActiveDressStyle}
               />
 
               <div className="my-4 flex items-center justify-center gap-2">
-                <Button type="submit" className="px-6">
-                  apply
-                </Button>
-
-                <Button
-                  onClick={handleOnReset}
-                  variant="outline"
-                  type="reset"
-                  className="px-6"
-                >
+                <Button onClick={handleOnReset} type="reset" className="w-full">
                   Clear
                 </Button>
               </div>
             </div>
           </form>
 
-          <ProductsList allProducts={allProducts} />
+          <ProductsList allProducts={all.allProducts} />
         </div>
 
         <Pagination
-          allProductsRequest={allProductsRequest}
           setCurrentPage={setCurrentPage}
           page={page}
           pageCount={pageCount}
