@@ -1,37 +1,35 @@
-import { customFetch } from '@/utils/customFetch';
+import { ProductsType } from '@/types';
 import { AxiosError } from 'axios';
 
-export const getAllProducts = async (
-  activeName = '',
-  activeClothe = '',
-  activePrice = '',
-  activeColor = '',
-  activeSize = '',
-  activeDressStyle = '',
-  page = 1,
-) => {
-  const populate = '?populate=deep,3';
-  const nameFilter = activeName && `&filters[name][$containsi]=${activeName}`;
-  const clotheFilter =
-    activeClothe && `&filters[categories][slug][$eq]=${activeClothe}`;
-  const priceFilter = activePrice && `&filters[price][$lte]=${activePrice}`;
-  const colorFilter =
-    activeColor && `&filters[colors][slug][$eq]=${activeColor}`;
-  const sizeFilter = activeSize && `&filters[sizes][slug][$eq]=${activeSize}`;
-  const dressStyleFilter =
-    activeDressStyle && `&filters[dress_style][slug][$eq]=${activeDressStyle}`;
-  const pagination = `&pagination[page]=${page}&pagination[pageSize]=6`;
+export enum HttpStatusCode {
+  OK = 200,
+  BAD_REQUEST = 400,
+  NOT_FOUND = 404,
+  SERVER_ERROR = 500,
+}
 
-  const url = `${populate}${nameFilter}${clotheFilter}${priceFilter}${colorFilter}${sizeFilter}${dressStyleFilter}${pagination}`;
+export type HttpResponse<T> = {
+  statusCode: HttpStatusCode;
+  data?: T;
+};
 
+export type LoadProducts = {
+  loadAll: () => Promise<HttpResponse<ProductsType>>;
+};
+
+export interface FiltersProps {
+  loadProducts: LoadProducts;
+}
+
+export const getAllProducts = async ({ loadProducts }: FiltersProps) => {
   try {
-    const { data } = await customFetch.get(`/products${url}`);
+    const response = await loadProducts.loadAll();
 
-    if (!data) {
+    if (!response) {
       throw new Error('No products found');
     }
 
-    return data;
+    return response.data;
   } catch (error) {
     if (error instanceof AxiosError) {
       throw new Error(error.response?.data?.error?.message);
