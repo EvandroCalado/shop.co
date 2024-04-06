@@ -4,22 +4,18 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { FC } from 'react';
 
 interface PaginationProps {
-  allProductsRequest?: (page?: number) => Promise<void>;
   setCurrentPage: (page: number) => void;
   page: number;
   pageCount: number;
 }
 
 export const Pagination: FC<PaginationProps> = ({
-  allProductsRequest,
   setCurrentPage,
   page,
   pageCount,
 }) => {
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
-
-    if (allProductsRequest) allProductsRequest(page);
   };
 
   const pages = Array.from({ length: pageCount }, (_, i) => i + 1);
