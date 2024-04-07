@@ -1,6 +1,6 @@
-import { getAllColors, getAllProducts, getAllSizes } from '@/actions';
+import { AxiosHttpClientAdapter, HttpClient } from '@/adapters';
+import { getAll } from '@/loaders';
 import { ColorsType, ProductsType, SizesType } from '@/types';
-import { customFetch } from '@/utils/customFetch';
 import { useCallback, useEffect, useState } from 'react';
 
 export interface UseFilterProps {
@@ -40,29 +40,52 @@ export const useFilters = ({ activeName, currentPage }: UseFilterProps) => {
 
   const url = `${populate}${nameFilter}${clotheFilter}${priceFilter}${colorFilter}${sizeFilter}${dressStyleFilter}${pagination}`;
 
-  const getColors = useCallback(async () => {
-    const colors = await getAllColors();
+  const getColors = useCallback(async (httpClient: HttpClient) => {
+    const colors: ColorsType = await getAll({
+      loadAllItems: {
+        loadAll: async () =>
+          await httpClient.request({
+            url: `${process.env.NEXT_PUBLIC_API_URL}/colors`,
+            method: 'get',
+          }),
+      },
+    });
     setAllColors(colors);
   }, []);
 
-  const getSizes = useCallback(async () => {
-    const sizes = await getAllSizes();
+  const getSizes = useCallback(async (httpClient: HttpClient) => {
+    const sizes: SizesType = await getAll({
+      loadAllItems: {
+        loadAll: async () =>
+          await httpClient.request({
+            url: `${process.env.NEXT_PUBLIC_API_URL}/sizes`,
+            method: 'get',
+          }),
+      },
+    });
     setAllSizes(sizes);
   }, []);
 
-  const getProducts = useCallback(async () => {
-    const products = await getAllProducts({
-      loadProducts: {
-        loadAll: async () => await customFetch.get(`/products${url}`),
-      },
-    });
-    setAllProducts(products);
-  }, [url]);
+  const getProducts = useCallback(
+    async (httpClient: HttpClient) => {
+      const products: ProductsType = await getAll({
+        loadAllItems: {
+          loadAll: async () =>
+            await httpClient.request({
+              url: `${process.env.NEXT_PUBLIC_API_URL}/products${url}`,
+              method: 'get',
+            }),
+        },
+      });
+      setAllProducts(products);
+    },
+    [url],
+  );
 
   useEffect(() => {
-    getColors();
-    getSizes();
-    getProducts();
+    getColors(new AxiosHttpClientAdapter());
+    getSizes(new AxiosHttpClientAdapter());
+    getProducts(new AxiosHttpClientAdapter());
   }, [getColors, getProducts, getSizes]);
 
   return {
@@ -86,6 +109,5 @@ export const useFilters = ({ activeName, currentPage }: UseFilterProps) => {
       setActiveColor,
       setActiveSize,
     },
-    getProducts,
   };
 };
