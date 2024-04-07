@@ -27,7 +27,7 @@ const Shop = () => {
   const [showFilters, setShowFilters] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
 
-  const { all, active, setActive, getProducts } = useFilters({
+  const { all, active, setActive } = useFilters({
     activeName,
     currentPage,
   });
@@ -36,13 +36,6 @@ const Shop = () => {
     ? all.allProducts.meta.pagination
     : { page: 0, pageCount: 0 };
 
-  const handleOnSubmit = async (event: React.FormEvent) => {
-    event.preventDefault();
-
-    getProducts();
-    setShowFilters(false);
-  };
-
   const handleOnReset = () => {
     setActive.setActiveClothe('');
     setActive.setActivePrice(0);
@@ -50,7 +43,6 @@ const Shop = () => {
     setActive.setActiveSize('');
     setActive.setActiveDressStyle('');
     setCurrentPage(1);
-    getProducts();
     router.push('/shop?q=');
 
     setShowFilters(false);
@@ -62,10 +54,7 @@ const Shop = () => {
         <BreadCrumb />
 
         <div className="relative flex flex-col justify-between gap-8 md:flex-row">
-          <form
-            onSubmit={handleOnSubmit}
-            className="absolute left-0 z-10 h-fit w-full rounded-xl border border-[#f0f0f0] bg-white px-4 py-2 md:static md:w-[238px]"
-          >
+          <form className="absolute left-0 z-10 h-fit w-full rounded-xl border border-[#f0f0f0] bg-white px-4 py-2 md:static md:w-[238px]">
             <div className="flex w-full items-center justify-between">
               <Heading
                 title="filters"
