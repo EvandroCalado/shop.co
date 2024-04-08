@@ -1,6 +1,6 @@
 'use client';
 
-import { getProductById, getProductsByCategory } from '@/actions';
+import { AxiosHttpClientAdapter, HttpClient } from '@/adapters';
 import {
   BreadCrumb,
   Button,
@@ -15,6 +15,7 @@ import {
   RatingItem,
   Sizes,
 } from '@/components';
+import { getAll } from '@/loaders';
 import { useCartStore } from '@/stores/cartStore';
 import { ProductType, ProductsType } from '@/types';
 import { calcDiscount } from '@/utils/calcDiscount';
@@ -26,6 +27,7 @@ import toast from 'react-hot-toast';
 
 const ProductDetails = () => {
   const { data: session } = useSession();
+  const addToCart = useCartStore((state) => state.addToCart);
   const [product, setProduct] = useState<ProductType>();
   const [productsByCategories, setProductsByCategories] =
     useState<ProductsType>();
@@ -34,28 +36,51 @@ const ProductDetails = () => {
   const [activeQuantity, setActiveQuantity] = useState(1);
   const [colorError, setColorError] = useState('');
   const [sizeError, setSizeError] = useState('');
-  const addToCart = useCartStore((state) => state.addToCart);
 
   const param = useParams();
 
-  const getProduct = useCallback(async () => {
-    const product = await getProductById(param.id as string);
-    const productsByCategories = await getProductsByCategory(
-      product?.attributes.categories.data[0].attributes.slug,
-    );
-    setProduct(product);
-    setProductsByCategories(productsByCategories);
-  }, [param]);
+  const getProduct = useCallback(
+    async (httpClient: HttpClient) => {
+      const productById: ProductType = await getAll({
+        loadAllItems: {
+          loadAll: async () =>
+            await httpClient.request({
+              url: `${process.env.NEXT_PUBLIC_API_URL}/products/${param.id}?populate=deep,3`,
+              method: 'get',
+            }),
+        },
+      });
+      setProduct(productById);
+    },
+    [param.id],
+  );
+
+  const getProductByCategory = useCallback(
+    async (httpClient: HttpClient) => {
+      const productByCategory = await getAll({
+        loadAllItems: {
+          loadAll: async () =>
+            await httpClient.request({
+              url: `${process.env.NEXT_PUBLIC_API_URL}/products?filters[categories][slug][$eq]=${product?.data.attributes.categories.data[0].attributes.slug}&populate=*`,
+              method: 'get',
+            }),
+        },
+      });
+      setProductsByCategories(productByCategory);
+    },
+    [product?.data.attributes.categories.data],
+  );
 
   useEffect(() => {
-    getProduct();
-  }, [getProduct]);
+    getProduct(new AxiosHttpClientAdapter());
+    getProductByCategory(new AxiosHttpClientAdapter());
+  }, [getProduct, getProductByCategory]);
 
   if (!product) return null;
   if (!productsByCategories) return null;
 
   const { images, price, discount, name, description, colors, sizes, ratings } =
-    product?.attributes || {};
+    product.data.attributes || {};
 
   const handleAddToCart = () => {
     if (activeColor === '') {
@@ -82,7 +107,7 @@ const ProductDetails = () => {
     const res = customFetch.post('/wishlists', {
       data: {
         user: session?.user.id,
-        products: product.id,
+        products: product?.data.id,
       },
     });
 
@@ -97,7 +122,7 @@ const ProductDetails = () => {
   return (
     <Layout>
       <section className="px-6 py-6 md:px-16 lg:px-24">
-        <BreadCrumb id={product.id} name={name} />
+        <BreadCrumb id={product?.data.id} name={name} />
 
         <div className="flex flex-col justify-between gap-16 lg:flex-row">
           <ProductGallery images={images} />
@@ -105,7 +130,7 @@ const ProductDetails = () => {
           <div className="flex w-full flex-col justify-between gap-4">
             <Heading title={name} uppercase />
 
-            {ratings.data.length > 0 && <RatingItem ratings={ratings} />}
+            <RatingItem ratings={ratings} />
 
             <ProductPrice price={price} discount={discount} />
 
