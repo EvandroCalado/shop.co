@@ -1,14 +1,22 @@
 import { Meta, StoryFn } from '@storybook/react';
 import { ProductsCarousel, ProductsCarouselProps } from '.';
 
+import mock from '../../mocks/products.json';
+
 export default {
   title: 'Components/ProductsCarousel',
   component: ProductsCarousel,
   args: {
+    products: mock,
     title: 'new arrivals',
   },
   parameters: {
-    layout: 'fullscreen',
+    nextjs: {
+      appDirectory: true,
+      navigation: {
+        pathname: '/login',
+      },
+    },
   },
 } as Meta;
 
