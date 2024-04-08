@@ -1,0 +1,517 @@
+{
+  "id": "1712580706800",
+  "product": {
+    "id": 1,
+    "attributes": {
+      "name": "camiseta penalty x",
+      "slug": "camiseta-penalty-x",
+      "description": "Camisa em microfibra de poliéster com logo na parte frontal da peça. Possui tecnologia Dry One, que proporciona rápida secagem rápida e ótima absorção de suor. Composição: 100% POLIÉSTER.",
+      "createdAt": "2024-03-10T23:04:41.265Z",
+      "updatedAt": "2024-03-10T23:04:43.013Z",
+      "publishedAt": "2024-03-10T23:04:43.010Z",
+      "details": "<ul><li><span style=\"color:rgb(15,17,17);\"><strong>Dimensões do produto</strong> ‏ : ‎ 10 x 20 x 30 cm; 150 g</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Fabricante</strong> ‏ : ‎ Penalty</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>ASIN</strong> ‏ : ‎ B08W68PS8C</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Número do modelo</strong> ‏ : ‎ 3106039000-P</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Departamento</strong> ‏ : ‎ Masculino</span></li></ul>",
+      "price": 59.9,
+      "discount": 20,
+      "cover": {
+        "data": {
+          "id": 2,
+          "attributes": {
+            "name": "01.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 569,
+            "height": 775,
+            "formats": {
+              "small": {
+                "ext": ".png",
+                "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111519/small_01_0c2164794f.png",
+                "hash": "small_01_0c2164794f",
+                "mime": "image/png",
+                "name": "small_01.png",
+                "path": null,
+                "size": 138.2,
+                "width": 367,
+                "height": 500,
+                "provider_metadata": {
+                  "public_id": "small_01_0c2164794f",
+                  "resource_type": "image"
+                }
+              },
+              "medium": {
+                "ext": ".png",
+                "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/medium_01_0c2164794f.png",
+                "hash": "medium_01_0c2164794f",
+                "mime": "image/png",
+                "name": "medium_01.png",
+                "path": null,
+                "size": 265.49,
+                "width": 551,
+                "height": 750,
+                "provider_metadata": {
+                  "public_id": "medium_01_0c2164794f",
+                  "resource_type": "image"
+                }
+              },
+              "thumbnail": {
+                "ext": ".png",
+                "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/thumbnail_01_0c2164794f.png",
+                "hash": "thumbnail_01_0c2164794f",
+                "mime": "image/png",
+                "name": "thumbnail_01.png",
+                "path": null,
+                "size": 20.69,
+                "width": 115,
+                "height": 156,
+                "provider_metadata": {
+                  "public_id": "thumbnail_01_0c2164794f",
+                  "resource_type": "image"
+                }
+              }
+            },
+            "hash": "01_0c2164794f",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 73.72,
+            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/01_0c2164794f.png",
+            "previewUrl": null,
+            "provider": "cloudinary",
+            "provider_metadata": {
+              "public_id": "01_0c2164794f",
+              "resource_type": "image"
+            },
+            "createdAt": "2024-03-10T22:58:39.749Z",
+            "updatedAt": "2024-03-10T22:58:39.749Z"
+          }
+        }
+      },
+      "images": {
+        "data": [
+          {
+            "id": 2,
+            "attributes": {
+              "name": "01.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 569,
+              "height": 775,
+              "formats": {
+                "small": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111519/small_01_0c2164794f.png",
+                  "hash": "small_01_0c2164794f",
+                  "mime": "image/png",
+                  "name": "small_01.png",
+                  "path": null,
+                  "size": 138.2,
+                  "width": 367,
+                  "height": 500,
+                  "provider_metadata": {
+                    "public_id": "small_01_0c2164794f",
+                    "resource_type": "image"
+                  }
+                },
+                "medium": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/medium_01_0c2164794f.png",
+                  "hash": "medium_01_0c2164794f",
+                  "mime": "image/png",
+                  "name": "medium_01.png",
+                  "path": null,
+                  "size": 265.49,
+                  "width": 551,
+                  "height": 750,
+                  "provider_metadata": {
+                    "public_id": "medium_01_0c2164794f",
+                    "resource_type": "image"
+                  }
+                },
+                "thumbnail": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/thumbnail_01_0c2164794f.png",
+                  "hash": "thumbnail_01_0c2164794f",
+                  "mime": "image/png",
+                  "name": "thumbnail_01.png",
+                  "path": null,
+                  "size": 20.69,
+                  "width": 115,
+                  "height": 156,
+                  "provider_metadata": {
+                    "public_id": "thumbnail_01_0c2164794f",
+                    "resource_type": "image"
+                  }
+                }
+              },
+              "hash": "01_0c2164794f",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 73.72,
+              "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/01_0c2164794f.png",
+              "previewUrl": null,
+              "provider": "cloudinary",
+              "provider_metadata": {
+                "public_id": "01_0c2164794f",
+                "resource_type": "image"
+              },
+              "createdAt": "2024-03-10T22:58:39.749Z",
+              "updatedAt": "2024-03-10T22:58:39.749Z"
+            }
+          },
+          {
+            "id": 3,
+            "attributes": {
+              "name": "02.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 569,
+              "height": 767,
+              "formats": {
+                "small": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/small_02_007712bdac.png",
+                  "hash": "small_02_007712bdac",
+                  "mime": "image/png",
+                  "name": "small_02.png",
+                  "path": null,
+                  "size": 157.38,
+                  "width": 371,
+                  "height": 500,
+                  "provider_metadata": {
+                    "public_id": "small_02_007712bdac",
+                    "resource_type": "image"
+                  }
+                },
+                "medium": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111540/medium_02_007712bdac.png",
+                  "hash": "medium_02_007712bdac",
+                  "mime": "image/png",
+                  "name": "medium_02.png",
+                  "path": null,
+                  "size": 290.55,
+                  "width": 556,
+                  "height": 750,
+                  "provider_metadata": {
+                    "public_id": "medium_02_007712bdac",
+                    "resource_type": "image"
+                  }
+                },
+                "thumbnail": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/thumbnail_02_007712bdac.png",
+                  "hash": "thumbnail_02_007712bdac",
+                  "mime": "image/png",
+                  "name": "thumbnail_02.png",
+                  "path": null,
+                  "size": 25.35,
+                  "width": 116,
+                  "height": 156,
+                  "provider_metadata": {
+                    "public_id": "thumbnail_02_007712bdac",
+                    "resource_type": "image"
+                  }
+                }
+              },
+              "hash": "02_007712bdac",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 76.28,
+              "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/02_007712bdac.png",
+              "previewUrl": null,
+              "provider": "cloudinary",
+              "provider_metadata": {
+                "public_id": "02_007712bdac",
+                "resource_type": "image"
+              },
+              "createdAt": "2024-03-10T22:59:01.232Z",
+              "updatedAt": "2024-03-10T22:59:01.232Z"
+            }
+          },
+          {
+            "id": 4,
+            "attributes": {
+              "name": "03.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 569,
+              "height": 695,
+              "formats": {
+                "small": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/small_03_03d908e42f.png",
+                  "hash": "small_03_03d908e42f",
+                  "mime": "image/png",
+                  "name": "small_03.png",
+                  "path": null,
+                  "size": 169.88,
+                  "width": 409,
+                  "height": 500,
+                  "provider_metadata": {
+                    "public_id": "small_03_03d908e42f",
+                    "resource_type": "image"
+                  }
+                },
+                "thumbnail": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/thumbnail_03_03d908e42f.png",
+                  "hash": "thumbnail_03_03d908e42f",
+                  "mime": "image/png",
+                  "name": "thumbnail_03.png",
+                  "path": null,
+                  "size": 27.35,
+                  "width": 128,
+                  "height": 156,
+                  "provider_metadata": {
+                    "public_id": "thumbnail_03_03d908e42f",
+                    "resource_type": "image"
+                  }
+                }
+              },
+              "hash": "03_03d908e42f",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 69.87,
+              "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/03_03d908e42f.png",
+              "previewUrl": null,
+              "provider": "cloudinary",
+              "provider_metadata": {
+                "public_id": "03_03d908e42f",
+                "resource_type": "image"
+              },
+              "createdAt": "2024-03-10T22:59:21.837Z",
+              "updatedAt": "2024-03-10T22:59:21.837Z"
+            }
+          }
+        ]
+      },
+      "categories": {
+        "data": [
+          {
+            "id": 3,
+            "attributes": {
+              "name": "t shirts",
+              "slug": "t-shirts",
+              "createdAt": "2024-03-10T21:36:27.691Z",
+              "updatedAt": "2024-03-10T21:37:14.439Z",
+              "publishedAt": "2024-03-10T21:36:28.646Z"
+            }
+          }
+        ]
+      },
+      "brand": {
+        "data": {
+          "id": 2,
+          "attributes": {
+            "name": "penalty",
+            "slug": "penalty",
+            "createdAt": "2024-03-10T23:01:25.825Z",
+            "updatedAt": "2024-03-10T23:01:26.731Z",
+            "publishedAt": "2024-03-10T23:01:26.728Z"
+          }
+        }
+      },
+      "colors": {
+        "data": [
+          {
+            "id": 10,
+            "attributes": {
+              "name": "black",
+              "slug": "black",
+              "createdAt": "2024-03-10T21:41:52.063Z",
+              "updatedAt": "2024-03-10T21:41:53.351Z",
+              "publishedAt": "2024-03-10T21:41:53.348Z",
+              "color": "#000000"
+            }
+          },
+          {
+            "id": 1,
+            "attributes": {
+              "name": "red",
+              "slug": "red",
+              "createdAt": "2024-03-10T21:38:23.639Z",
+              "updatedAt": "2024-03-10T21:38:24.685Z",
+              "publishedAt": "2024-03-10T21:38:24.683Z",
+              "color": "#F50606"
+            }
+          },
+          {
+            "id": 2,
+            "attributes": {
+              "name": "green",
+              "slug": "green",
+              "createdAt": "2024-03-10T21:38:47.316Z",
+              "updatedAt": "2024-03-10T21:38:48.337Z",
+              "publishedAt": "2024-03-10T21:38:48.334Z",
+              "color": "#00C12B"
+            }
+          }
+        ]
+      },
+      "sizes": {
+        "data": [
+          {
+            "id": 3,
+            "attributes": {
+              "name": "small",
+              "slug": "small",
+              "createdAt": "2024-03-10T21:44:56.693Z",
+              "updatedAt": "2024-03-10T21:45:18.998Z",
+              "publishedAt": "2024-03-10T21:44:57.671Z"
+            }
+          },
+          {
+            "id": 4,
+            "attributes": {
+              "name": "medium",
+              "slug": "medium",
+              "createdAt": "2024-03-10T21:45:34.400Z",
+              "updatedAt": "2024-03-10T21:45:35.181Z",
+              "publishedAt": "2024-03-10T21:45:35.179Z"
+            }
+          },
+          {
+            "id": 5,
+            "attributes": {
+              "name": "large",
+              "slug": "large",
+              "createdAt": "2024-03-10T21:45:46.922Z",
+              "updatedAt": "2024-03-10T21:45:47.654Z",
+              "publishedAt": "2024-03-10T21:45:47.652Z"
+            }
+          }
+        ]
+      },
+      "tag": {
+        "data": {
+          "id": 3,
+          "attributes": {
+            "name": "on sale",
+            "slug": "on-sale",
+            "createdAt": "2024-03-10T21:47:37.714Z",
+            "updatedAt": "2024-03-10T21:47:38.557Z",
+            "publishedAt": "2024-03-10T21:47:38.555Z"
+          }
+        }
+      },
+      "dress_style": {
+        "data": {
+          "id": 1,
+          "attributes": {
+            "name": "casual",
+            "slug": "casual",
+            "createdAt": "2024-03-10T21:42:23.870Z",
+            "updatedAt": "2024-03-14T12:17:46.928Z",
+            "publishedAt": "2024-03-10T21:42:24.767Z",
+            "image": {
+              "data": {
+                "id": 8,
+                "attributes": {
+                  "name": "casual.png",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 466,
+                  "height": 662,
+                  "formats": {
+                    "small": {
+                      "ext": ".png",
+                      "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418658/small_casual_5caf81f192.png",
+                      "hash": "small_casual_5caf81f192",
+                      "mime": "image/png",
+                      "name": "small_casual.png",
+                      "path": null,
+                      "size": 297.39,
+                      "width": 352,
+                      "height": 500,
+                      "provider_metadata": {
+                        "public_id": "small_casual_5caf81f192",
+                        "resource_type": "image"
+                      }
+                    },
+                    "thumbnail": {
+                      "ext": ".png",
+                      "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418658/thumbnail_casual_5caf81f192.png",
+                      "hash": "thumbnail_casual_5caf81f192",
+                      "mime": "image/png",
+                      "name": "thumbnail_casual.png",
+                      "path": null,
+                      "size": 33.4,
+                      "width": 110,
+                      "height": 156,
+                      "provider_metadata": {
+                        "public_id": "thumbnail_casual_5caf81f192",
+                        "resource_type": "image"
+                      }
+                    }
+                  },
+                  "hash": "casual_5caf81f192",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "size": 166.52,
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418658/casual_5caf81f192.png",
+                  "previewUrl": null,
+                  "provider": "cloudinary",
+                  "provider_metadata": {
+                    "public_id": "casual_5caf81f192",
+                    "resource_type": "image"
+                  },
+                  "createdAt": "2024-03-14T12:17:39.234Z",
+                  "updatedAt": "2024-03-14T12:17:39.234Z"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ratings": {
+        "data": [
+          {
+            "id": 2,
+            "attributes": {
+              "rate": "five",
+              "avaliation": "Just tried out T-Shirt from shop.co, and I'm impressed! The design is stylish, the fabric feels luxurious, and it fits like a dream. Definitely worth the investment. Check it out! ",
+              "createdAt": "2024-03-18T14:02:13.919Z",
+              "updatedAt": "2024-03-18T14:02:13.919Z",
+              "publishedAt": "2024-03-18T14:02:13.914Z",
+              "user": {
+                "data": {
+                  "id": 1,
+                  "attributes": {
+                    "username": "Evandro",
+                    "email": "evandro@gmail.com",
+                    "provider": "local",
+                    "confirmed": true,
+                    "blocked": false,
+                    "createdAt": "2024-03-09T00:18:03.170Z",
+                    "updatedAt": "2024-04-08T01:57:08.475Z"
+                  }
+                }
+              },
+              "product": {
+                "data": {
+                  "id": 1,
+                  "attributes": {
+                    "name": "camiseta penalty x",
+                    "slug": "camiseta-penalty-x",
+                    "description": "Camisa em microfibra de poliéster com logo na parte frontal da peça. Possui tecnologia Dry One, que proporciona rápida secagem rápida e ótima absorção de suor. Composição: 100% POLIÉSTER.",
+                    "createdAt": "2024-03-10T23:04:41.265Z",
+                    "updatedAt": "2024-03-10T23:04:43.013Z",
+                    "publishedAt": "2024-03-10T23:04:43.010Z",
+                    "details": "<ul><li><span style=\"color:rgb(15,17,17);\"><strong>Dimensões do produto</strong> ‏ : ‎ 10 x 20 x 30 cm; 150 g</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Fabricante</strong> ‏ : ‎ Penalty</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>ASIN</strong> ‏ : ‎ B08W68PS8C</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Número do modelo</strong> ‏ : ‎ 3106039000-P</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Departamento</strong> ‏ : ‎ Masculino</span></li></ul>",
+                    "price": 59.9,
+                    "discount": 20
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "wishlists": {
+        "data": []
+      }
+    }
+  },
+  "color": "black",
+  "size": "medium",
+  "quantity": 1,
+  "amount": 47.92
+}
