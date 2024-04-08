@@ -31,9 +31,6 @@ export default {
       ],
     },
   },
-  parameters: {
-    layout: 'fullscreen',
-  },
 } as Meta;
 
 export const Default: StoryFn<ColorsProps> = (args) => <Colors {...args} />;

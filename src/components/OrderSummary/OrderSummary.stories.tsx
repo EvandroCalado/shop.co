@@ -6,3 +6,12 @@ export default {
 };
 
 export const Default = () => <OrderSummary />;
+
+Default.parameters = {
+  nextjs: {
+    appDirectory: true,
+    navigation: {
+      pathname: '/login',
+    },
+  },
+};

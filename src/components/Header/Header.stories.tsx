@@ -10,3 +10,14 @@ export default {
 } as Meta;
 
 export const Default = () => <Header />;
+
+Default.parameters = {
+  nextjs: {
+    appDirectory: true,
+    navigation: {
+      query: {
+        q: 'test',
+      },
+    },
+  },
+};

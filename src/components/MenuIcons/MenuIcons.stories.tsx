@@ -7,3 +7,12 @@ export default {
 } as Meta;
 
 export const Default = () => <MenuIcons />;
+
+Default.parameters = {
+  nextjs: {
+    appDirectory: true,
+    navigation: {
+      pathname: '/wishlist',
+    },
+  },
+};

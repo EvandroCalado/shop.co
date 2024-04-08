@@ -7,3 +7,14 @@ export default {
 } as Meta;
 
 export const Default = () => <Search />;
+
+Default.parameters = {
+  nextjs: {
+    appDirectory: true,
+    navigation: {
+      query: {
+        q: 'test',
+      },
+    },
+  },
+};
