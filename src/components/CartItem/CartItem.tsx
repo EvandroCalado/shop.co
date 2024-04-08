@@ -15,8 +15,10 @@ export interface CartItemProps {
 }
 
 export const CartItem: FC<CartItemProps> = ({ cartItem }) => {
-  const { removeFromCart, cartItems, increaseQuantity, decreaseQuantity } =
-    useCartStore();
+  const removeFromCart = useCartStore((state) => state.removeFromCart);
+  const cartItems = useCartStore((state) => state.cartItems);
+  const increaseQuantity = useCartStore((state) => state.increaseQuantity);
+  const decreaseQuantity = useCartStore((state) => state.decreaseQuantity);
 
   const { cover, name } = cartItem.product.attributes;
 
