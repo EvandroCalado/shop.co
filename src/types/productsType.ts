@@ -14,7 +14,7 @@ interface Pagination {
   total: number;
 }
 
-export interface ProductType {
+interface ProductType {
   id: number;
   attributes: Attributes10;
 }
