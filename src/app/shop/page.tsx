@@ -24,6 +24,9 @@ const Shop = () => {
   const query = useSearchParams();
   const router = useRouter();
 
+  const activeName = query.get('q');
+  const queryDressStyle = query.get('dressStyle');
+
   const [allColors, setAllColors] = useState<ColorsType>();
   const [allSizes, setAllSizes] = useState<SizesType>();
   const [allProducts, setAllProducts] = useState<ProductsType>();
@@ -34,7 +37,6 @@ const Shop = () => {
   const [activeSize, setActiveSize] = useState('');
   const [showFilters, setShowFilters] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const activeName = query.get('q');
 
   const { page, pageCount } = allProducts
     ? allProducts.meta.pagination
@@ -51,9 +53,12 @@ const Shop = () => {
   }, []);
 
   const getProducts = useCallback(async () => {
-    const products = await getAllProducts(activeName || '');
+    const products = await getAllProducts(
+      activeName || '',
+      queryDressStyle || '',
+    );
     setAllProducts(products);
-  }, [activeName]);
+  }, [activeName, queryDressStyle]);
 
   const priceToString = () => {
     if (activePrice === 0) return '';
@@ -64,11 +69,11 @@ const Shop = () => {
   const allProductsRequest = async (page = currentPage) => {
     const products = await getAllProducts(
       activeName || '',
+      activeDressStyle,
       activeClothe,
       priceToString(),
       activeColor,
       activeSize,
-      activeDressStyle,
       page,
     );
 

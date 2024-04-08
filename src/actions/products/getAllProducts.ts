@@ -3,11 +3,11 @@ import { AxiosError } from 'axios';
 
 export const getAllProducts = async (
   activeName = '',
+  activeDressStyle = '',
   activeClothe = '',
   activePrice = '',
   activeColor = '',
   activeSize = '',
-  activeDressStyle = '',
   page = 1,
 ) => {
   const populate = '?populate=deep,3';

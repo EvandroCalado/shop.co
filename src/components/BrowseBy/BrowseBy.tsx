@@ -25,7 +25,7 @@ export const BrowseBy: FC<BrowseByProps> = ({ productsByDressStyle }) => {
 
         <div className="flex flex-col items-center gap-4 md:flex-row">
           <Link
-            href={`/productsByDressStyle/${casual.slug}`}
+            href={`/shop?dressStyle=${casual.slug}`}
             className="flex h-[180px] w-full items-start justify-between overflow-hidden rounded-xl bg-white md:h-[320px] md:flex-[2]"
           >
             <Heading title={casual.name} as="h5" className="m-8 capitalize" />
@@ -42,7 +42,7 @@ export const BrowseBy: FC<BrowseByProps> = ({ productsByDressStyle }) => {
           </Link>
 
           <Link
-            href={`/productsByDressStyle/${formal.slug}`}
+            href={`/shop?dressStyle=${formal.slug}`}
             className="flex h-[180px] w-full items-start justify-between overflow-hidden rounded-xl bg-white md:h-[320px] md:flex-[3]"
           >
             <Heading title={formal.name} as="h5" className="m-8 capitalize" />
@@ -61,7 +61,7 @@ export const BrowseBy: FC<BrowseByProps> = ({ productsByDressStyle }) => {
 
         <div className="flex flex-col items-center gap-4 md:flex-row">
           <Link
-            href={`/productsByDressStyle/${gym.slug}`}
+            href={`/shop?dressStyle=${gym.slug}`}
             className="flex h-[180px] w-full items-start justify-between overflow-hidden rounded-xl bg-white md:h-[320px] md:flex-[3]"
           >
             <Heading title={gym.name} as="h5" className="m-8 capitalize" />
@@ -78,7 +78,7 @@ export const BrowseBy: FC<BrowseByProps> = ({ productsByDressStyle }) => {
           </Link>
 
           <Link
-            href={`/productsByDressStyle/${party.slug}`}
+            href={`/shop?dressStyle=${party.slug}`}
             className="flex h-[180px] w-full items-start justify-between overflow-hidden rounded-xl bg-white md:h-[320px] md:flex-[2]"
           >
             <Heading title={party.name} as="h5" className="m-8 capitalize" />
