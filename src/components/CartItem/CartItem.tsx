@@ -18,13 +18,14 @@ export const CartItem: FC<CartItemProps> = ({ cartItem }) => {
   const { removeFromCart, cartItems, increaseQuantity, decreaseQuantity } =
     useCartStore();
 
-  const { cover, name } = cartItem.product.attributes;
+  const { cover, name } = cartItem.product.data.attributes;
 
   const currentCartItem = cartItems.filter((item) => item.id === cartItem.id);
 
   const currentAmount = currentCartItem
     .reduce(
-      (total, item) => total + item.quantity * item.product.attributes.price,
+      (total, item) =>
+        total + item.quantity * item.product.data.attributes.price,
       0,
     )
     .toFixed(0);
@@ -35,8 +36,8 @@ export const CartItem: FC<CartItemProps> = ({ cartItem }) => {
         total +
         item.quantity *
           calcDiscount(
-            item.product.attributes.price,
-            item.product.attributes.discount,
+            item.product.data.attributes.price,
+            item.product.data.attributes.discount,
           ),
       0,
     )

@@ -24,18 +24,18 @@ export const OrderSummary = () => {
       acc +
       item.quantity *
         calcDiscount(
-          item.product.attributes.price,
-          item.product.attributes.discount,
+          item.product.data.attributes.price,
+          item.product.data.attributes.discount,
         )
     );
   }, 0);
 
   const subtotalWithoutDiscount = cartItems.reduce((acc, item) => {
-    return acc + item.quantity * item.product.attributes.price;
+    return acc + item.quantity * item.product.data.attributes.price;
   }, 0);
 
   const totalPercentageDiscount = cartItems.reduce((acc, item) => {
-    return acc + item.product.attributes.discount / cartItems.length;
+    return acc + item.product.data.attributes.discount / cartItems.length;
   }, 0);
 
   const totalDiscount = subtotalWithoutDiscount - subtotalWithDiscount;

@@ -11,7 +11,7 @@ export const CartList: FC<CartListProps> = ({ cartItems }) => {
     <div className="flex h-fit w-full flex-col gap-4 rounded-2xl border-[1px] border-[#f0f0f0] p-4 lg:flex-[2]">
       {cartItems.map((cartItem) => (
         <CartItem
-          key={cartItem.product.id + cartItem.color + cartItem.size}
+          key={cartItem.product.data.id + cartItem.color + cartItem.size}
           cartItem={cartItem}
         />
       ))}

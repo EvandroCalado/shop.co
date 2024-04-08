@@ -5,7 +5,7 @@ import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import { ProductType } from '@/types/productsType';
+import { ProductType } from '@/types';
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
 export interface ProductGalleryProps {
-  images: ProductType['attributes']['images'];
+  images: ProductType['data']['attributes']['images'];
 }
 
 export const ProductGallery: FC<ProductGalleryProps> = ({ images }) => {
@@ -31,7 +31,7 @@ export const ProductGallery: FC<ProductGalleryProps> = ({ images }) => {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
-        {images.data.map((image) => (
+        {images?.data?.map((image) => (
           <SwiperSlide key={image.id}>
             <div className="relative mb-4 h-[400px] rounded-2xl bg-[#f0f0f0] lg:max-w-[600px]">
               <Image

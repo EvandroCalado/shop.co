@@ -1,7 +1,7 @@
 'use client';
 
 import { useActive } from '@/hooks/useActive';
-import { ProductType } from '@/types/productsType';
+import { ProductType } from '@/types';
 import { FC } from 'react';
 import { Faq, ProductDetails, Rating } from '..';
 
@@ -14,7 +14,7 @@ export const ProductTabs: FC<ProductTabsProps> = ({ product }) => {
 
   const { active, setActive } = useActive(tabs[0]);
 
-  const { details, ratings } = product.attributes;
+  const { details, ratings } = product.data.attributes;
 
   return (
     <section className="mb-16">
