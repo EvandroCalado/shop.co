@@ -1,7 +1,8 @@
 'use client';
 
-import { usersMe } from '@/actions';
+import { AxiosHttpClientAdapter, HttpClient } from '@/adapters';
 import { Button, Heading, Layout } from '@/components';
+import { getAll } from '@/loaders';
 import { UserType } from '@/types/userType';
 import { customFetch } from '@/utils/customFetch';
 import { AxiosError } from 'axios';
@@ -20,17 +21,31 @@ const Profile = () => {
 
   const router = useRouter();
 
-  const getUser = useCallback(async () => {
-    const user = (await usersMe(session?.user.jwt as string)) as UserType;
+  const getUser = useCallback(
+    async (httpClient: HttpClient) => {
+      const user: UserType = await getAll({
+        loadAllItems: {
+          loadAll: async () =>
+            await httpClient.request({
+              url: `${process.env.NEXT_PUBLIC_API_URL}/users/me?populate=deep,2`,
+              method: 'get',
+              headers: {
+                Authorization: `Bearer ${session?.user?.jwt}`,
+              },
+            }),
+        },
+      });
 
-    if (user) {
-      setUserData(user);
-      setAvatar(user.avatar.url);
-    }
-  }, [session?.user.jwt]);
+      if (user) {
+        setUserData(user);
+        setAvatar(user.avatar.url);
+      }
+    },
+    [session?.user.jwt],
+  );
 
   useEffect(() => {
-    getUser();
+    getUser(new AxiosHttpClientAdapter());
   }, [getUser, router, session]);
 
   const handleAvatar = async (event: React.ChangeEvent<HTMLInputElement>) => {
