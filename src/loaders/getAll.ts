@@ -26,7 +26,7 @@ export const getAll = async ({ loadAllItems }: GetAllProductsProps) => {
     const response = await loadAllItems.loadAll();
 
     if (!(response.statusCode === HttpStatusCode.OK)) {
-      throw new Error('No products found');
+      throw new Error('Not found');
     }
 
     return response.body;
