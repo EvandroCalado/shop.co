@@ -1,15 +1,14 @@
 'use client';
 
-import { MoveLeft, MoveRight } from 'lucide-react';
-import { Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Heading, RatingCard } from '..';
-
 import { RatingsType } from '@/types/ratingsType';
+import { MoveLeft, MoveRight } from 'lucide-react';
 import { FC } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Heading, RatingCard } from '..';
 
 export interface RatingCarouselProps {
   ratings: RatingsType;
@@ -57,24 +56,6 @@ export const RatingCarousel: FC<RatingCarouselProps> = ({ ratings }) => {
             <RatingCard rating={rating} />
           </SwiperSlide>
         ))}
-        {/* <SwiperSlide>
-          <RatingCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <RatingCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <RatingCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <RatingCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <RatingCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <RatingCard />
-        </SwiperSlide> */}
       </Swiper>
     </section>
   );
