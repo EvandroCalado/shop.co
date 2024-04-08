@@ -10,7 +10,7 @@ exports[`<HeaderInfo /> > should render a snapshot 1`] = `
     </h4>
     <a
       class="border-b font-bold duration-150 hover:brightness-90"
-      href="/register"
+      href="/shop"
     >
       Sign Up Now
     </a>

@@ -11,7 +11,7 @@ describe('<HeaderInfo />', () => {
     ).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Sign Up Now' })).toHaveAttribute(
       'href',
-      '/register',
+      '/shop',
     );
   });
 
