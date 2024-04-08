@@ -1,0 +1,3964 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "name": "casual",
+        "slug": "casual",
+        "createdAt": "2024-03-10T21:42:23.870Z",
+        "updatedAt": "2024-03-14T12:17:46.928Z",
+        "publishedAt": "2024-03-10T21:42:24.767Z",
+        "products": {
+          "data": [
+            {
+              "id": 1,
+              "attributes": {
+                "name": "camiseta penalty x",
+                "slug": "camiseta-penalty-x",
+                "description": "Camisa em microfibra de poliéster com logo na parte frontal da peça. Possui tecnologia Dry One, que proporciona rápida secagem rápida e ótima absorção de suor. Composição: 100% POLIÉSTER.",
+                "createdAt": "2024-03-10T23:04:41.265Z",
+                "updatedAt": "2024-03-10T23:04:43.013Z",
+                "publishedAt": "2024-03-10T23:04:43.010Z",
+                "details": "<ul><li><span style=\"color:rgb(15,17,17);\"><strong>Dimensões do produto</strong> ‏ : ‎ 10 x 20 x 30 cm; 150 g</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Fabricante</strong> ‏ : ‎ Penalty</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>ASIN</strong> ‏ : ‎ B08W68PS8C</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Número do modelo</strong> ‏ : ‎ 3106039000-P</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Departamento</strong> ‏ : ‎ Masculino</span></li></ul>",
+                "price": 59.9,
+                "discount": 20,
+                "cover": {
+                  "data": {
+                    "id": 2,
+                    "attributes": {
+                      "name": "01.png",
+                      "alternativeText": null,
+                      "caption": null,
+                      "width": 569,
+                      "height": 775,
+                      "formats": {
+                        "small": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111519/small_01_0c2164794f.png",
+                          "hash": "small_01_0c2164794f",
+                          "mime": "image/png",
+                          "name": "small_01.png",
+                          "path": null,
+                          "size": 138.2,
+                          "width": 367,
+                          "height": 500,
+                          "provider_metadata": {
+                            "public_id": "small_01_0c2164794f",
+                            "resource_type": "image"
+                          }
+                        },
+                        "medium": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/medium_01_0c2164794f.png",
+                          "hash": "medium_01_0c2164794f",
+                          "mime": "image/png",
+                          "name": "medium_01.png",
+                          "path": null,
+                          "size": 265.49,
+                          "width": 551,
+                          "height": 750,
+                          "provider_metadata": {
+                            "public_id": "medium_01_0c2164794f",
+                            "resource_type": "image"
+                          }
+                        },
+                        "thumbnail": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/thumbnail_01_0c2164794f.png",
+                          "hash": "thumbnail_01_0c2164794f",
+                          "mime": "image/png",
+                          "name": "thumbnail_01.png",
+                          "path": null,
+                          "size": 20.69,
+                          "width": 115,
+                          "height": 156,
+                          "provider_metadata": {
+                            "public_id": "thumbnail_01_0c2164794f",
+                            "resource_type": "image"
+                          }
+                        }
+                      },
+                      "hash": "01_0c2164794f",
+                      "ext": ".png",
+                      "mime": "image/png",
+                      "size": 73.72,
+                      "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/01_0c2164794f.png",
+                      "previewUrl": null,
+                      "provider": "cloudinary",
+                      "provider_metadata": {
+                        "public_id": "01_0c2164794f",
+                        "resource_type": "image"
+                      },
+                      "createdAt": "2024-03-10T22:58:39.749Z",
+                      "updatedAt": "2024-03-10T22:58:39.749Z"
+                    }
+                  }
+                },
+                "images": {
+                  "data": [
+                    {
+                      "id": 2,
+                      "attributes": {
+                        "name": "01.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 775,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111519/small_01_0c2164794f.png",
+                            "hash": "small_01_0c2164794f",
+                            "mime": "image/png",
+                            "name": "small_01.png",
+                            "path": null,
+                            "size": 138.2,
+                            "width": 367,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_01_0c2164794f",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/medium_01_0c2164794f.png",
+                            "hash": "medium_01_0c2164794f",
+                            "mime": "image/png",
+                            "name": "medium_01.png",
+                            "path": null,
+                            "size": 265.49,
+                            "width": 551,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_01_0c2164794f",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/thumbnail_01_0c2164794f.png",
+                            "hash": "thumbnail_01_0c2164794f",
+                            "mime": "image/png",
+                            "name": "thumbnail_01.png",
+                            "path": null,
+                            "size": 20.69,
+                            "width": 115,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_01_0c2164794f",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "01_0c2164794f",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 73.72,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/01_0c2164794f.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "01_0c2164794f",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T22:58:39.749Z",
+                        "updatedAt": "2024-03-10T22:58:39.749Z"
+                      }
+                    },
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "02.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 767,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/small_02_007712bdac.png",
+                            "hash": "small_02_007712bdac",
+                            "mime": "image/png",
+                            "name": "small_02.png",
+                            "path": null,
+                            "size": 157.38,
+                            "width": 371,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_02_007712bdac",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111540/medium_02_007712bdac.png",
+                            "hash": "medium_02_007712bdac",
+                            "mime": "image/png",
+                            "name": "medium_02.png",
+                            "path": null,
+                            "size": 290.55,
+                            "width": 556,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_02_007712bdac",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/thumbnail_02_007712bdac.png",
+                            "hash": "thumbnail_02_007712bdac",
+                            "mime": "image/png",
+                            "name": "thumbnail_02.png",
+                            "path": null,
+                            "size": 25.35,
+                            "width": 116,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_02_007712bdac",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "02_007712bdac",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 76.28,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/02_007712bdac.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "02_007712bdac",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T22:59:01.232Z",
+                        "updatedAt": "2024-03-10T22:59:01.232Z"
+                      }
+                    },
+                    {
+                      "id": 4,
+                      "attributes": {
+                        "name": "03.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 695,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/small_03_03d908e42f.png",
+                            "hash": "small_03_03d908e42f",
+                            "mime": "image/png",
+                            "name": "small_03.png",
+                            "path": null,
+                            "size": 169.88,
+                            "width": 409,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_03_03d908e42f",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/thumbnail_03_03d908e42f.png",
+                            "hash": "thumbnail_03_03d908e42f",
+                            "mime": "image/png",
+                            "name": "thumbnail_03.png",
+                            "path": null,
+                            "size": 27.35,
+                            "width": 128,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_03_03d908e42f",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "03_03d908e42f",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 69.87,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/03_03d908e42f.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "03_03d908e42f",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T22:59:21.837Z",
+                        "updatedAt": "2024-03-10T22:59:21.837Z"
+                      }
+                    }
+                  ]
+                },
+                "categories": {
+                  "data": [
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "t shirts",
+                        "slug": "t-shirts",
+                        "createdAt": "2024-03-10T21:36:27.691Z",
+                        "updatedAt": "2024-03-10T21:37:14.439Z",
+                        "publishedAt": "2024-03-10T21:36:28.646Z"
+                      }
+                    }
+                  ]
+                },
+                "brand": {
+                  "data": {
+                    "id": 2,
+                    "attributes": {
+                      "name": "penalty",
+                      "slug": "penalty",
+                      "createdAt": "2024-03-10T23:01:25.825Z",
+                      "updatedAt": "2024-03-10T23:01:26.731Z",
+                      "publishedAt": "2024-03-10T23:01:26.728Z"
+                    }
+                  }
+                },
+                "colors": {
+                  "data": [
+                    {
+                      "id": 10,
+                      "attributes": {
+                        "name": "black",
+                        "slug": "black",
+                        "createdAt": "2024-03-10T21:41:52.063Z",
+                        "updatedAt": "2024-03-10T21:41:53.351Z",
+                        "publishedAt": "2024-03-10T21:41:53.348Z",
+                        "color": "#000000"
+                      }
+                    },
+                    {
+                      "id": 1,
+                      "attributes": {
+                        "name": "red",
+                        "slug": "red",
+                        "createdAt": "2024-03-10T21:38:23.639Z",
+                        "updatedAt": "2024-03-10T21:38:24.685Z",
+                        "publishedAt": "2024-03-10T21:38:24.683Z",
+                        "color": "#F50606"
+                      }
+                    },
+                    {
+                      "id": 2,
+                      "attributes": {
+                        "name": "green",
+                        "slug": "green",
+                        "createdAt": "2024-03-10T21:38:47.316Z",
+                        "updatedAt": "2024-03-10T21:38:48.337Z",
+                        "publishedAt": "2024-03-10T21:38:48.334Z",
+                        "color": "#00C12B"
+                      }
+                    }
+                  ]
+                },
+                "sizes": {
+                  "data": [
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "small",
+                        "slug": "small",
+                        "createdAt": "2024-03-10T21:44:56.693Z",
+                        "updatedAt": "2024-03-10T21:45:18.998Z",
+                        "publishedAt": "2024-03-10T21:44:57.671Z"
+                      }
+                    },
+                    {
+                      "id": 4,
+                      "attributes": {
+                        "name": "medium",
+                        "slug": "medium",
+                        "createdAt": "2024-03-10T21:45:34.400Z",
+                        "updatedAt": "2024-03-10T21:45:35.181Z",
+                        "publishedAt": "2024-03-10T21:45:35.179Z"
+                      }
+                    },
+                    {
+                      "id": 5,
+                      "attributes": {
+                        "name": "large",
+                        "slug": "large",
+                        "createdAt": "2024-03-10T21:45:46.922Z",
+                        "updatedAt": "2024-03-10T21:45:47.654Z",
+                        "publishedAt": "2024-03-10T21:45:47.652Z"
+                      }
+                    }
+                  ]
+                },
+                "tag": {
+                  "data": {
+                    "id": 3,
+                    "attributes": {
+                      "name": "on sale",
+                      "slug": "on-sale",
+                      "createdAt": "2024-03-10T21:47:37.714Z",
+                      "updatedAt": "2024-03-10T21:47:38.557Z",
+                      "publishedAt": "2024-03-10T21:47:38.555Z"
+                    }
+                  }
+                },
+                "dress_style": {
+                  "data": {
+                    "id": 1,
+                    "attributes": {
+                      "name": "casual",
+                      "slug": "casual",
+                      "createdAt": "2024-03-10T21:42:23.870Z",
+                      "updatedAt": "2024-03-14T12:17:46.928Z",
+                      "publishedAt": "2024-03-10T21:42:24.767Z"
+                    }
+                  }
+                },
+                "ratings": {
+                  "data": [
+                    {
+                      "id": 2,
+                      "attributes": {
+                        "rate": "five",
+                        "avaliation": "Just tried out T-Shirt from shop.co, and I'm impressed! The design is stylish, the fabric feels luxurious, and it fits like a dream. Definitely worth the investment. Check it out! ",
+                        "createdAt": "2024-03-18T14:02:13.919Z",
+                        "updatedAt": "2024-03-18T14:02:13.919Z",
+                        "publishedAt": "2024-03-18T14:02:13.914Z"
+                      }
+                    }
+                  ]
+                },
+                "wishlists": {
+                  "data": []
+                }
+              }
+            },
+            {
+              "id": 6,
+              "attributes": {
+                "name": "camiseta penalty x 2",
+                "slug": "camiseta-penalty-x-2",
+                "description": "Camisa em microfibra de poliéster com logo na parte frontal da peça. Possui tecnologia Dry One, que proporciona rápida secagem rápida e ótima absorção de suor. Composição: 100% POLIÉSTER.",
+                "createdAt": "2024-03-11T02:09:31.724Z",
+                "updatedAt": "2024-03-11T02:09:32.897Z",
+                "publishedAt": "2024-03-11T02:09:32.894Z",
+                "details": "<ul><li><span style=\"color:rgb(15,17,17);\"><strong>Dimensões do produto</strong> ‏ : ‎ 10 x 20 x 30 cm; 150 g</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Fabricante</strong> ‏ : ‎ Penalty</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>ASIN</strong> ‏ : ‎ B08W68PS8C</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Número do modelo</strong> ‏ : ‎ 3106039000-P</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Departamento</strong> ‏ : ‎ Masculino</span></li></ul>",
+                "price": 59.9,
+                "discount": 20,
+                "cover": {
+                  "data": {
+                    "id": 2,
+                    "attributes": {
+                      "name": "01.png",
+                      "alternativeText": null,
+                      "caption": null,
+                      "width": 569,
+                      "height": 775,
+                      "formats": {
+                        "small": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111519/small_01_0c2164794f.png",
+                          "hash": "small_01_0c2164794f",
+                          "mime": "image/png",
+                          "name": "small_01.png",
+                          "path": null,
+                          "size": 138.2,
+                          "width": 367,
+                          "height": 500,
+                          "provider_metadata": {
+                            "public_id": "small_01_0c2164794f",
+                            "resource_type": "image"
+                          }
+                        },
+                        "medium": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/medium_01_0c2164794f.png",
+                          "hash": "medium_01_0c2164794f",
+                          "mime": "image/png",
+                          "name": "medium_01.png",
+                          "path": null,
+                          "size": 265.49,
+                          "width": 551,
+                          "height": 750,
+                          "provider_metadata": {
+                            "public_id": "medium_01_0c2164794f",
+                            "resource_type": "image"
+                          }
+                        },
+                        "thumbnail": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/thumbnail_01_0c2164794f.png",
+                          "hash": "thumbnail_01_0c2164794f",
+                          "mime": "image/png",
+                          "name": "thumbnail_01.png",
+                          "path": null,
+                          "size": 20.69,
+                          "width": 115,
+                          "height": 156,
+                          "provider_metadata": {
+                            "public_id": "thumbnail_01_0c2164794f",
+                            "resource_type": "image"
+                          }
+                        }
+                      },
+                      "hash": "01_0c2164794f",
+                      "ext": ".png",
+                      "mime": "image/png",
+                      "size": 73.72,
+                      "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/01_0c2164794f.png",
+                      "previewUrl": null,
+                      "provider": "cloudinary",
+                      "provider_metadata": {
+                        "public_id": "01_0c2164794f",
+                        "resource_type": "image"
+                      },
+                      "createdAt": "2024-03-10T22:58:39.749Z",
+                      "updatedAt": "2024-03-10T22:58:39.749Z"
+                    }
+                  }
+                },
+                "images": {
+                  "data": [
+                    {
+                      "id": 2,
+                      "attributes": {
+                        "name": "01.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 775,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111519/small_01_0c2164794f.png",
+                            "hash": "small_01_0c2164794f",
+                            "mime": "image/png",
+                            "name": "small_01.png",
+                            "path": null,
+                            "size": 138.2,
+                            "width": 367,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_01_0c2164794f",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/medium_01_0c2164794f.png",
+                            "hash": "medium_01_0c2164794f",
+                            "mime": "image/png",
+                            "name": "medium_01.png",
+                            "path": null,
+                            "size": 265.49,
+                            "width": 551,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_01_0c2164794f",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/thumbnail_01_0c2164794f.png",
+                            "hash": "thumbnail_01_0c2164794f",
+                            "mime": "image/png",
+                            "name": "thumbnail_01.png",
+                            "path": null,
+                            "size": 20.69,
+                            "width": 115,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_01_0c2164794f",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "01_0c2164794f",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 73.72,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/01_0c2164794f.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "01_0c2164794f",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T22:58:39.749Z",
+                        "updatedAt": "2024-03-10T22:58:39.749Z"
+                      }
+                    },
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "02.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 767,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/small_02_007712bdac.png",
+                            "hash": "small_02_007712bdac",
+                            "mime": "image/png",
+                            "name": "small_02.png",
+                            "path": null,
+                            "size": 157.38,
+                            "width": 371,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_02_007712bdac",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111540/medium_02_007712bdac.png",
+                            "hash": "medium_02_007712bdac",
+                            "mime": "image/png",
+                            "name": "medium_02.png",
+                            "path": null,
+                            "size": 290.55,
+                            "width": 556,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_02_007712bdac",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/thumbnail_02_007712bdac.png",
+                            "hash": "thumbnail_02_007712bdac",
+                            "mime": "image/png",
+                            "name": "thumbnail_02.png",
+                            "path": null,
+                            "size": 25.35,
+                            "width": 116,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_02_007712bdac",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "02_007712bdac",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 76.28,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/02_007712bdac.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "02_007712bdac",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T22:59:01.232Z",
+                        "updatedAt": "2024-03-10T22:59:01.232Z"
+                      }
+                    },
+                    {
+                      "id": 4,
+                      "attributes": {
+                        "name": "03.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 695,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/small_03_03d908e42f.png",
+                            "hash": "small_03_03d908e42f",
+                            "mime": "image/png",
+                            "name": "small_03.png",
+                            "path": null,
+                            "size": 169.88,
+                            "width": 409,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_03_03d908e42f",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/thumbnail_03_03d908e42f.png",
+                            "hash": "thumbnail_03_03d908e42f",
+                            "mime": "image/png",
+                            "name": "thumbnail_03.png",
+                            "path": null,
+                            "size": 27.35,
+                            "width": 128,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_03_03d908e42f",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "03_03d908e42f",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 69.87,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/03_03d908e42f.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "03_03d908e42f",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T22:59:21.837Z",
+                        "updatedAt": "2024-03-10T22:59:21.837Z"
+                      }
+                    }
+                  ]
+                },
+                "categories": {
+                  "data": [
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "t shirts",
+                        "slug": "t-shirts",
+                        "createdAt": "2024-03-10T21:36:27.691Z",
+                        "updatedAt": "2024-03-10T21:37:14.439Z",
+                        "publishedAt": "2024-03-10T21:36:28.646Z"
+                      }
+                    }
+                  ]
+                },
+                "brand": {
+                  "data": {
+                    "id": 2,
+                    "attributes": {
+                      "name": "penalty",
+                      "slug": "penalty",
+                      "createdAt": "2024-03-10T23:01:25.825Z",
+                      "updatedAt": "2024-03-10T23:01:26.731Z",
+                      "publishedAt": "2024-03-10T23:01:26.728Z"
+                    }
+                  }
+                },
+                "colors": {
+                  "data": [
+                    {
+                      "id": 10,
+                      "attributes": {
+                        "name": "black",
+                        "slug": "black",
+                        "createdAt": "2024-03-10T21:41:52.063Z",
+                        "updatedAt": "2024-03-10T21:41:53.351Z",
+                        "publishedAt": "2024-03-10T21:41:53.348Z",
+                        "color": "#000000"
+                      }
+                    },
+                    {
+                      "id": 1,
+                      "attributes": {
+                        "name": "red",
+                        "slug": "red",
+                        "createdAt": "2024-03-10T21:38:23.639Z",
+                        "updatedAt": "2024-03-10T21:38:24.685Z",
+                        "publishedAt": "2024-03-10T21:38:24.683Z",
+                        "color": "#F50606"
+                      }
+                    },
+                    {
+                      "id": 2,
+                      "attributes": {
+                        "name": "green",
+                        "slug": "green",
+                        "createdAt": "2024-03-10T21:38:47.316Z",
+                        "updatedAt": "2024-03-10T21:38:48.337Z",
+                        "publishedAt": "2024-03-10T21:38:48.334Z",
+                        "color": "#00C12B"
+                      }
+                    }
+                  ]
+                },
+                "sizes": {
+                  "data": [
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "small",
+                        "slug": "small",
+                        "createdAt": "2024-03-10T21:44:56.693Z",
+                        "updatedAt": "2024-03-10T21:45:18.998Z",
+                        "publishedAt": "2024-03-10T21:44:57.671Z"
+                      }
+                    },
+                    {
+                      "id": 4,
+                      "attributes": {
+                        "name": "medium",
+                        "slug": "medium",
+                        "createdAt": "2024-03-10T21:45:34.400Z",
+                        "updatedAt": "2024-03-10T21:45:35.181Z",
+                        "publishedAt": "2024-03-10T21:45:35.179Z"
+                      }
+                    },
+                    {
+                      "id": 5,
+                      "attributes": {
+                        "name": "large",
+                        "slug": "large",
+                        "createdAt": "2024-03-10T21:45:46.922Z",
+                        "updatedAt": "2024-03-10T21:45:47.654Z",
+                        "publishedAt": "2024-03-10T21:45:47.652Z"
+                      }
+                    }
+                  ]
+                },
+                "tag": {
+                  "data": {
+                    "id": 3,
+                    "attributes": {
+                      "name": "on sale",
+                      "slug": "on-sale",
+                      "createdAt": "2024-03-10T21:47:37.714Z",
+                      "updatedAt": "2024-03-10T21:47:38.557Z",
+                      "publishedAt": "2024-03-10T21:47:38.555Z"
+                    }
+                  }
+                },
+                "dress_style": {
+                  "data": {
+                    "id": 1,
+                    "attributes": {
+                      "name": "casual",
+                      "slug": "casual",
+                      "createdAt": "2024-03-10T21:42:23.870Z",
+                      "updatedAt": "2024-03-14T12:17:46.928Z",
+                      "publishedAt": "2024-03-10T21:42:24.767Z"
+                    }
+                  }
+                },
+                "ratings": {
+                  "data": []
+                },
+                "wishlists": {
+                  "data": [
+                    {
+                      "id": 22,
+                      "attributes": {
+                        "createdAt": "2024-04-04T23:08:16.848Z",
+                        "updatedAt": "2024-04-04T23:08:16.848Z",
+                        "publishedAt": "2024-04-04T23:08:16.844Z"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 7,
+              "attributes": {
+                "name": "camiseta penalty x 3",
+                "slug": "camiseta-penalty-x-3",
+                "description": "Camisa em microfibra de poliéster com logo na parte frontal da peça. Possui tecnologia Dry One, que proporciona rápida secagem rápida e ótima absorção de suor. Composição: 100% POLIÉSTER.",
+                "createdAt": "2024-03-11T02:09:46.939Z",
+                "updatedAt": "2024-03-11T02:09:47.967Z",
+                "publishedAt": "2024-03-11T02:09:47.964Z",
+                "details": "<ul><li><span style=\"color:rgb(15,17,17);\"><strong>Dimensões do produto</strong> ‏ : ‎ 10 x 20 x 30 cm; 150 g</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Fabricante</strong> ‏ : ‎ Penalty</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>ASIN</strong> ‏ : ‎ B08W68PS8C</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Número do modelo</strong> ‏ : ‎ 3106039000-P</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Departamento</strong> ‏ : ‎ Masculino</span></li></ul>",
+                "price": 59.9,
+                "discount": 20,
+                "cover": {
+                  "data": {
+                    "id": 2,
+                    "attributes": {
+                      "name": "01.png",
+                      "alternativeText": null,
+                      "caption": null,
+                      "width": 569,
+                      "height": 775,
+                      "formats": {
+                        "small": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111519/small_01_0c2164794f.png",
+                          "hash": "small_01_0c2164794f",
+                          "mime": "image/png",
+                          "name": "small_01.png",
+                          "path": null,
+                          "size": 138.2,
+                          "width": 367,
+                          "height": 500,
+                          "provider_metadata": {
+                            "public_id": "small_01_0c2164794f",
+                            "resource_type": "image"
+                          }
+                        },
+                        "medium": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/medium_01_0c2164794f.png",
+                          "hash": "medium_01_0c2164794f",
+                          "mime": "image/png",
+                          "name": "medium_01.png",
+                          "path": null,
+                          "size": 265.49,
+                          "width": 551,
+                          "height": 750,
+                          "provider_metadata": {
+                            "public_id": "medium_01_0c2164794f",
+                            "resource_type": "image"
+                          }
+                        },
+                        "thumbnail": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/thumbnail_01_0c2164794f.png",
+                          "hash": "thumbnail_01_0c2164794f",
+                          "mime": "image/png",
+                          "name": "thumbnail_01.png",
+                          "path": null,
+                          "size": 20.69,
+                          "width": 115,
+                          "height": 156,
+                          "provider_metadata": {
+                            "public_id": "thumbnail_01_0c2164794f",
+                            "resource_type": "image"
+                          }
+                        }
+                      },
+                      "hash": "01_0c2164794f",
+                      "ext": ".png",
+                      "mime": "image/png",
+                      "size": 73.72,
+                      "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/01_0c2164794f.png",
+                      "previewUrl": null,
+                      "provider": "cloudinary",
+                      "provider_metadata": {
+                        "public_id": "01_0c2164794f",
+                        "resource_type": "image"
+                      },
+                      "createdAt": "2024-03-10T22:58:39.749Z",
+                      "updatedAt": "2024-03-10T22:58:39.749Z"
+                    }
+                  }
+                },
+                "images": {
+                  "data": [
+                    {
+                      "id": 2,
+                      "attributes": {
+                        "name": "01.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 775,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111519/small_01_0c2164794f.png",
+                            "hash": "small_01_0c2164794f",
+                            "mime": "image/png",
+                            "name": "small_01.png",
+                            "path": null,
+                            "size": 138.2,
+                            "width": 367,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_01_0c2164794f",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/medium_01_0c2164794f.png",
+                            "hash": "medium_01_0c2164794f",
+                            "mime": "image/png",
+                            "name": "medium_01.png",
+                            "path": null,
+                            "size": 265.49,
+                            "width": 551,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_01_0c2164794f",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/thumbnail_01_0c2164794f.png",
+                            "hash": "thumbnail_01_0c2164794f",
+                            "mime": "image/png",
+                            "name": "thumbnail_01.png",
+                            "path": null,
+                            "size": 20.69,
+                            "width": 115,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_01_0c2164794f",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "01_0c2164794f",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 73.72,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/01_0c2164794f.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "01_0c2164794f",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T22:58:39.749Z",
+                        "updatedAt": "2024-03-10T22:58:39.749Z"
+                      }
+                    },
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "02.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 767,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/small_02_007712bdac.png",
+                            "hash": "small_02_007712bdac",
+                            "mime": "image/png",
+                            "name": "small_02.png",
+                            "path": null,
+                            "size": 157.38,
+                            "width": 371,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_02_007712bdac",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111540/medium_02_007712bdac.png",
+                            "hash": "medium_02_007712bdac",
+                            "mime": "image/png",
+                            "name": "medium_02.png",
+                            "path": null,
+                            "size": 290.55,
+                            "width": 556,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_02_007712bdac",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/thumbnail_02_007712bdac.png",
+                            "hash": "thumbnail_02_007712bdac",
+                            "mime": "image/png",
+                            "name": "thumbnail_02.png",
+                            "path": null,
+                            "size": 25.35,
+                            "width": 116,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_02_007712bdac",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "02_007712bdac",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 76.28,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/02_007712bdac.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "02_007712bdac",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T22:59:01.232Z",
+                        "updatedAt": "2024-03-10T22:59:01.232Z"
+                      }
+                    },
+                    {
+                      "id": 4,
+                      "attributes": {
+                        "name": "03.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 695,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/small_03_03d908e42f.png",
+                            "hash": "small_03_03d908e42f",
+                            "mime": "image/png",
+                            "name": "small_03.png",
+                            "path": null,
+                            "size": 169.88,
+                            "width": 409,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_03_03d908e42f",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/thumbnail_03_03d908e42f.png",
+                            "hash": "thumbnail_03_03d908e42f",
+                            "mime": "image/png",
+                            "name": "thumbnail_03.png",
+                            "path": null,
+                            "size": 27.35,
+                            "width": 128,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_03_03d908e42f",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "03_03d908e42f",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 69.87,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/03_03d908e42f.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "03_03d908e42f",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T22:59:21.837Z",
+                        "updatedAt": "2024-03-10T22:59:21.837Z"
+                      }
+                    }
+                  ]
+                },
+                "categories": {
+                  "data": [
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "t shirts",
+                        "slug": "t-shirts",
+                        "createdAt": "2024-03-10T21:36:27.691Z",
+                        "updatedAt": "2024-03-10T21:37:14.439Z",
+                        "publishedAt": "2024-03-10T21:36:28.646Z"
+                      }
+                    }
+                  ]
+                },
+                "brand": {
+                  "data": {
+                    "id": 2,
+                    "attributes": {
+                      "name": "penalty",
+                      "slug": "penalty",
+                      "createdAt": "2024-03-10T23:01:25.825Z",
+                      "updatedAt": "2024-03-10T23:01:26.731Z",
+                      "publishedAt": "2024-03-10T23:01:26.728Z"
+                    }
+                  }
+                },
+                "colors": {
+                  "data": [
+                    {
+                      "id": 10,
+                      "attributes": {
+                        "name": "black",
+                        "slug": "black",
+                        "createdAt": "2024-03-10T21:41:52.063Z",
+                        "updatedAt": "2024-03-10T21:41:53.351Z",
+                        "publishedAt": "2024-03-10T21:41:53.348Z",
+                        "color": "#000000"
+                      }
+                    },
+                    {
+                      "id": 1,
+                      "attributes": {
+                        "name": "red",
+                        "slug": "red",
+                        "createdAt": "2024-03-10T21:38:23.639Z",
+                        "updatedAt": "2024-03-10T21:38:24.685Z",
+                        "publishedAt": "2024-03-10T21:38:24.683Z",
+                        "color": "#F50606"
+                      }
+                    },
+                    {
+                      "id": 2,
+                      "attributes": {
+                        "name": "green",
+                        "slug": "green",
+                        "createdAt": "2024-03-10T21:38:47.316Z",
+                        "updatedAt": "2024-03-10T21:38:48.337Z",
+                        "publishedAt": "2024-03-10T21:38:48.334Z",
+                        "color": "#00C12B"
+                      }
+                    }
+                  ]
+                },
+                "sizes": {
+                  "data": [
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "small",
+                        "slug": "small",
+                        "createdAt": "2024-03-10T21:44:56.693Z",
+                        "updatedAt": "2024-03-10T21:45:18.998Z",
+                        "publishedAt": "2024-03-10T21:44:57.671Z"
+                      }
+                    },
+                    {
+                      "id": 4,
+                      "attributes": {
+                        "name": "medium",
+                        "slug": "medium",
+                        "createdAt": "2024-03-10T21:45:34.400Z",
+                        "updatedAt": "2024-03-10T21:45:35.181Z",
+                        "publishedAt": "2024-03-10T21:45:35.179Z"
+                      }
+                    },
+                    {
+                      "id": 5,
+                      "attributes": {
+                        "name": "large",
+                        "slug": "large",
+                        "createdAt": "2024-03-10T21:45:46.922Z",
+                        "updatedAt": "2024-03-10T21:45:47.654Z",
+                        "publishedAt": "2024-03-10T21:45:47.652Z"
+                      }
+                    }
+                  ]
+                },
+                "tag": {
+                  "data": {
+                    "id": 3,
+                    "attributes": {
+                      "name": "on sale",
+                      "slug": "on-sale",
+                      "createdAt": "2024-03-10T21:47:37.714Z",
+                      "updatedAt": "2024-03-10T21:47:38.557Z",
+                      "publishedAt": "2024-03-10T21:47:38.555Z"
+                    }
+                  }
+                },
+                "dress_style": {
+                  "data": {
+                    "id": 1,
+                    "attributes": {
+                      "name": "casual",
+                      "slug": "casual",
+                      "createdAt": "2024-03-10T21:42:23.870Z",
+                      "updatedAt": "2024-03-14T12:17:46.928Z",
+                      "publishedAt": "2024-03-10T21:42:24.767Z"
+                    }
+                  }
+                },
+                "ratings": {
+                  "data": []
+                },
+                "wishlists": {
+                  "data": [
+                    {
+                      "id": 26,
+                      "attributes": {
+                        "createdAt": "2024-04-06T21:19:42.213Z",
+                        "updatedAt": "2024-04-06T21:19:42.213Z",
+                        "publishedAt": "2024-04-06T21:19:42.207Z"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 8,
+              "attributes": {
+                "name": "camiseta penalty x 4",
+                "slug": "camiseta-penalty-x-4",
+                "description": "Camisa em microfibra de poliéster com logo na parte frontal da peça. Possui tecnologia Dry One, que proporciona rápida secagem rápida e ótima absorção de suor. Composição: 100% POLIÉSTER.",
+                "createdAt": "2024-03-11T02:10:01.027Z",
+                "updatedAt": "2024-03-11T02:10:01.950Z",
+                "publishedAt": "2024-03-11T02:10:01.944Z",
+                "details": "<ul><li><span style=\"color:rgb(15,17,17);\"><strong>Dimensões do produto</strong> ‏ : ‎ 10 x 20 x 30 cm; 150 g</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Fabricante</strong> ‏ : ‎ Penalty</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>ASIN</strong> ‏ : ‎ B08W68PS8C</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Número do modelo</strong> ‏ : ‎ 3106039000-P</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Departamento</strong> ‏ : ‎ Masculino</span></li></ul>",
+                "price": 59.9,
+                "discount": 20,
+                "cover": {
+                  "data": {
+                    "id": 2,
+                    "attributes": {
+                      "name": "01.png",
+                      "alternativeText": null,
+                      "caption": null,
+                      "width": 569,
+                      "height": 775,
+                      "formats": {
+                        "small": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111519/small_01_0c2164794f.png",
+                          "hash": "small_01_0c2164794f",
+                          "mime": "image/png",
+                          "name": "small_01.png",
+                          "path": null,
+                          "size": 138.2,
+                          "width": 367,
+                          "height": 500,
+                          "provider_metadata": {
+                            "public_id": "small_01_0c2164794f",
+                            "resource_type": "image"
+                          }
+                        },
+                        "medium": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/medium_01_0c2164794f.png",
+                          "hash": "medium_01_0c2164794f",
+                          "mime": "image/png",
+                          "name": "medium_01.png",
+                          "path": null,
+                          "size": 265.49,
+                          "width": 551,
+                          "height": 750,
+                          "provider_metadata": {
+                            "public_id": "medium_01_0c2164794f",
+                            "resource_type": "image"
+                          }
+                        },
+                        "thumbnail": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/thumbnail_01_0c2164794f.png",
+                          "hash": "thumbnail_01_0c2164794f",
+                          "mime": "image/png",
+                          "name": "thumbnail_01.png",
+                          "path": null,
+                          "size": 20.69,
+                          "width": 115,
+                          "height": 156,
+                          "provider_metadata": {
+                            "public_id": "thumbnail_01_0c2164794f",
+                            "resource_type": "image"
+                          }
+                        }
+                      },
+                      "hash": "01_0c2164794f",
+                      "ext": ".png",
+                      "mime": "image/png",
+                      "size": 73.72,
+                      "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/01_0c2164794f.png",
+                      "previewUrl": null,
+                      "provider": "cloudinary",
+                      "provider_metadata": {
+                        "public_id": "01_0c2164794f",
+                        "resource_type": "image"
+                      },
+                      "createdAt": "2024-03-10T22:58:39.749Z",
+                      "updatedAt": "2024-03-10T22:58:39.749Z"
+                    }
+                  }
+                },
+                "images": {
+                  "data": [
+                    {
+                      "id": 2,
+                      "attributes": {
+                        "name": "01.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 775,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111519/small_01_0c2164794f.png",
+                            "hash": "small_01_0c2164794f",
+                            "mime": "image/png",
+                            "name": "small_01.png",
+                            "path": null,
+                            "size": 138.2,
+                            "width": 367,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_01_0c2164794f",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/medium_01_0c2164794f.png",
+                            "hash": "medium_01_0c2164794f",
+                            "mime": "image/png",
+                            "name": "medium_01.png",
+                            "path": null,
+                            "size": 265.49,
+                            "width": 551,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_01_0c2164794f",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/thumbnail_01_0c2164794f.png",
+                            "hash": "thumbnail_01_0c2164794f",
+                            "mime": "image/png",
+                            "name": "thumbnail_01.png",
+                            "path": null,
+                            "size": 20.69,
+                            "width": 115,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_01_0c2164794f",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "01_0c2164794f",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 73.72,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111518/01_0c2164794f.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "01_0c2164794f",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T22:58:39.749Z",
+                        "updatedAt": "2024-03-10T22:58:39.749Z"
+                      }
+                    },
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "02.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 767,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/small_02_007712bdac.png",
+                            "hash": "small_02_007712bdac",
+                            "mime": "image/png",
+                            "name": "small_02.png",
+                            "path": null,
+                            "size": 157.38,
+                            "width": 371,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_02_007712bdac",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111540/medium_02_007712bdac.png",
+                            "hash": "medium_02_007712bdac",
+                            "mime": "image/png",
+                            "name": "medium_02.png",
+                            "path": null,
+                            "size": 290.55,
+                            "width": 556,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_02_007712bdac",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/thumbnail_02_007712bdac.png",
+                            "hash": "thumbnail_02_007712bdac",
+                            "mime": "image/png",
+                            "name": "thumbnail_02.png",
+                            "path": null,
+                            "size": 25.35,
+                            "width": 116,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_02_007712bdac",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "02_007712bdac",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 76.28,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111539/02_007712bdac.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "02_007712bdac",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T22:59:01.232Z",
+                        "updatedAt": "2024-03-10T22:59:01.232Z"
+                      }
+                    },
+                    {
+                      "id": 4,
+                      "attributes": {
+                        "name": "03.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 695,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/small_03_03d908e42f.png",
+                            "hash": "small_03_03d908e42f",
+                            "mime": "image/png",
+                            "name": "small_03.png",
+                            "path": null,
+                            "size": 169.88,
+                            "width": 409,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_03_03d908e42f",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/thumbnail_03_03d908e42f.png",
+                            "hash": "thumbnail_03_03d908e42f",
+                            "mime": "image/png",
+                            "name": "thumbnail_03.png",
+                            "path": null,
+                            "size": 27.35,
+                            "width": 128,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_03_03d908e42f",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "03_03d908e42f",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 69.87,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710111560/03_03d908e42f.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "03_03d908e42f",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T22:59:21.837Z",
+                        "updatedAt": "2024-03-10T22:59:21.837Z"
+                      }
+                    }
+                  ]
+                },
+                "categories": {
+                  "data": [
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "t shirts",
+                        "slug": "t-shirts",
+                        "createdAt": "2024-03-10T21:36:27.691Z",
+                        "updatedAt": "2024-03-10T21:37:14.439Z",
+                        "publishedAt": "2024-03-10T21:36:28.646Z"
+                      }
+                    }
+                  ]
+                },
+                "brand": {
+                  "data": {
+                    "id": 2,
+                    "attributes": {
+                      "name": "penalty",
+                      "slug": "penalty",
+                      "createdAt": "2024-03-10T23:01:25.825Z",
+                      "updatedAt": "2024-03-10T23:01:26.731Z",
+                      "publishedAt": "2024-03-10T23:01:26.728Z"
+                    }
+                  }
+                },
+                "colors": {
+                  "data": [
+                    {
+                      "id": 10,
+                      "attributes": {
+                        "name": "black",
+                        "slug": "black",
+                        "createdAt": "2024-03-10T21:41:52.063Z",
+                        "updatedAt": "2024-03-10T21:41:53.351Z",
+                        "publishedAt": "2024-03-10T21:41:53.348Z",
+                        "color": "#000000"
+                      }
+                    },
+                    {
+                      "id": 1,
+                      "attributes": {
+                        "name": "red",
+                        "slug": "red",
+                        "createdAt": "2024-03-10T21:38:23.639Z",
+                        "updatedAt": "2024-03-10T21:38:24.685Z",
+                        "publishedAt": "2024-03-10T21:38:24.683Z",
+                        "color": "#F50606"
+                      }
+                    },
+                    {
+                      "id": 2,
+                      "attributes": {
+                        "name": "green",
+                        "slug": "green",
+                        "createdAt": "2024-03-10T21:38:47.316Z",
+                        "updatedAt": "2024-03-10T21:38:48.337Z",
+                        "publishedAt": "2024-03-10T21:38:48.334Z",
+                        "color": "#00C12B"
+                      }
+                    }
+                  ]
+                },
+                "sizes": {
+                  "data": [
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "small",
+                        "slug": "small",
+                        "createdAt": "2024-03-10T21:44:56.693Z",
+                        "updatedAt": "2024-03-10T21:45:18.998Z",
+                        "publishedAt": "2024-03-10T21:44:57.671Z"
+                      }
+                    },
+                    {
+                      "id": 4,
+                      "attributes": {
+                        "name": "medium",
+                        "slug": "medium",
+                        "createdAt": "2024-03-10T21:45:34.400Z",
+                        "updatedAt": "2024-03-10T21:45:35.181Z",
+                        "publishedAt": "2024-03-10T21:45:35.179Z"
+                      }
+                    },
+                    {
+                      "id": 5,
+                      "attributes": {
+                        "name": "large",
+                        "slug": "large",
+                        "createdAt": "2024-03-10T21:45:46.922Z",
+                        "updatedAt": "2024-03-10T21:45:47.654Z",
+                        "publishedAt": "2024-03-10T21:45:47.652Z"
+                      }
+                    }
+                  ]
+                },
+                "tag": {
+                  "data": {
+                    "id": 3,
+                    "attributes": {
+                      "name": "on sale",
+                      "slug": "on-sale",
+                      "createdAt": "2024-03-10T21:47:37.714Z",
+                      "updatedAt": "2024-03-10T21:47:38.557Z",
+                      "publishedAt": "2024-03-10T21:47:38.555Z"
+                    }
+                  }
+                },
+                "dress_style": {
+                  "data": {
+                    "id": 1,
+                    "attributes": {
+                      "name": "casual",
+                      "slug": "casual",
+                      "createdAt": "2024-03-10T21:42:23.870Z",
+                      "updatedAt": "2024-03-14T12:17:46.928Z",
+                      "publishedAt": "2024-03-10T21:42:24.767Z"
+                    }
+                  }
+                },
+                "ratings": {
+                  "data": [
+                    {
+                      "id": 9,
+                      "attributes": {
+                        "rate": "four",
+                        "avaliation": "Just tried out T-Shirt from shop.co, and I'm impressed! The design is stylish, the fabric feels luxurious, and it fits like a dream. Definitely worth the investment. Check it out! ",
+                        "createdAt": "2024-03-18T23:50:51.726Z",
+                        "updatedAt": "2024-03-18T23:50:52.954Z",
+                        "publishedAt": "2024-03-18T23:50:52.951Z"
+                      }
+                    },
+                    {
+                      "id": 10,
+                      "attributes": {
+                        "rate": "one",
+                        "avaliation": "Just tried out T-Shirt from shop.co, and I'm impressed! The design is stylish, the fabric feels luxurious, and it fits like a dream. Definitely worth the investment. Check it out! ",
+                        "createdAt": "2024-03-19T01:36:55.496Z",
+                        "updatedAt": "2024-03-19T01:36:56.894Z",
+                        "publishedAt": "2024-03-19T01:36:56.891Z"
+                      }
+                    }
+                  ]
+                },
+                "wishlists": {
+                  "data": []
+                }
+              }
+            }
+          ]
+        },
+        "image": {
+          "data": {
+            "id": 8,
+            "attributes": {
+              "name": "casual.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 466,
+              "height": 662,
+              "formats": {
+                "small": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418658/small_casual_5caf81f192.png",
+                  "hash": "small_casual_5caf81f192",
+                  "mime": "image/png",
+                  "name": "small_casual.png",
+                  "path": null,
+                  "size": 297.39,
+                  "width": 352,
+                  "height": 500,
+                  "provider_metadata": {
+                    "public_id": "small_casual_5caf81f192",
+                    "resource_type": "image"
+                  }
+                },
+                "thumbnail": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418658/thumbnail_casual_5caf81f192.png",
+                  "hash": "thumbnail_casual_5caf81f192",
+                  "mime": "image/png",
+                  "name": "thumbnail_casual.png",
+                  "path": null,
+                  "size": 33.4,
+                  "width": 110,
+                  "height": 156,
+                  "provider_metadata": {
+                    "public_id": "thumbnail_casual_5caf81f192",
+                    "resource_type": "image"
+                  }
+                }
+              },
+              "hash": "casual_5caf81f192",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 166.52,
+              "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418658/casual_5caf81f192.png",
+              "previewUrl": null,
+              "provider": "cloudinary",
+              "provider_metadata": {
+                "public_id": "casual_5caf81f192",
+                "resource_type": "image"
+              },
+              "createdAt": "2024-03-14T12:17:39.234Z",
+              "updatedAt": "2024-03-14T12:17:39.234Z"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "name": "formal",
+        "slug": "formal",
+        "createdAt": "2024-03-10T21:42:35.506Z",
+        "updatedAt": "2024-03-14T12:18:09.171Z",
+        "publishedAt": "2024-03-10T21:42:36.217Z",
+        "products": {
+          "data": []
+        },
+        "image": {
+          "data": {
+            "id": 9,
+            "attributes": {
+              "name": "formal.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 342,
+              "height": 509,
+              "formats": {
+                "small": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418685/small_formal_706176b8e3.png",
+                  "hash": "small_formal_706176b8e3",
+                  "mime": "image/png",
+                  "name": "small_formal.png",
+                  "path": null,
+                  "size": 236.04,
+                  "width": 336,
+                  "height": 500,
+                  "provider_metadata": {
+                    "public_id": "small_formal_706176b8e3",
+                    "resource_type": "image"
+                  }
+                },
+                "thumbnail": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418684/thumbnail_formal_706176b8e3.png",
+                  "hash": "thumbnail_formal_706176b8e3",
+                  "mime": "image/png",
+                  "name": "thumbnail_formal.png",
+                  "path": null,
+                  "size": 26.3,
+                  "width": 105,
+                  "height": 156,
+                  "provider_metadata": {
+                    "public_id": "thumbnail_formal_706176b8e3",
+                    "resource_type": "image"
+                  }
+                }
+              },
+              "hash": "formal_706176b8e3",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 96.52,
+              "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418684/formal_706176b8e3.png",
+              "previewUrl": null,
+              "provider": "cloudinary",
+              "provider_metadata": {
+                "public_id": "formal_706176b8e3",
+                "resource_type": "image"
+              },
+              "createdAt": "2024-03-14T12:18:06.172Z",
+              "updatedAt": "2024-03-14T12:18:06.172Z"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "name": "gym",
+        "slug": "gym",
+        "createdAt": "2024-03-10T21:43:17.836Z",
+        "updatedAt": "2024-03-14T12:18:29.382Z",
+        "publishedAt": "2024-03-10T21:43:18.678Z",
+        "products": {
+          "data": [
+            {
+              "id": 2,
+              "attributes": {
+                "name": "camisa adidas tabela",
+                "slug": "camisa-adidas-tabela",
+                "description": "Se mantenha seco durante o dia, com a tecnologia que mantém o suor longe da pele.",
+                "createdAt": "2024-03-10T23:10:54.359Z",
+                "updatedAt": "2024-03-10T23:10:56.071Z",
+                "publishedAt": "2024-03-10T23:10:56.065Z",
+                "details": "<ul><li><span style=\"color:rgb(15,17,17);\"><strong>Descontinuado pelo fabricante</strong> ‏ : ‎ Não</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Dimensões do produto</strong> ‏ : ‎ 30 x 25 x 2 cm; 160 g</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Fabricante</strong> ‏ : ‎ Adidas</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>ASIN</strong> ‏ : ‎ B00JTT66T2</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Número do modelo</strong> ‏ : ‎ F50274</span></li></ul>",
+                "price": 119.9,
+                "discount": 30,
+                "cover": {
+                  "data": {
+                    "id": 5,
+                    "attributes": {
+                      "name": "01.png",
+                      "alternativeText": null,
+                      "caption": null,
+                      "width": 569,
+                      "height": 1015,
+                      "formats": {
+                        "large": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/large_01_9f095971bb.png",
+                          "hash": "large_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "large_01.png",
+                          "path": null,
+                          "size": 522.75,
+                          "width": 561,
+                          "height": 1000,
+                          "provider_metadata": {
+                            "public_id": "large_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        },
+                        "small": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/small_01_9f095971bb.png",
+                          "hash": "small_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "small_01.png",
+                          "path": null,
+                          "size": 172.82,
+                          "width": 280,
+                          "height": 500,
+                          "provider_metadata": {
+                            "public_id": "small_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        },
+                        "medium": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/medium_01_9f095971bb.png",
+                          "hash": "medium_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "medium_01.png",
+                          "path": null,
+                          "size": 340,
+                          "width": 420,
+                          "height": 750,
+                          "provider_metadata": {
+                            "public_id": "medium_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        },
+                        "thumbnail": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/thumbnail_01_9f095971bb.png",
+                          "hash": "thumbnail_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "thumbnail_01.png",
+                          "path": null,
+                          "size": 25.25,
+                          "width": 87,
+                          "height": 156,
+                          "provider_metadata": {
+                            "public_id": "thumbnail_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        }
+                      },
+                      "hash": "01_9f095971bb",
+                      "ext": ".png",
+                      "mime": "image/png",
+                      "size": 142.54,
+                      "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/01_9f095971bb.png",
+                      "previewUrl": null,
+                      "provider": "cloudinary",
+                      "provider_metadata": {
+                        "public_id": "01_9f095971bb",
+                        "resource_type": "image"
+                      },
+                      "createdAt": "2024-03-10T23:08:03.622Z",
+                      "updatedAt": "2024-03-10T23:08:03.622Z"
+                    }
+                  }
+                },
+                "images": {
+                  "data": [
+                    {
+                      "id": 7,
+                      "attributes": {
+                        "name": "03.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 1194,
+                        "formats": {
+                          "large": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112184/large_03_117594e614.png",
+                            "hash": "large_03_117594e614",
+                            "mime": "image/png",
+                            "name": "large_03.png",
+                            "path": null,
+                            "size": 463.66,
+                            "width": 477,
+                            "height": 1000,
+                            "provider_metadata": {
+                              "public_id": "large_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          },
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112184/small_03_117594e614.png",
+                            "hash": "small_03_117594e614",
+                            "mime": "image/png",
+                            "name": "small_03.png",
+                            "path": null,
+                            "size": 142.84,
+                            "width": 238,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112184/medium_03_117594e614.png",
+                            "hash": "medium_03_117594e614",
+                            "mime": "image/png",
+                            "name": "medium_03.png",
+                            "path": null,
+                            "size": 284.69,
+                            "width": 357,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112183/thumbnail_03_117594e614.png",
+                            "hash": "thumbnail_03_117594e614",
+                            "mime": "image/png",
+                            "name": "thumbnail_03.png",
+                            "path": null,
+                            "size": 21.06,
+                            "width": 74,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "03_117594e614",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 147.16,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112183/03_117594e614.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "03_117594e614",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T23:09:45.029Z",
+                        "updatedAt": "2024-03-10T23:09:45.029Z"
+                      }
+                    },
+                    {
+                      "id": 5,
+                      "attributes": {
+                        "name": "01.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 1015,
+                        "formats": {
+                          "large": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/large_01_9f095971bb.png",
+                            "hash": "large_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "large_01.png",
+                            "path": null,
+                            "size": 522.75,
+                            "width": 561,
+                            "height": 1000,
+                            "provider_metadata": {
+                              "public_id": "large_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          },
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/small_01_9f095971bb.png",
+                            "hash": "small_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "small_01.png",
+                            "path": null,
+                            "size": 172.82,
+                            "width": 280,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/medium_01_9f095971bb.png",
+                            "hash": "medium_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "medium_01.png",
+                            "path": null,
+                            "size": 340,
+                            "width": 420,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/thumbnail_01_9f095971bb.png",
+                            "hash": "thumbnail_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "thumbnail_01.png",
+                            "path": null,
+                            "size": 25.25,
+                            "width": 87,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "01_9f095971bb",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 142.54,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/01_9f095971bb.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "01_9f095971bb",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T23:08:03.622Z",
+                        "updatedAt": "2024-03-10T23:08:03.622Z"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "attributes": {
+                        "name": "02.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 682,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112128/small_02_16af270799.png",
+                            "hash": "small_02_16af270799",
+                            "mime": "image/png",
+                            "name": "small_02.png",
+                            "path": null,
+                            "size": 261.06,
+                            "width": 417,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_02_16af270799",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112128/thumbnail_02_16af270799.png",
+                            "hash": "thumbnail_02_16af270799",
+                            "mime": "image/png",
+                            "name": "thumbnail_02.png",
+                            "path": null,
+                            "size": 35.65,
+                            "width": 130,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_02_16af270799",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "02_16af270799",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 109.6,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112128/02_16af270799.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "02_16af270799",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T23:08:49.529Z",
+                        "updatedAt": "2024-03-10T23:08:49.529Z"
+                      }
+                    }
+                  ]
+                },
+                "categories": {
+                  "data": [
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "t shirts",
+                        "slug": "t-shirts",
+                        "createdAt": "2024-03-10T21:36:27.691Z",
+                        "updatedAt": "2024-03-10T21:37:14.439Z",
+                        "publishedAt": "2024-03-10T21:36:28.646Z"
+                      }
+                    }
+                  ]
+                },
+                "brand": {
+                  "data": {
+                    "id": 1,
+                    "attributes": {
+                      "name": "adidas",
+                      "slug": "adidas",
+                      "createdAt": "2024-03-10T21:34:13.602Z",
+                      "updatedAt": "2024-03-10T21:34:15.439Z",
+                      "publishedAt": "2024-03-10T21:34:15.436Z"
+                    }
+                  }
+                },
+                "colors": {
+                  "data": [
+                    {
+                      "id": 1,
+                      "attributes": {
+                        "name": "red",
+                        "slug": "red",
+                        "createdAt": "2024-03-10T21:38:23.639Z",
+                        "updatedAt": "2024-03-10T21:38:24.685Z",
+                        "publishedAt": "2024-03-10T21:38:24.683Z",
+                        "color": "#F50606"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "attributes": {
+                        "name": "blue",
+                        "slug": "blue",
+                        "createdAt": "2024-03-10T21:40:15.705Z",
+                        "updatedAt": "2024-03-22T23:39:28.102Z",
+                        "publishedAt": "2024-03-10T21:40:16.478Z",
+                        "color": "#063AF5"
+                      }
+                    },
+                    {
+                      "id": 7,
+                      "attributes": {
+                        "name": "purple",
+                        "slug": "purple",
+                        "createdAt": "2024-03-10T21:40:59.111Z",
+                        "updatedAt": "2024-03-10T21:40:59.948Z",
+                        "publishedAt": "2024-03-10T21:40:59.945Z",
+                        "color": "#7D06F5"
+                      }
+                    }
+                  ]
+                },
+                "sizes": {
+                  "data": [
+                    {
+                      "id": 2,
+                      "attributes": {
+                        "name": "x-small",
+                        "slug": "x-small",
+                        "createdAt": "2024-03-10T21:44:41.310Z",
+                        "updatedAt": "2024-03-10T21:44:42.093Z",
+                        "publishedAt": "2024-03-10T21:44:42.089Z"
+                      }
+                    },
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "small",
+                        "slug": "small",
+                        "createdAt": "2024-03-10T21:44:56.693Z",
+                        "updatedAt": "2024-03-10T21:45:18.998Z",
+                        "publishedAt": "2024-03-10T21:44:57.671Z"
+                      }
+                    },
+                    {
+                      "id": 4,
+                      "attributes": {
+                        "name": "medium",
+                        "slug": "medium",
+                        "createdAt": "2024-03-10T21:45:34.400Z",
+                        "updatedAt": "2024-03-10T21:45:35.181Z",
+                        "publishedAt": "2024-03-10T21:45:35.179Z"
+                      }
+                    },
+                    {
+                      "id": 5,
+                      "attributes": {
+                        "name": "large",
+                        "slug": "large",
+                        "createdAt": "2024-03-10T21:45:46.922Z",
+                        "updatedAt": "2024-03-10T21:45:47.654Z",
+                        "publishedAt": "2024-03-10T21:45:47.652Z"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "attributes": {
+                        "name": "x-large",
+                        "slug": "x-large",
+                        "createdAt": "2024-03-10T21:46:03.637Z",
+                        "updatedAt": "2024-03-10T21:46:04.381Z",
+                        "publishedAt": "2024-03-10T21:46:04.379Z"
+                      }
+                    }
+                  ]
+                },
+                "tag": {
+                  "data": {
+                    "id": 1,
+                    "attributes": {
+                      "name": "new arrivals",
+                      "slug": "new-arrivals",
+                      "createdAt": "2024-03-10T21:47:00.451Z",
+                      "updatedAt": "2024-03-10T21:47:01.261Z",
+                      "publishedAt": "2024-03-10T21:47:01.259Z"
+                    }
+                  }
+                },
+                "dress_style": {
+                  "data": {
+                    "id": 4,
+                    "attributes": {
+                      "name": "gym",
+                      "slug": "gym",
+                      "createdAt": "2024-03-10T21:43:17.836Z",
+                      "updatedAt": "2024-03-14T12:18:29.382Z",
+                      "publishedAt": "2024-03-10T21:43:18.678Z"
+                    }
+                  }
+                },
+                "ratings": {
+                  "data": []
+                },
+                "wishlists": {
+                  "data": [
+                    {
+                      "id": 4,
+                      "attributes": {
+                        "createdAt": "2024-04-04T13:38:27.817Z",
+                        "updatedAt": "2024-04-04T13:47:54.683Z",
+                        "publishedAt": "2024-04-04T13:38:27.809Z"
+                      }
+                    },
+                    {
+                      "id": 21,
+                      "attributes": {
+                        "createdAt": "2024-04-04T23:08:12.772Z",
+                        "updatedAt": "2024-04-04T23:08:12.772Z",
+                        "publishedAt": "2024-04-04T23:08:12.766Z"
+                      }
+                    },
+                    {
+                      "id": 25,
+                      "attributes": {
+                        "createdAt": "2024-04-06T21:19:37.352Z",
+                        "updatedAt": "2024-04-06T21:19:37.352Z",
+                        "publishedAt": "2024-04-06T21:19:37.348Z"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 3,
+              "attributes": {
+                "name": "camisa adidas tabela 2",
+                "slug": "camisa-adidas-tabela-2",
+                "description": "Se mantenha seco durante o dia, com a tecnologia que mantém o suor longe da pele.",
+                "createdAt": "2024-03-11T02:08:14.207Z",
+                "updatedAt": "2024-03-22T12:21:24.289Z",
+                "publishedAt": "2024-03-11T02:08:15.314Z",
+                "details": "<ul><li><span style=\"color:rgb(15,17,17);\"><strong>Descontinuado pelo fabricante</strong> ‏ : ‎ Não</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Dimensões do produto</strong> ‏ : ‎ 30 x 25 x 2 cm; 160 g</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Fabricante</strong> ‏ : ‎ Adidas</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>ASIN</strong> ‏ : ‎ B00JTT66T2</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Número do modelo</strong> ‏ : ‎ F50274</span></li></ul>",
+                "price": 119.9,
+                "discount": 30,
+                "cover": {
+                  "data": {
+                    "id": 5,
+                    "attributes": {
+                      "name": "01.png",
+                      "alternativeText": null,
+                      "caption": null,
+                      "width": 569,
+                      "height": 1015,
+                      "formats": {
+                        "large": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/large_01_9f095971bb.png",
+                          "hash": "large_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "large_01.png",
+                          "path": null,
+                          "size": 522.75,
+                          "width": 561,
+                          "height": 1000,
+                          "provider_metadata": {
+                            "public_id": "large_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        },
+                        "small": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/small_01_9f095971bb.png",
+                          "hash": "small_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "small_01.png",
+                          "path": null,
+                          "size": 172.82,
+                          "width": 280,
+                          "height": 500,
+                          "provider_metadata": {
+                            "public_id": "small_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        },
+                        "medium": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/medium_01_9f095971bb.png",
+                          "hash": "medium_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "medium_01.png",
+                          "path": null,
+                          "size": 340,
+                          "width": 420,
+                          "height": 750,
+                          "provider_metadata": {
+                            "public_id": "medium_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        },
+                        "thumbnail": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/thumbnail_01_9f095971bb.png",
+                          "hash": "thumbnail_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "thumbnail_01.png",
+                          "path": null,
+                          "size": 25.25,
+                          "width": 87,
+                          "height": 156,
+                          "provider_metadata": {
+                            "public_id": "thumbnail_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        }
+                      },
+                      "hash": "01_9f095971bb",
+                      "ext": ".png",
+                      "mime": "image/png",
+                      "size": 142.54,
+                      "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/01_9f095971bb.png",
+                      "previewUrl": null,
+                      "provider": "cloudinary",
+                      "provider_metadata": {
+                        "public_id": "01_9f095971bb",
+                        "resource_type": "image"
+                      },
+                      "createdAt": "2024-03-10T23:08:03.622Z",
+                      "updatedAt": "2024-03-10T23:08:03.622Z"
+                    }
+                  }
+                },
+                "images": {
+                  "data": [
+                    {
+                      "id": 7,
+                      "attributes": {
+                        "name": "03.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 1194,
+                        "formats": {
+                          "large": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112184/large_03_117594e614.png",
+                            "hash": "large_03_117594e614",
+                            "mime": "image/png",
+                            "name": "large_03.png",
+                            "path": null,
+                            "size": 463.66,
+                            "width": 477,
+                            "height": 1000,
+                            "provider_metadata": {
+                              "public_id": "large_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          },
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112184/small_03_117594e614.png",
+                            "hash": "small_03_117594e614",
+                            "mime": "image/png",
+                            "name": "small_03.png",
+                            "path": null,
+                            "size": 142.84,
+                            "width": 238,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112184/medium_03_117594e614.png",
+                            "hash": "medium_03_117594e614",
+                            "mime": "image/png",
+                            "name": "medium_03.png",
+                            "path": null,
+                            "size": 284.69,
+                            "width": 357,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112183/thumbnail_03_117594e614.png",
+                            "hash": "thumbnail_03_117594e614",
+                            "mime": "image/png",
+                            "name": "thumbnail_03.png",
+                            "path": null,
+                            "size": 21.06,
+                            "width": 74,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "03_117594e614",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 147.16,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112183/03_117594e614.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "03_117594e614",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T23:09:45.029Z",
+                        "updatedAt": "2024-03-10T23:09:45.029Z"
+                      }
+                    },
+                    {
+                      "id": 5,
+                      "attributes": {
+                        "name": "01.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 1015,
+                        "formats": {
+                          "large": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/large_01_9f095971bb.png",
+                            "hash": "large_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "large_01.png",
+                            "path": null,
+                            "size": 522.75,
+                            "width": 561,
+                            "height": 1000,
+                            "provider_metadata": {
+                              "public_id": "large_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          },
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/small_01_9f095971bb.png",
+                            "hash": "small_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "small_01.png",
+                            "path": null,
+                            "size": 172.82,
+                            "width": 280,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/medium_01_9f095971bb.png",
+                            "hash": "medium_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "medium_01.png",
+                            "path": null,
+                            "size": 340,
+                            "width": 420,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/thumbnail_01_9f095971bb.png",
+                            "hash": "thumbnail_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "thumbnail_01.png",
+                            "path": null,
+                            "size": 25.25,
+                            "width": 87,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "01_9f095971bb",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 142.54,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/01_9f095971bb.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "01_9f095971bb",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T23:08:03.622Z",
+                        "updatedAt": "2024-03-10T23:08:03.622Z"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "attributes": {
+                        "name": "02.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 682,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112128/small_02_16af270799.png",
+                            "hash": "small_02_16af270799",
+                            "mime": "image/png",
+                            "name": "small_02.png",
+                            "path": null,
+                            "size": 261.06,
+                            "width": 417,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_02_16af270799",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112128/thumbnail_02_16af270799.png",
+                            "hash": "thumbnail_02_16af270799",
+                            "mime": "image/png",
+                            "name": "thumbnail_02.png",
+                            "path": null,
+                            "size": 35.65,
+                            "width": 130,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_02_16af270799",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "02_16af270799",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 109.6,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112128/02_16af270799.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "02_16af270799",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T23:08:49.529Z",
+                        "updatedAt": "2024-03-10T23:08:49.529Z"
+                      }
+                    }
+                  ]
+                },
+                "categories": {
+                  "data": [
+                    {
+                      "id": 7,
+                      "attributes": {
+                        "name": "jeans",
+                        "slug": "jeans",
+                        "createdAt": "2024-03-10T21:37:40.407Z",
+                        "updatedAt": "2024-03-10T21:37:41.119Z",
+                        "publishedAt": "2024-03-10T21:37:41.116Z"
+                      }
+                    }
+                  ]
+                },
+                "brand": {
+                  "data": {
+                    "id": 1,
+                    "attributes": {
+                      "name": "adidas",
+                      "slug": "adidas",
+                      "createdAt": "2024-03-10T21:34:13.602Z",
+                      "updatedAt": "2024-03-10T21:34:15.439Z",
+                      "publishedAt": "2024-03-10T21:34:15.436Z"
+                    }
+                  }
+                },
+                "colors": {
+                  "data": [
+                    {
+                      "id": 1,
+                      "attributes": {
+                        "name": "red",
+                        "slug": "red",
+                        "createdAt": "2024-03-10T21:38:23.639Z",
+                        "updatedAt": "2024-03-10T21:38:24.685Z",
+                        "publishedAt": "2024-03-10T21:38:24.683Z",
+                        "color": "#F50606"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "attributes": {
+                        "name": "blue",
+                        "slug": "blue",
+                        "createdAt": "2024-03-10T21:40:15.705Z",
+                        "updatedAt": "2024-03-22T23:39:28.102Z",
+                        "publishedAt": "2024-03-10T21:40:16.478Z",
+                        "color": "#063AF5"
+                      }
+                    },
+                    {
+                      "id": 7,
+                      "attributes": {
+                        "name": "purple",
+                        "slug": "purple",
+                        "createdAt": "2024-03-10T21:40:59.111Z",
+                        "updatedAt": "2024-03-10T21:40:59.948Z",
+                        "publishedAt": "2024-03-10T21:40:59.945Z",
+                        "color": "#7D06F5"
+                      }
+                    }
+                  ]
+                },
+                "sizes": {
+                  "data": [
+                    {
+                      "id": 2,
+                      "attributes": {
+                        "name": "x-small",
+                        "slug": "x-small",
+                        "createdAt": "2024-03-10T21:44:41.310Z",
+                        "updatedAt": "2024-03-10T21:44:42.093Z",
+                        "publishedAt": "2024-03-10T21:44:42.089Z"
+                      }
+                    },
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "small",
+                        "slug": "small",
+                        "createdAt": "2024-03-10T21:44:56.693Z",
+                        "updatedAt": "2024-03-10T21:45:18.998Z",
+                        "publishedAt": "2024-03-10T21:44:57.671Z"
+                      }
+                    },
+                    {
+                      "id": 4,
+                      "attributes": {
+                        "name": "medium",
+                        "slug": "medium",
+                        "createdAt": "2024-03-10T21:45:34.400Z",
+                        "updatedAt": "2024-03-10T21:45:35.181Z",
+                        "publishedAt": "2024-03-10T21:45:35.179Z"
+                      }
+                    },
+                    {
+                      "id": 5,
+                      "attributes": {
+                        "name": "large",
+                        "slug": "large",
+                        "createdAt": "2024-03-10T21:45:46.922Z",
+                        "updatedAt": "2024-03-10T21:45:47.654Z",
+                        "publishedAt": "2024-03-10T21:45:47.652Z"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "attributes": {
+                        "name": "x-large",
+                        "slug": "x-large",
+                        "createdAt": "2024-03-10T21:46:03.637Z",
+                        "updatedAt": "2024-03-10T21:46:04.381Z",
+                        "publishedAt": "2024-03-10T21:46:04.379Z"
+                      }
+                    }
+                  ]
+                },
+                "tag": {
+                  "data": {
+                    "id": 1,
+                    "attributes": {
+                      "name": "new arrivals",
+                      "slug": "new-arrivals",
+                      "createdAt": "2024-03-10T21:47:00.451Z",
+                      "updatedAt": "2024-03-10T21:47:01.261Z",
+                      "publishedAt": "2024-03-10T21:47:01.259Z"
+                    }
+                  }
+                },
+                "dress_style": {
+                  "data": {
+                    "id": 4,
+                    "attributes": {
+                      "name": "gym",
+                      "slug": "gym",
+                      "createdAt": "2024-03-10T21:43:17.836Z",
+                      "updatedAt": "2024-03-14T12:18:29.382Z",
+                      "publishedAt": "2024-03-10T21:43:18.678Z"
+                    }
+                  }
+                },
+                "ratings": {
+                  "data": [
+                    {
+                      "id": 7,
+                      "attributes": {
+                        "rate": "two",
+                        "avaliation": "Just tried out T-Shirt from shop.co, and I'm impressed! The design is stylish, the fabric feels luxurious, and it fits like a dream. Definitely worth the investment. Check it out! ",
+                        "createdAt": "2024-03-18T23:50:09.427Z",
+                        "updatedAt": "2024-03-18T23:50:12.642Z",
+                        "publishedAt": "2024-03-18T23:50:12.638Z"
+                      }
+                    }
+                  ]
+                },
+                "wishlists": {
+                  "data": []
+                }
+              }
+            },
+            {
+              "id": 4,
+              "attributes": {
+                "name": "camisa adidas tabela 3",
+                "slug": "camisa-adidas-tabela-3",
+                "description": "Se mantenha seco durante o dia, com a tecnologia que mantém o suor longe da pele.",
+                "createdAt": "2024-03-11T02:08:35.344Z",
+                "updatedAt": "2024-03-22T12:21:39.019Z",
+                "publishedAt": "2024-03-11T02:08:36.479Z",
+                "details": "<ul><li><span style=\"color:rgb(15,17,17);\"><strong>Descontinuado pelo fabricante</strong> ‏ : ‎ Não</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Dimensões do produto</strong> ‏ : ‎ 30 x 25 x 2 cm; 160 g</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Fabricante</strong> ‏ : ‎ Adidas</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>ASIN</strong> ‏ : ‎ B00JTT66T2</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Número do modelo</strong> ‏ : ‎ F50274</span></li></ul>",
+                "price": 119.9,
+                "discount": 30,
+                "cover": {
+                  "data": {
+                    "id": 5,
+                    "attributes": {
+                      "name": "01.png",
+                      "alternativeText": null,
+                      "caption": null,
+                      "width": 569,
+                      "height": 1015,
+                      "formats": {
+                        "large": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/large_01_9f095971bb.png",
+                          "hash": "large_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "large_01.png",
+                          "path": null,
+                          "size": 522.75,
+                          "width": 561,
+                          "height": 1000,
+                          "provider_metadata": {
+                            "public_id": "large_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        },
+                        "small": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/small_01_9f095971bb.png",
+                          "hash": "small_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "small_01.png",
+                          "path": null,
+                          "size": 172.82,
+                          "width": 280,
+                          "height": 500,
+                          "provider_metadata": {
+                            "public_id": "small_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        },
+                        "medium": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/medium_01_9f095971bb.png",
+                          "hash": "medium_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "medium_01.png",
+                          "path": null,
+                          "size": 340,
+                          "width": 420,
+                          "height": 750,
+                          "provider_metadata": {
+                            "public_id": "medium_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        },
+                        "thumbnail": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/thumbnail_01_9f095971bb.png",
+                          "hash": "thumbnail_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "thumbnail_01.png",
+                          "path": null,
+                          "size": 25.25,
+                          "width": 87,
+                          "height": 156,
+                          "provider_metadata": {
+                            "public_id": "thumbnail_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        }
+                      },
+                      "hash": "01_9f095971bb",
+                      "ext": ".png",
+                      "mime": "image/png",
+                      "size": 142.54,
+                      "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/01_9f095971bb.png",
+                      "previewUrl": null,
+                      "provider": "cloudinary",
+                      "provider_metadata": {
+                        "public_id": "01_9f095971bb",
+                        "resource_type": "image"
+                      },
+                      "createdAt": "2024-03-10T23:08:03.622Z",
+                      "updatedAt": "2024-03-10T23:08:03.622Z"
+                    }
+                  }
+                },
+                "images": {
+                  "data": [
+                    {
+                      "id": 7,
+                      "attributes": {
+                        "name": "03.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 1194,
+                        "formats": {
+                          "large": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112184/large_03_117594e614.png",
+                            "hash": "large_03_117594e614",
+                            "mime": "image/png",
+                            "name": "large_03.png",
+                            "path": null,
+                            "size": 463.66,
+                            "width": 477,
+                            "height": 1000,
+                            "provider_metadata": {
+                              "public_id": "large_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          },
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112184/small_03_117594e614.png",
+                            "hash": "small_03_117594e614",
+                            "mime": "image/png",
+                            "name": "small_03.png",
+                            "path": null,
+                            "size": 142.84,
+                            "width": 238,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112184/medium_03_117594e614.png",
+                            "hash": "medium_03_117594e614",
+                            "mime": "image/png",
+                            "name": "medium_03.png",
+                            "path": null,
+                            "size": 284.69,
+                            "width": 357,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112183/thumbnail_03_117594e614.png",
+                            "hash": "thumbnail_03_117594e614",
+                            "mime": "image/png",
+                            "name": "thumbnail_03.png",
+                            "path": null,
+                            "size": 21.06,
+                            "width": 74,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "03_117594e614",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 147.16,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112183/03_117594e614.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "03_117594e614",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T23:09:45.029Z",
+                        "updatedAt": "2024-03-10T23:09:45.029Z"
+                      }
+                    },
+                    {
+                      "id": 5,
+                      "attributes": {
+                        "name": "01.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 1015,
+                        "formats": {
+                          "large": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/large_01_9f095971bb.png",
+                            "hash": "large_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "large_01.png",
+                            "path": null,
+                            "size": 522.75,
+                            "width": 561,
+                            "height": 1000,
+                            "provider_metadata": {
+                              "public_id": "large_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          },
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/small_01_9f095971bb.png",
+                            "hash": "small_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "small_01.png",
+                            "path": null,
+                            "size": 172.82,
+                            "width": 280,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/medium_01_9f095971bb.png",
+                            "hash": "medium_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "medium_01.png",
+                            "path": null,
+                            "size": 340,
+                            "width": 420,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/thumbnail_01_9f095971bb.png",
+                            "hash": "thumbnail_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "thumbnail_01.png",
+                            "path": null,
+                            "size": 25.25,
+                            "width": 87,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "01_9f095971bb",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 142.54,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/01_9f095971bb.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "01_9f095971bb",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T23:08:03.622Z",
+                        "updatedAt": "2024-03-10T23:08:03.622Z"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "attributes": {
+                        "name": "02.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 682,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112128/small_02_16af270799.png",
+                            "hash": "small_02_16af270799",
+                            "mime": "image/png",
+                            "name": "small_02.png",
+                            "path": null,
+                            "size": 261.06,
+                            "width": 417,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_02_16af270799",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112128/thumbnail_02_16af270799.png",
+                            "hash": "thumbnail_02_16af270799",
+                            "mime": "image/png",
+                            "name": "thumbnail_02.png",
+                            "path": null,
+                            "size": 35.65,
+                            "width": 130,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_02_16af270799",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "02_16af270799",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 109.6,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112128/02_16af270799.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "02_16af270799",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T23:08:49.529Z",
+                        "updatedAt": "2024-03-10T23:08:49.529Z"
+                      }
+                    }
+                  ]
+                },
+                "categories": {
+                  "data": [
+                    {
+                      "id": 6,
+                      "attributes": {
+                        "name": "hoodies",
+                        "slug": "hoodies",
+                        "createdAt": "2024-03-10T21:37:26.623Z",
+                        "updatedAt": "2024-03-10T21:37:27.451Z",
+                        "publishedAt": "2024-03-10T21:37:27.448Z"
+                      }
+                    }
+                  ]
+                },
+                "brand": {
+                  "data": {
+                    "id": 1,
+                    "attributes": {
+                      "name": "adidas",
+                      "slug": "adidas",
+                      "createdAt": "2024-03-10T21:34:13.602Z",
+                      "updatedAt": "2024-03-10T21:34:15.439Z",
+                      "publishedAt": "2024-03-10T21:34:15.436Z"
+                    }
+                  }
+                },
+                "colors": {
+                  "data": [
+                    {
+                      "id": 1,
+                      "attributes": {
+                        "name": "red",
+                        "slug": "red",
+                        "createdAt": "2024-03-10T21:38:23.639Z",
+                        "updatedAt": "2024-03-10T21:38:24.685Z",
+                        "publishedAt": "2024-03-10T21:38:24.683Z",
+                        "color": "#F50606"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "attributes": {
+                        "name": "blue",
+                        "slug": "blue",
+                        "createdAt": "2024-03-10T21:40:15.705Z",
+                        "updatedAt": "2024-03-22T23:39:28.102Z",
+                        "publishedAt": "2024-03-10T21:40:16.478Z",
+                        "color": "#063AF5"
+                      }
+                    },
+                    {
+                      "id": 7,
+                      "attributes": {
+                        "name": "purple",
+                        "slug": "purple",
+                        "createdAt": "2024-03-10T21:40:59.111Z",
+                        "updatedAt": "2024-03-10T21:40:59.948Z",
+                        "publishedAt": "2024-03-10T21:40:59.945Z",
+                        "color": "#7D06F5"
+                      }
+                    }
+                  ]
+                },
+                "sizes": {
+                  "data": [
+                    {
+                      "id": 2,
+                      "attributes": {
+                        "name": "x-small",
+                        "slug": "x-small",
+                        "createdAt": "2024-03-10T21:44:41.310Z",
+                        "updatedAt": "2024-03-10T21:44:42.093Z",
+                        "publishedAt": "2024-03-10T21:44:42.089Z"
+                      }
+                    },
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "small",
+                        "slug": "small",
+                        "createdAt": "2024-03-10T21:44:56.693Z",
+                        "updatedAt": "2024-03-10T21:45:18.998Z",
+                        "publishedAt": "2024-03-10T21:44:57.671Z"
+                      }
+                    },
+                    {
+                      "id": 4,
+                      "attributes": {
+                        "name": "medium",
+                        "slug": "medium",
+                        "createdAt": "2024-03-10T21:45:34.400Z",
+                        "updatedAt": "2024-03-10T21:45:35.181Z",
+                        "publishedAt": "2024-03-10T21:45:35.179Z"
+                      }
+                    },
+                    {
+                      "id": 5,
+                      "attributes": {
+                        "name": "large",
+                        "slug": "large",
+                        "createdAt": "2024-03-10T21:45:46.922Z",
+                        "updatedAt": "2024-03-10T21:45:47.654Z",
+                        "publishedAt": "2024-03-10T21:45:47.652Z"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "attributes": {
+                        "name": "x-large",
+                        "slug": "x-large",
+                        "createdAt": "2024-03-10T21:46:03.637Z",
+                        "updatedAt": "2024-03-10T21:46:04.381Z",
+                        "publishedAt": "2024-03-10T21:46:04.379Z"
+                      }
+                    }
+                  ]
+                },
+                "tag": {
+                  "data": {
+                    "id": 1,
+                    "attributes": {
+                      "name": "new arrivals",
+                      "slug": "new-arrivals",
+                      "createdAt": "2024-03-10T21:47:00.451Z",
+                      "updatedAt": "2024-03-10T21:47:01.261Z",
+                      "publishedAt": "2024-03-10T21:47:01.259Z"
+                    }
+                  }
+                },
+                "dress_style": {
+                  "data": {
+                    "id": 4,
+                    "attributes": {
+                      "name": "gym",
+                      "slug": "gym",
+                      "createdAt": "2024-03-10T21:43:17.836Z",
+                      "updatedAt": "2024-03-14T12:18:29.382Z",
+                      "publishedAt": "2024-03-10T21:43:18.678Z"
+                    }
+                  }
+                },
+                "ratings": {
+                  "data": [
+                    {
+                      "id": 8,
+                      "attributes": {
+                        "rate": "three",
+                        "avaliation": "Just tried out T-Shirt from shop.co, and I'm impressed! The design is stylish, the fabric feels luxurious, and it fits like a dream. Definitely worth the investment. Check it out! ",
+                        "createdAt": "2024-03-18T23:50:32.441Z",
+                        "updatedAt": "2024-03-18T23:50:33.914Z",
+                        "publishedAt": "2024-03-18T23:50:33.912Z"
+                      }
+                    }
+                  ]
+                },
+                "wishlists": {
+                  "data": []
+                }
+              }
+            },
+            {
+              "id": 5,
+              "attributes": {
+                "name": "camisa adidas tabela 4",
+                "slug": "camisa-adidas-tabela-4",
+                "description": "Se mantenha seco durante o dia, com a tecnologia que mantém o suor longe da pele.",
+                "createdAt": "2024-03-11T02:08:50.830Z",
+                "updatedAt": "2024-03-22T12:21:55.183Z",
+                "publishedAt": "2024-03-11T02:08:53.275Z",
+                "details": "<ul><li><span style=\"color:rgb(15,17,17);\"><strong>Descontinuado pelo fabricante</strong> ‏ : ‎ Não</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Dimensões do produto</strong> ‏ : ‎ 30 x 25 x 2 cm; 160 g</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Fabricante</strong> ‏ : ‎ Adidas</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>ASIN</strong> ‏ : ‎ B00JTT66T2</span></li><li><span style=\"color:rgb(15,17,17);\"><strong>Número do modelo</strong> ‏ : ‎ F50274</span></li></ul>",
+                "price": 119.9,
+                "discount": 30,
+                "cover": {
+                  "data": {
+                    "id": 5,
+                    "attributes": {
+                      "name": "01.png",
+                      "alternativeText": null,
+                      "caption": null,
+                      "width": 569,
+                      "height": 1015,
+                      "formats": {
+                        "large": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/large_01_9f095971bb.png",
+                          "hash": "large_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "large_01.png",
+                          "path": null,
+                          "size": 522.75,
+                          "width": 561,
+                          "height": 1000,
+                          "provider_metadata": {
+                            "public_id": "large_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        },
+                        "small": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/small_01_9f095971bb.png",
+                          "hash": "small_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "small_01.png",
+                          "path": null,
+                          "size": 172.82,
+                          "width": 280,
+                          "height": 500,
+                          "provider_metadata": {
+                            "public_id": "small_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        },
+                        "medium": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/medium_01_9f095971bb.png",
+                          "hash": "medium_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "medium_01.png",
+                          "path": null,
+                          "size": 340,
+                          "width": 420,
+                          "height": 750,
+                          "provider_metadata": {
+                            "public_id": "medium_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        },
+                        "thumbnail": {
+                          "ext": ".png",
+                          "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/thumbnail_01_9f095971bb.png",
+                          "hash": "thumbnail_01_9f095971bb",
+                          "mime": "image/png",
+                          "name": "thumbnail_01.png",
+                          "path": null,
+                          "size": 25.25,
+                          "width": 87,
+                          "height": 156,
+                          "provider_metadata": {
+                            "public_id": "thumbnail_01_9f095971bb",
+                            "resource_type": "image"
+                          }
+                        }
+                      },
+                      "hash": "01_9f095971bb",
+                      "ext": ".png",
+                      "mime": "image/png",
+                      "size": 142.54,
+                      "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/01_9f095971bb.png",
+                      "previewUrl": null,
+                      "provider": "cloudinary",
+                      "provider_metadata": {
+                        "public_id": "01_9f095971bb",
+                        "resource_type": "image"
+                      },
+                      "createdAt": "2024-03-10T23:08:03.622Z",
+                      "updatedAt": "2024-03-10T23:08:03.622Z"
+                    }
+                  }
+                },
+                "images": {
+                  "data": [
+                    {
+                      "id": 7,
+                      "attributes": {
+                        "name": "03.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 1194,
+                        "formats": {
+                          "large": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112184/large_03_117594e614.png",
+                            "hash": "large_03_117594e614",
+                            "mime": "image/png",
+                            "name": "large_03.png",
+                            "path": null,
+                            "size": 463.66,
+                            "width": 477,
+                            "height": 1000,
+                            "provider_metadata": {
+                              "public_id": "large_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          },
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112184/small_03_117594e614.png",
+                            "hash": "small_03_117594e614",
+                            "mime": "image/png",
+                            "name": "small_03.png",
+                            "path": null,
+                            "size": 142.84,
+                            "width": 238,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112184/medium_03_117594e614.png",
+                            "hash": "medium_03_117594e614",
+                            "mime": "image/png",
+                            "name": "medium_03.png",
+                            "path": null,
+                            "size": 284.69,
+                            "width": 357,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112183/thumbnail_03_117594e614.png",
+                            "hash": "thumbnail_03_117594e614",
+                            "mime": "image/png",
+                            "name": "thumbnail_03.png",
+                            "path": null,
+                            "size": 21.06,
+                            "width": 74,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_03_117594e614",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "03_117594e614",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 147.16,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112183/03_117594e614.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "03_117594e614",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T23:09:45.029Z",
+                        "updatedAt": "2024-03-10T23:09:45.029Z"
+                      }
+                    },
+                    {
+                      "id": 5,
+                      "attributes": {
+                        "name": "01.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 1015,
+                        "formats": {
+                          "large": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/large_01_9f095971bb.png",
+                            "hash": "large_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "large_01.png",
+                            "path": null,
+                            "size": 522.75,
+                            "width": 561,
+                            "height": 1000,
+                            "provider_metadata": {
+                              "public_id": "large_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          },
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/small_01_9f095971bb.png",
+                            "hash": "small_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "small_01.png",
+                            "path": null,
+                            "size": 172.82,
+                            "width": 280,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          },
+                          "medium": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/medium_01_9f095971bb.png",
+                            "hash": "medium_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "medium_01.png",
+                            "path": null,
+                            "size": 340,
+                            "width": 420,
+                            "height": 750,
+                            "provider_metadata": {
+                              "public_id": "medium_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/thumbnail_01_9f095971bb.png",
+                            "hash": "thumbnail_01_9f095971bb",
+                            "mime": "image/png",
+                            "name": "thumbnail_01.png",
+                            "path": null,
+                            "size": 25.25,
+                            "width": 87,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_01_9f095971bb",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "01_9f095971bb",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 142.54,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112082/01_9f095971bb.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "01_9f095971bb",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T23:08:03.622Z",
+                        "updatedAt": "2024-03-10T23:08:03.622Z"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "attributes": {
+                        "name": "02.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 569,
+                        "height": 682,
+                        "formats": {
+                          "small": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112128/small_02_16af270799.png",
+                            "hash": "small_02_16af270799",
+                            "mime": "image/png",
+                            "name": "small_02.png",
+                            "path": null,
+                            "size": 261.06,
+                            "width": 417,
+                            "height": 500,
+                            "provider_metadata": {
+                              "public_id": "small_02_16af270799",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".png",
+                            "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112128/thumbnail_02_16af270799.png",
+                            "hash": "thumbnail_02_16af270799",
+                            "mime": "image/png",
+                            "name": "thumbnail_02.png",
+                            "path": null,
+                            "size": 35.65,
+                            "width": 130,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_02_16af270799",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "02_16af270799",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 109.6,
+                        "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710112128/02_16af270799.png",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "02_16af270799",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2024-03-10T23:08:49.529Z",
+                        "updatedAt": "2024-03-10T23:08:49.529Z"
+                      }
+                    }
+                  ]
+                },
+                "categories": {
+                  "data": [
+                    {
+                      "id": 4,
+                      "attributes": {
+                        "name": "shorts",
+                        "slug": "shorts",
+                        "createdAt": "2024-03-10T21:36:40.404Z",
+                        "updatedAt": "2024-03-22T13:19:20.766Z",
+                        "publishedAt": "2024-03-10T21:36:41.316Z"
+                      }
+                    }
+                  ]
+                },
+                "brand": {
+                  "data": {
+                    "id": 1,
+                    "attributes": {
+                      "name": "adidas",
+                      "slug": "adidas",
+                      "createdAt": "2024-03-10T21:34:13.602Z",
+                      "updatedAt": "2024-03-10T21:34:15.439Z",
+                      "publishedAt": "2024-03-10T21:34:15.436Z"
+                    }
+                  }
+                },
+                "colors": {
+                  "data": [
+                    {
+                      "id": 1,
+                      "attributes": {
+                        "name": "red",
+                        "slug": "red",
+                        "createdAt": "2024-03-10T21:38:23.639Z",
+                        "updatedAt": "2024-03-10T21:38:24.685Z",
+                        "publishedAt": "2024-03-10T21:38:24.683Z",
+                        "color": "#F50606"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "attributes": {
+                        "name": "blue",
+                        "slug": "blue",
+                        "createdAt": "2024-03-10T21:40:15.705Z",
+                        "updatedAt": "2024-03-22T23:39:28.102Z",
+                        "publishedAt": "2024-03-10T21:40:16.478Z",
+                        "color": "#063AF5"
+                      }
+                    },
+                    {
+                      "id": 7,
+                      "attributes": {
+                        "name": "purple",
+                        "slug": "purple",
+                        "createdAt": "2024-03-10T21:40:59.111Z",
+                        "updatedAt": "2024-03-10T21:40:59.948Z",
+                        "publishedAt": "2024-03-10T21:40:59.945Z",
+                        "color": "#7D06F5"
+                      }
+                    }
+                  ]
+                },
+                "sizes": {
+                  "data": [
+                    {
+                      "id": 2,
+                      "attributes": {
+                        "name": "x-small",
+                        "slug": "x-small",
+                        "createdAt": "2024-03-10T21:44:41.310Z",
+                        "updatedAt": "2024-03-10T21:44:42.093Z",
+                        "publishedAt": "2024-03-10T21:44:42.089Z"
+                      }
+                    },
+                    {
+                      "id": 3,
+                      "attributes": {
+                        "name": "small",
+                        "slug": "small",
+                        "createdAt": "2024-03-10T21:44:56.693Z",
+                        "updatedAt": "2024-03-10T21:45:18.998Z",
+                        "publishedAt": "2024-03-10T21:44:57.671Z"
+                      }
+                    },
+                    {
+                      "id": 4,
+                      "attributes": {
+                        "name": "medium",
+                        "slug": "medium",
+                        "createdAt": "2024-03-10T21:45:34.400Z",
+                        "updatedAt": "2024-03-10T21:45:35.181Z",
+                        "publishedAt": "2024-03-10T21:45:35.179Z"
+                      }
+                    },
+                    {
+                      "id": 5,
+                      "attributes": {
+                        "name": "large",
+                        "slug": "large",
+                        "createdAt": "2024-03-10T21:45:46.922Z",
+                        "updatedAt": "2024-03-10T21:45:47.654Z",
+                        "publishedAt": "2024-03-10T21:45:47.652Z"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "attributes": {
+                        "name": "x-large",
+                        "slug": "x-large",
+                        "createdAt": "2024-03-10T21:46:03.637Z",
+                        "updatedAt": "2024-03-10T21:46:04.381Z",
+                        "publishedAt": "2024-03-10T21:46:04.379Z"
+                      }
+                    }
+                  ]
+                },
+                "tag": {
+                  "data": {
+                    "id": 1,
+                    "attributes": {
+                      "name": "new arrivals",
+                      "slug": "new-arrivals",
+                      "createdAt": "2024-03-10T21:47:00.451Z",
+                      "updatedAt": "2024-03-10T21:47:01.261Z",
+                      "publishedAt": "2024-03-10T21:47:01.259Z"
+                    }
+                  }
+                },
+                "dress_style": {
+                  "data": {
+                    "id": 4,
+                    "attributes": {
+                      "name": "gym",
+                      "slug": "gym",
+                      "createdAt": "2024-03-10T21:43:17.836Z",
+                      "updatedAt": "2024-03-14T12:18:29.382Z",
+                      "publishedAt": "2024-03-10T21:43:18.678Z"
+                    }
+                  }
+                },
+                "ratings": {
+                  "data": []
+                },
+                "wishlists": {
+                  "data": [
+                    {
+                      "id": 23,
+                      "attributes": {
+                        "createdAt": "2024-04-04T23:08:21.819Z",
+                        "updatedAt": "2024-04-04T23:08:21.819Z",
+                        "publishedAt": "2024-04-04T23:08:21.813Z"
+                      }
+                    },
+                    {
+                      "id": 27,
+                      "attributes": {
+                        "createdAt": "2024-04-06T21:19:48.649Z",
+                        "updatedAt": "2024-04-06T21:19:48.649Z",
+                        "publishedAt": "2024-04-06T21:19:48.644Z"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "image": {
+          "data": {
+            "id": 10,
+            "attributes": {
+              "name": "gym.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 466,
+              "height": 586,
+              "formats": {
+                "small": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418706/small_gym_568614a82f.png",
+                  "hash": "small_gym_568614a82f",
+                  "mime": "image/png",
+                  "name": "small_gym.png",
+                  "path": null,
+                  "size": 208.3,
+                  "width": 398,
+                  "height": 500,
+                  "provider_metadata": {
+                    "public_id": "small_gym_568614a82f",
+                    "resource_type": "image"
+                  }
+                },
+                "thumbnail": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418705/thumbnail_gym_568614a82f.png",
+                  "hash": "thumbnail_gym_568614a82f",
+                  "mime": "image/png",
+                  "name": "thumbnail_gym.png",
+                  "path": null,
+                  "size": 30.14,
+                  "width": 124,
+                  "height": 156,
+                  "provider_metadata": {
+                    "public_id": "thumbnail_gym_568614a82f",
+                    "resource_type": "image"
+                  }
+                }
+              },
+              "hash": "gym_568614a82f",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 68.61,
+              "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418705/gym_568614a82f.png",
+              "previewUrl": null,
+              "provider": "cloudinary",
+              "provider_metadata": {
+                "public_id": "gym_568614a82f",
+                "resource_type": "image"
+              },
+              "createdAt": "2024-03-14T12:18:26.467Z",
+              "updatedAt": "2024-03-14T12:18:26.467Z"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "name": "party",
+        "slug": "party",
+        "createdAt": "2024-03-10T21:42:52.294Z",
+        "updatedAt": "2024-03-14T12:18:49.518Z",
+        "publishedAt": "2024-03-10T21:43:06.438Z",
+        "products": {
+          "data": []
+        },
+        "image": {
+          "data": {
+            "id": 11,
+            "attributes": {
+              "name": "party.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 385,
+              "height": 570,
+              "formats": {
+                "small": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418725/small_party_910661a07c.png",
+                  "hash": "small_party_910661a07c",
+                  "mime": "image/png",
+                  "name": "small_party.png",
+                  "path": null,
+                  "size": 332.55,
+                  "width": 338,
+                  "height": 500,
+                  "provider_metadata": {
+                    "public_id": "small_party_910661a07c",
+                    "resource_type": "image"
+                  }
+                },
+                "thumbnail": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418725/thumbnail_party_910661a07c.png",
+                  "hash": "thumbnail_party_910661a07c",
+                  "mime": "image/png",
+                  "name": "thumbnail_party.png",
+                  "path": null,
+                  "size": 37.42,
+                  "width": 105,
+                  "height": 156,
+                  "provider_metadata": {
+                    "public_id": "thumbnail_party_910661a07c",
+                    "resource_type": "image"
+                  }
+                }
+              },
+              "hash": "party_910661a07c",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 126.48,
+              "url": "https://res.cloudinary.com/dnhsdenji/image/upload/v1710418725/party_910661a07c.png",
+              "previewUrl": null,
+              "provider": "cloudinary",
+              "provider_metadata": {
+                "public_id": "party_910661a07c",
+                "resource_type": "image"
+              },
+              "createdAt": "2024-03-14T12:18:46.510Z",
+              "updatedAt": "2024-03-14T12:18:46.510Z"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 4
+    }
+  }
+}
