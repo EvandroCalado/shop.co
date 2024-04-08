@@ -1,7 +1,8 @@
 'use client';
 
-import { getAllOrdersByUser } from '@/actions/orders/getAllOrdersByUser';
+import { AxiosHttpClientAdapter, HttpClient } from '@/adapters';
 import { Heading, Layout, Pagination } from '@/components';
+import { getAll } from '@/loaders';
 import { OrdersType } from '@/types/ordersType';
 import { calcDiscount } from '@/utils/calcDiscount';
 import { formatDate } from '@/utils/formatDate';
@@ -21,19 +22,30 @@ const Orders = () => {
     pageCount: 0,
   };
 
+  const populate = '?populate=deep,2';
+  const filters = `&filters[userId][id][$eq]=${session?.user?.id}`;
+  const sort = `&sort[createdAt]=desc`;
+  const pagination = `&pagination[page]=${currentPage}&pagination[pageSize]=6`;
+  const url = `/orders${populate}${filters}${sort}${pagination}`;
+
   const getOrdersByUser = useCallback(
-    async (page = currentPage) => {
-      const orders = await getAllOrdersByUser(
-        session?.user?.id as string,
-        page,
-      );
+    async (httpClient: HttpClient) => {
+      const orders: OrdersType = await getAll({
+        loadAllItems: {
+          loadAll: async () =>
+            await httpClient.request({
+              url: `${process.env.NEXT_PUBLIC_API_URL}${url}`,
+              method: 'get',
+            }),
+        },
+      });
       setOrders(orders);
     },
-    [currentPage, session?.user?.id],
+    [url],
   );
 
   useEffect(() => {
-    getOrdersByUser();
+    getOrdersByUser(new AxiosHttpClientAdapter());
   }, [getOrdersByUser]);
 
   if (!session) {
@@ -93,7 +105,6 @@ const Orders = () => {
         </table>
 
         <Pagination
-          allProductsRequest={() => getOrdersByUser(page)}
           page={page}
           pageCount={pageCount}
           setCurrentPage={setCurrentPage}
