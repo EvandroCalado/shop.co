@@ -1,6 +1,5 @@
 'use client';
 
-import { getProductById, getProductsByCategory } from '@/actions';
 import {
   BreadCrumb,
   Button,
@@ -15,6 +14,7 @@ import {
   RatingItem,
   Sizes,
 } from '@/components';
+import { getProductById, getProductsByCategory } from '@/loaders';
 import { useCartStore } from '@/stores/cartStore';
 import { ProductType, ProductsType } from '@/types';
 import { calcDiscount } from '@/utils/calcDiscount';

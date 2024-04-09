@@ -1,6 +1,5 @@
 'use client';
 
-import { getAllColors, getAllProducts, getAllSizes } from '@/actions';
 import {
   BreadCrumb,
   Button,
@@ -15,6 +14,7 @@ import {
   ProductsList,
   Separator,
 } from '@/components';
+import { getAllColors, getAllProducts, getAllSizes } from '@/loaders';
 import { ColorsType, ProductsType, SizesType } from '@/types';
 import { SlidersHorizontal, X } from 'lucide-react';
 import { useRouter, useSearchParams } from 'next/navigation';

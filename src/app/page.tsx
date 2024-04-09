@@ -1,9 +1,4 @@
 import {
-  getAllRatings,
-  getProductsByDressStyle,
-  getProductsByTagSlug,
-} from '@/actions';
-import {
   BrandsBar,
   BrowseBy,
   Hero,
@@ -11,6 +6,11 @@ import {
   ProductsCarousel,
   RatingCarousel,
 } from '@/components';
+import {
+  getAllRatings,
+  getProductsByDressStyle,
+  getProductsByTagSlug,
+} from '@/loaders';
 import { ProductsType } from '@/types';
 import toast from 'react-hot-toast';
 

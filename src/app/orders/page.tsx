@@ -1,7 +1,7 @@
 'use client';
 
-import { getAllOrdersByUser } from '@/actions/orders/getAllOrdersByUser';
 import { Heading, Layout, Pagination } from '@/components';
+import { getAllOrdersByUser } from '@/loaders/orders/getAllOrdersByUser';
 import { OrdersType } from '@/types/ordersType';
 import { calcDiscount } from '@/utils/calcDiscount';
 import { formatDate } from '@/utils/formatDate';

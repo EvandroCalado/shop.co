@@ -1,7 +1,7 @@
 'use client';
 
-import { usersMe } from '@/actions';
 import { Button, Heading, Layout } from '@/components';
+import { usersMe } from '@/loaders';
 import { UserType } from '@/types/userType';
 import { customFetch } from '@/utils/customFetch';
 import { AxiosError } from 'axios';

@@ -1,5 +1,5 @@
-import { getOrderById } from '@/actions';
 import { Button, Heading, Layout } from '@/components';
+import { getOrderById } from '@/loaders';
 import { CartItemProps } from '@/stores/cartStore';
 import { formatDate } from '@/utils/formatDate';
 import Image from 'next/image';
