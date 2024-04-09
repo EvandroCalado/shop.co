@@ -4,14 +4,14 @@ import { SizesType } from '@/types/sizesType';
 import { FC } from 'react';
 import { Button } from '..';
 
-export interface SizeProps {
+export interface SizesProps {
   title?: string;
   sizes: SizesType | undefined;
   activeSize: string;
   setActiveSize: (size: string) => void;
 }
 
-export const Sizes: FC<SizeProps> = ({
+export const Sizes: FC<SizesProps> = ({
   sizes,
   title,
   activeSize,
