@@ -1,3 +1,4 @@
+import { ProductsType } from '@/types';
 import { customFetch } from '@/utils/customFetch';
 import { AxiosError } from 'axios';
 
@@ -25,7 +26,7 @@ export const getAllProducts = async (
   const url = `${populate}${nameFilter}${clotheFilter}${priceFilter}${colorFilter}${sizeFilter}${dressStyleFilter}${pagination}`;
 
   try {
-    const { data } = await customFetch.get(`/products${url}`);
+    const { data } = await customFetch.get<ProductsType>(`/products${url}`);
 
     if (!data) {
       throw new Error('No products found');
