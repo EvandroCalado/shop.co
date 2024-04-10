@@ -1,20 +1,8 @@
-export interface ProductsType {
-  data: ProductType[];
-  meta: Meta;
+export interface ProductType {
+  data: Data6;
 }
 
-interface Meta {
-  pagination: Pagination;
-}
-
-interface Pagination {
-  page: number;
-  pageSize: number;
-  pageCount: number;
-  total: number;
-}
-
-interface ProductType {
+interface Data6 {
   id: number;
   attributes: Attributes10;
 }
@@ -37,14 +25,19 @@ interface Attributes10 {
   sizes: Categories;
   tag: Brand;
   dress_style: Dressstyle;
-  ratings: RatingsType;
+  ratings: Ratings;
+  wishlists: Wishlists;
 }
 
-export interface RatingsType {
-  data: RatingType[];
+interface Wishlists {
+  data: [];
 }
 
-export interface RatingType {
+interface Ratings {
+  data: Datum4[];
+}
+
+interface Datum4 {
   id: number;
   attributes: Attributes9;
 }
@@ -218,7 +211,6 @@ interface Attributes2 {
 }
 
 interface Formats2 {
-  large?: Small;
   small: Small;
   medium?: Small;
   thumbnail: Small;
@@ -256,7 +248,6 @@ interface Formats {
   small: Small;
   medium: Small;
   thumbnail: Small;
-  large?: Small;
 }
 
 interface Small {
